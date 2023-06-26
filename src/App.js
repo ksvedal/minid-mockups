@@ -1,23 +1,29 @@
 import React, { useState } from 'react';
 import Hello from "./components/Hello";
 import StyledMinId from "./components/StyledMinId";
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Password from './pages/PasswordPage';
 
 function App() {
     const [activeStyle, setActiveStyle] = useState('style-1');
 
     return (
-        <div>
-            <StyledMinId activeStyle={activeStyle} />
+        <Router>
+            <div>
+                <StyledMinId activeStyle={activeStyle} />
+                <h1>My App</h1>
+                <nav>
+                    <ul>
+                        <li>
+                            <Link to="/password">Password</Link>
+                        </li>
+                    </ul>
+                </nav>
 
-            <body className="flex justify-center lg:p-20 h-screen">
-            <container className="flex bg-red-500 p-10 w-full lg:w-2/5 h-full lg:h-2/3 rounded-3xl">
-                <div>
-                    <Hello />
-                </div>
-            </container>
-            </body>
-        </div>
-    );
+                <Route path="/password" element={<Password />} />
+
+            </div>
+        </Router>)
 }
 
 export default App;
