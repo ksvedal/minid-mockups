@@ -1,21 +1,23 @@
+import React, { useState } from 'react';
 import Hello from "./components/Hello";
-
-/* Mobile first! e.g.:
-w- : mobile
-lg: w- : computer */
+import StyledMinId from "./components/StyledMinId";
 
 function App() {
-  return (
-    <body className = "flex justify-center lg:p-20 h-screen">
-      <container className = "flex bg-cyan-600 p-10 w-full lg:w-2/5 h-full lg:h-2/3 rounded-3xl">
+    const [activeStyle, setActiveStyle] = useState('style-1');
+
+    return (
         <div>
-          <Hello />
-        </div> 
-      </container>
-    </body>
-   
-  );
+            <StyledMinId activeStyle={activeStyle} />
+
+            <body className="flex justify-center lg:p-20 h-screen">
+            <container className="flex bg-red-500 p-10 w-full lg:w-2/5 h-full lg:h-2/3 rounded-3xl">
+                <div>
+                    <Hello />
+                </div>
+            </container>
+            </body>
+        </div>
+    );
 }
 
-export default App; 
-
+export default App;
