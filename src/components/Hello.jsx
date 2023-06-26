@@ -10,14 +10,8 @@ const handleClick = () => {
 }
 
     return (
-        <div className="text-3xl text-orange-300">Hellooo
-            <p className="text-2xl">Press here </p>
-            <button onClick = {handleClick} className = {
-                click 
-                ? 'text-8xl'
-                : 'text-xs'
-            }
-            >
+        <div className="text-3xl text-orange-300">
+            <button> 
                 Click
             </button>
         </div>
