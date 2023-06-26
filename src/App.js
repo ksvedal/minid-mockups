@@ -1,21 +1,35 @@
-import Hello from "./components/Hello";
 
-/* Mobile first! e.g.:
-w- : mobile
-lg: w- : computer */
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Password from './pages/PasswordPage';
 
-function App() {
+const App = () => {
   return (
-    <body className = "flex justify-center lg:p-20 h-screen">
-      <container className = "flex bg-cyan-600 p-10 w-full lg:w-2/5 h-full lg:h-2/3 rounded-3xl">
-        <div>
-          <Hello />
-        </div> 
-      </container>
-    </body>
-   
+    <Router>
+      <div>
+        <h1>My App</h1>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/password">Password</Link>
+            </li>
+          </ul>
+        </nav>
+        
+          <Route path="/password" element={<Password />} />
+      
+      </div>
+    </Router>
   );
-}
+};
 
-export default App; 
+export default App;
+
+
+
+
+
+
+
+
 
