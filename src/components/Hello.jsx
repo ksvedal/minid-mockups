@@ -11,7 +11,7 @@ const handleClick = () => {
 
     return (
         <div className="text-3xl text-orange-300">
-            <button> 
+            <button>
                 Click
             </button>
         </div>
