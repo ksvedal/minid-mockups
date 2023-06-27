@@ -4,7 +4,7 @@ import "../index.css"
 
 const ValidationSuccessfull = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
+    <div>
       <h1>Gratulerer, du er logget inn!</h1>
     </div>
   );

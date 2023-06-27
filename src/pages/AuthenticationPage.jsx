@@ -7,7 +7,7 @@ import InputField from '../components/Input.jsx';
 
 const AuthenticationPage = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
+    <div>
       <h1>Skriv inn engangskode</h1>
       <InputField placeholder={"4 tall"}/>
       <NextButton>
