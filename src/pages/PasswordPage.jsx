@@ -1,5 +1,5 @@
 import React from 'react';
-import InputField from '../components/Input.jsx';
+import InputField from '../components/InputField.jsx';
 import NextButton from "../components/NextButton.jsx"
 import { Link } from 'react-router-dom';
 
