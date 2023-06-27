@@ -8,9 +8,9 @@ import ContactInfo from './pages/ContactInfoPage';
 import { themes } from './themes.js';
 import { useState } from 'react';
 import StyledMinId from './components/StyledMinId';
-import Switcher from './components/switchDarkMode';
 import { ThemeContext } from './store/ThemeContext';
 import ValidationSuccessfull from './pages/ValidationSuccessfullPage';
+import Switcher from './components/SwitchDarkmode';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
