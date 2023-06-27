@@ -8,25 +8,27 @@ import { themes } from '../themes.js';
 import InputField from '../components/input.jsx';
 
 const Homepage = () => {
-  const [theme, setTheme] = useState("theme2");
+  const [theme, setTheme] = useState("theme1");
 
   const changeTheme = (selectedTheme) => {
     setTheme(selectedTheme);
   };
   
   return ( 
-    <div className={themes[theme].background}>
-      <StyledMinId changeTheme={changeTheme}/>
-      <div>
-        <div className="flex flex-col items-center justify-center h-screen">
+    <div>
           <h1>Hello</h1>
+          <div ClassName={themes[theme].container}>
           <InputField />
           <NextButton>
             <Link to="/password">Neste</Link>
           </NextButton>
+
+          </div>
+          
         </div>
-      </div>
-    </div> 
+
+    
+
     
   );
 };

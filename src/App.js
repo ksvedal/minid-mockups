@@ -5,12 +5,11 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Password from './pages/PasswordPage';
 
 function App() {
-    const [activeStyle, setActiveStyle] = useState('style-1');
 
     return (
         <Router>
             <div>
-                <StyledMinId activeStyle={activeStyle} />
+                <StyledMinId />
                 <h1>My App</h1>
                 <nav>
                     <ul>
