@@ -1,29 +1,37 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ThemeContext } from '../store/ThemeContext';
 import { themes } from '../themes.js';
 
-const StyledMinId = ({ changeTheme }) => {
-    
-  const applyTheme = (selectedTheme) => {
-    changeTheme(selectedTheme);
-  };
+const StyledMinId = () => {
 
-  return (
-    <div className={themes.theme1.background + ' p-4'}>
-      <button
-        onClick={() => applyTheme('theme1')}
-        className="mr-4 p-2 bg-red-500 m-8 text-white"
-      >
-        Apply Theme 1
-      </button>
+    const { theme, changeTheme } = useContext(ThemeContext);
+    const applyTheme = (selectedTheme) => {
+      changeTheme(selectedTheme);
+    };
 
-      <button
-        onClick={() => applyTheme('theme2')}
-        className="p-2 bg-yellow-500 text-white"
-      >
-        Apply Theme 2
-      </button>
-    </div>
-  );
+    return (
+      <div className={'bg-yellow-50 rounded'}>
+        <button
+          onClick={() => applyTheme('theme1')}
+          className="m-2 p-2 bg-cyan-800 rounded-sm text-white"
+        >
+          Apply Theme 1
+        </button>
+
+        <button
+          onClick={() => applyTheme('theme2')}
+          className="m-2 p-2 bg-cyan-800 rounded-sm text-white"
+        >
+          Apply Theme 2
+        </button>
+          <button
+              onClick={() => applyTheme('theme3')}
+              className="m-2 p-2 bg-cyan-800 rounded-sm text-white"
+          >
+              Apply Theme 2
+          </button>
+      </div>
+    );
 };
 
 export default StyledMinId;
