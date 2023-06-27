@@ -16,12 +16,12 @@ export default function Switcher() {
 
 	return (
 		<>
-			<DarkModeSwitch
-				style={{ marginBottom: "2rem" }}
-				checked={darkmode}
-				onChange={toggleDarkmode}
-				size={30}
-			/>
+		<DarkModeSwitch
+			style={{ marginBottom: "2rem" }}
+			checked={darkmode}
+			onChange={toggleDarkmode}
+			size={30}
+		/>
 		</>
 	);
 }
