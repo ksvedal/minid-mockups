@@ -4,20 +4,6 @@ import NextButton from "../components/NextButton.jsx"
 import "../index.css"
 import SmallInputField from '../components/SmallInputField.jsx';
 
-/*
-const AuthenticationPage = () => {
-  return (
-    <div className="flex flex-col items-center justify-center h-screen">
-      <h1>Skriv inn engangskode fra sms</h1>
-      <InputField placeholder={"4 tall"} pattern={"[0-9]+"} />
-      <NextButton>
-      <Link to="/contactInfo">Neste</Link>
-      </NextButton>
-     
-    </div>
-  );
-};
-*/
 const AuthenticationPage = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen">
