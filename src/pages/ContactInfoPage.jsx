@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const ContactInfoPage = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen">
-      <h1>Skriv inn Telefonnummer</h1>
+      <h1>Skriv inn telefonnummer</h1>
       <InputField placeholder="8 tall" pattern="[0-9]+" />
       <h1>Skriv inn epost</h1>
       <InputField placeholder="epostadresse" />

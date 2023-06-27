@@ -10,7 +10,7 @@ const SmallInputField = ({ placeholder, pattern }) => {
     };
   
     return (
-        <div className="py-3">
+        <div className="py-2">
             <input
                 className="py-1 px-1 w-11 h-11 rounded-full border border-gray-400 text-center bg-gray-200"
                 type="text"

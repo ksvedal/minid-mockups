@@ -7,7 +7,7 @@ const Password = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen">
       <h1>Skriv inn passord</h1>
-      <InputField placeholder={"Passord"}/>
+      <InputField placeholder={"Passord"} type={"password"} />
       <NextButton>
       <Link to="/authentication">Neste</Link>
       </NextButton>

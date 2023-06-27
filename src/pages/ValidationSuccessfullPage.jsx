@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const ValidationSuccessfull = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen">
-      <h1>Gratulerer, du er logget inn!</h1>
+      <h1 className='py-3'>Gratulerer, du er logget inn!</h1>
       <NextButton>
           <Link to="/">Logg på igjen</Link>
       </NextButton>

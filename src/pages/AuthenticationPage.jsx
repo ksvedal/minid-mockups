@@ -21,6 +21,7 @@ const AuthenticationPage = () => {
 const AuthenticationPage = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen">
+      <img className='py-3' src="/images/grey_smartphone.jpg" width="100px" alt="Grey Smartphone" />
       <h1>Skriv inn engangskode fra sms</h1>
       <div className="flex items-center justify-center space-x-2">
         <SmallInputField placeholder={"1"} pattern={"[0-9]"} />
