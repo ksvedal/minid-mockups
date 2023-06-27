@@ -1,12 +1,20 @@
 export const themes = {
   theme1: {
-    background: "bg-pink-300 dark:bg-black",
-    container: "dark:bg-black z-10 flex bg-pink-100 p-10 w-full lg:w-2/5 h-full lg:h-2/3 rounded-3xl",
-    button: "bg-green-500 text-white m-0",
+    mainContainer: "flex items-center justify-center",
+    container: "bg-teal-500  h-80 w-96 flex flex-col items-center justify-center h-screen rounded-xl",
+    button: "p-3 my-1 bg-black rounded-full text-white w-full font-semibold",
+    input: "p-3 my-1 bg-white border rounded-full w-full font-semibold"
   },
   theme2: {
-    background: "bg-cyan-500 dark:bg-black",
-    container: "flex bg-black p-10 w-full lg:w-2/5 h-full lg:h-2/3 rounded-3xl",
-    button: "bg-white text-white m-8 rounded-3xl",
+    mainContainer: "flex items-center justify-center",
+    container: "bg-yellow-300  h-80 w-96 flex flex-col items-center justify-center rounded-xl",
+    button: "p-1 m-2 bg-black rounded-sm text-white w-full font-semibold",
+    input: "p-1 my-2 bg-red-300 border rounded-sm w-full font-semibold"
   },
+  theme3: {
+    mainContainer: "flex items-center justify-center",
+    container: "bg-gray-800 text-white h-96 w-96 flex flex-col items-center justify-center rounded-sm",
+    button: "p-1 m-2 bg-cyan-300 rounded-sm text-white w-full font-semibold",
+    input: "p-1 my-2 bg-red-300 border rounded-sm w-full font-semibold"
+  }
 };
