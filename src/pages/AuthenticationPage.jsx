@@ -8,9 +8,8 @@ import InputField from '../components/Input.jsx';
 const AuthenticationPage = () => {
   return (
     <div>
-      <h1>AuthenticationPage</h1>
-      <p>skriv inn engangskode</p>
-      <InputField />
+      <h1>Skriv inn engangskode</h1>
+      <InputField placeholder={"4 tall"}/>
       <NextButton>
       <Link to="/contactInfo">Neste</Link>
       </NextButton>

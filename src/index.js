@@ -10,6 +10,7 @@ import { useState } from 'react';
 import StyledMinId from './components/StyledMinId';
 import Switcher from './components/switchDarkMode';
 import { ThemeContext } from './store/ThemeContext';
+import ValidationSuccessfull from './pages/ValidationSuccessfullPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -33,6 +34,7 @@ const App = () => {
                             <Route path="/password" element={<Password />} />
                             <Route path="/authentication" element={<Authentication />} />
                             <Route path="/contactInfo" element={<ContactInfo />} />
+                            <Route path="/validationSuccessfull" element={<ValidationSuccessfull />} />
                         </Routes>
                     </div>
                 </div>

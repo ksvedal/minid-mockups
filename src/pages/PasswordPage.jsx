@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 const Password = () => {
   return (
     <div>
-      <h2>Skriva inn ditt passord her hehe</h2>
-      <InputField />
+      <h1>Skriv inn passord</h1>
+      <InputField placeholder={"Passord"}/>
       <NextButton>
       <Link to="/authentication">Neste</Link>
       </NextButton>

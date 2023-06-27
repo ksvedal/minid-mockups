@@ -6,12 +6,12 @@ import { Link } from 'react-router-dom';
 const ContactInfoPage = () => {
   return (
     <div>
-      <h2>Contact info page</h2>
-      <InputField />
-      <InputField />
-
+      <h1>Skriv inn Telefonnummer</h1>
+      <InputField placeholder={"8 tall"} />
+      <h1>Skriv inn epost</h1>
+      <InputField placeholder={"epostadresse"}/>
       <NextButton>
-            <Link to="/">Neste</Link>
+      <Link to="/validationSuccesfull">Neste</Link>
       </NextButton>
      
     </div>
