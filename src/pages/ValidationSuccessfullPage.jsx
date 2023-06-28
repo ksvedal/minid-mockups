@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 
 
 
-const ValidationSuccessfull = () => {
+const ValidationSuccessfullPage = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
+    <div>
       <h1 className='py-3'>Gratulerer, du er logget inn!</h1>
       <NextButton>
           <Link to="/">Logg på igjen</Link>
@@ -16,4 +16,4 @@ const ValidationSuccessfull = () => {
   );
 };
 
-export default ValidationSuccessfull;
+export default ValidationSuccessfullPage;

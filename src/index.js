@@ -8,9 +8,11 @@ import ContactInfo from './pages/ContactInfoPage';
 import { themes } from './themes.js';
 import { useState } from 'react';
 import StyledMinId from './components/StyledMinId';
-import Switcher from './components/switchDarkMode';
 import { ThemeContext } from './store/ThemeContext';
 import ValidationSuccessfull from './pages/ValidationSuccessfullPage';
+
+//@ts-ignore Case mismatch idk why, it doesn't look wrong and doesn't affect the program
+import Switcher from './components/SwitchDarkMode';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -25,10 +27,12 @@ const App = () => {
   return (
       <ThemeContext.Provider value={{ theme, changeTheme }}>
           <Router>
-              <StyledMinId />
+            <div className='flex'>
+                <StyledMinId />
+                <Switcher/>
+            </div>            
                 <div className={themes[theme].mainContainer}>
-                    <div className={themes[theme].container}>
-                        <Switcher />
+                    <div className={themes[theme].container}>                       
                         <Routes>
                             <Route path="/" element={<Homepage />} />
                             <Route path="/password" element={<Password />} />

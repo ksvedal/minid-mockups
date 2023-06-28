@@ -11,7 +11,7 @@ const ContactInfoPage = () => {
       <h1>Skriv inn epost</h1>
       <InputField placeholder="epostadresse" />
       <NextButton>
-        <Link to="/validationSuccessfull">Neste</Link>
+      <Link to="/validationSuccessfull">Neste</Link>
       </NextButton>
     </div>
   );
