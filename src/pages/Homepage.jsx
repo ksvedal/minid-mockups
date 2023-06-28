@@ -1,14 +1,10 @@
 import React from 'react';
-import { Link, redirect, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import NextButton from "../components/NextButton.jsx"
 import "../index.css"
-import InputField from '../components/InputField.jsx';
 import BackButton from '../components/BackButton.jsx';
-
 import ProgressBar from '../components/ProgressBar.jsx';
-
 import { useState } from 'react';
-
 
 const Homepage = () => {
   const navigate = useNavigate(); 
@@ -17,18 +13,15 @@ const Homepage = () => {
   const[errormsg, setErrormsg] = useState("");
 
   const handleInput = (event) => {
-    console.log(event.target.value)
     setInput(event.target.value); 
   };
 
-  
   const handleNextButtonClick = () => {
     if (input.length === 11){
       setErrormsg('');
       navigate("/password"); 
     } 
     else {
-      console.log('Must have 11 digits');
       setErrormsg('Fødselsnummer må inneholde 11 siffer');
     }
   }
