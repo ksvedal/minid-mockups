@@ -32,8 +32,7 @@ const App = () => {
                 <Switcher/>
             </div>            
                 <div className={themes[theme].mainContainer}>
-                    <div className={themes[theme].container}>
-                        
+                    <div className={themes[theme].container}>                       
                         <Routes>
                             <Route path="/" element={<Homepage />} />
                             <Route path="/password" element={<Password />} />
