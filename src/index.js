@@ -12,7 +12,7 @@ import { ThemeContext } from './store/ThemeContext';
 import ValidationSuccessfull from './pages/ValidationSuccessfullPage';
 
 //@ts-ignore Case mismatch idk why, it doesn't look wrong and doesn't affect the program
-import Switcher from './components/SwitchDarkmode';
+import Switcher from './components/SwitchDarkMode';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
