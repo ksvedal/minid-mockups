@@ -1,9 +1,14 @@
-import React from 'react';
+import React, {useState, useContext} from 'react';
+import {themes} from "../themes";
+import StyledMinId from '../components/StyledMinId.jsx';
+import { ThemeContext } from '../store/ThemeContext';
 
 const Button = ({ onClick, children }) => {
+  const { theme, changeTheme } = useContext(ThemeContext);
+
   return (
     <button
-      className="flex items-center justify-center w-533 h-533 px-82.95 py-68.137 gap-29.625 flex-shrink-0 rounded-full border-2.962 border-blue-600 bg-green-700 text-white"
+      className={themes[theme].button}
       onClick={onClick}
     >
       {children}

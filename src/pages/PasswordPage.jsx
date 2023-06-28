@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Password = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
+    <div>
       <h1>Skriv inn passord</h1>
       <InputField placeholder={"Passord"} type={"password"} />
       <NextButton>
