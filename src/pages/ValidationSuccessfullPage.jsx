@@ -3,8 +3,6 @@ import "../index.css"
 import NextButton from "../components/NextButton.jsx"
 import { Link } from 'react-router-dom';
 
-
-
 const ValidationSuccessfullPage = () => {
   return (
     <div>

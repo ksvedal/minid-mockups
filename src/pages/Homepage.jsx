@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import NextButton from "../components/NextButton.jsx"
 import "../index.css"
 import InputField from '../components/InputField.jsx';
-import {themes} from "../themes";
-
 
 const Homepage = () => {
   return (

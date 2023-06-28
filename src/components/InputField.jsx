@@ -12,9 +12,9 @@ const InputField = ({ placeholder, pattern, type }) => {
   };
 
   return (
-    <div className={`flex items-center justify-center w-1/2 h-200 px-1 py-2`}>
+    <div>
       <input
-        className={`flex-shrink-0 w-1/2 min-w-[160px] max-w-[200px] h-full rounded-full border border-gray-400 bg-gray-200 px-4 py-2 `}
+        className={"p-3 m-1 bg-white border rounded-full w-full font-semibold"}
         type={type === 'password' ? 'password' : 'text'} // Set the type to 'password' if it's explicitly provided as prop
         placeholder={placeholder}
         onChange={handleInputChange}

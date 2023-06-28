@@ -1,14 +1,10 @@
 import React, {useContext} from 'react';
 import { ThemeContext } from '../store/ThemeContext';
-import {themes} from "../themes";
-
 
 const InputField = ({placeholder}) => {
-    const { theme, changeTheme } = useContext(ThemeContext);
-
     return (
     <div>
-      <input className={themes[theme].input}
+      <input className={"p-3 m-1 bg-white border rounded-full w-full font-semibold"}
         type="text"
         placeholder={placeholder}
       />
