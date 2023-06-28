@@ -2,6 +2,7 @@ import React from 'react';
 import "../index.css"
 import NextButton from "../components/NextButton.jsx"
 import { Link } from 'react-router-dom';
+import BackButton from '../components/BackButton';
 
 
 
@@ -12,6 +13,9 @@ const ValidationSuccessfullPage = () => {
       <NextButton>
           <Link to="/">Logg på igjen</Link>
       </NextButton>
+      <BackButton>
+      <Link to="/contactInfo">Tilbake</Link>
+      </BackButton>
     </div>
   );
 };

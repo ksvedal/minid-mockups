@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import NextButton from "../components/NextButton.jsx"
 import "../index.css"
 import SmallInputField from '../components/SmallInputField.jsx';
+import BackButton from '../components/BackButton.jsx';
 
 const AuthenticationPage = () => {
   return (
@@ -18,6 +19,9 @@ const AuthenticationPage = () => {
       <NextButton>
         <Link to="/contactInfo">Neste</Link>
       </NextButton>
+      <BackButton>
+      <Link to="/password">Tilbake</Link>
+      </BackButton>
     </div>
   );
 };

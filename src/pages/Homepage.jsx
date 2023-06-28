@@ -4,6 +4,7 @@ import NextButton from "../components/NextButton.jsx"
 import "../index.css"
 import InputField from '../components/InputField.jsx';
 import {themes} from "../themes";
+import BackButton from '../components/BackButton.jsx';
 
 
 const Homepage = () => {
@@ -15,6 +16,9 @@ const Homepage = () => {
         <NextButton>
           <Link to="/password">Neste</Link>
         </NextButton>
+        <BackButton>
+          Tilbake
+        </BackButton>
       </div>
     </div>
   );
