@@ -1,4 +1,6 @@
 const SmallInputField = ({ placeholder, pattern }) => {
+    const { theme, changeTheme } = useContext(ThemeContext);
+
     const handleInputChange = (event) => {
       const inputValue = event.target.value;
       const lastChar = inputValue.slice(-1);
@@ -10,9 +12,9 @@ const SmallInputField = ({ placeholder, pattern }) => {
     };
   
     return (
-        <div className="py-2">
+        <div>
             <input
-                className="py-1 px-1 w-11 h-11 rounded-full border border-gray-400 text-center bg-gray-200"
+                className={themes[theme].smallInput}
                 type="text"
                 placeholder={placeholder}
                 maxLength={1}

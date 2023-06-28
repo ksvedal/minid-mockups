@@ -4,8 +4,6 @@ import NextButton from "../components/NextButton.jsx"
 import { Link } from 'react-router-dom';
 import BackButton from '../components/BackButton';
 
-
-
 const ValidationSuccessfullPage = () => {
   return (
     <div>

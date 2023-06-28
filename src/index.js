@@ -5,10 +5,6 @@ import Homepage from './pages/Homepage';
 import Password from './pages/PasswordPage';
 import Authentication from './pages/AuthenticationPage';
 import ContactInfo from './pages/ContactInfoPage';
-import { themes } from './themes.js';
-import { useState } from 'react';
-import StyledMinId from './components/StyledMinId';
-import { ThemeContext } from './store/ThemeContext';
 import ValidationSuccessfull from './pages/ValidationSuccessfullPage';
 
 //@ts-ignore Case mismatch idk why, it doesn't look wrong and doesn't affect the program
@@ -17,22 +13,13 @@ import Switcher from './components/SwitchDarkMode';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const App = () => {
-
-  const [theme, setTheme] = useState('theme1');
-
-  const changeTheme = (selectedTheme) => {
-    setTheme(selectedTheme);
-  };
-
   return (
-      <ThemeContext.Provider value={{ theme, changeTheme }}>
           <Router>
             <div className='flex'>
-                <StyledMinId />
                 <Switcher/>
             </div>            
-                <div className={themes[theme].mainContainer}>
-                    <div className={themes[theme].container}>                       
+                <div className={"flex items-center justify-center mt-48"}>
+                    <div className={"dark:bg-black dark:text-white bg-yellow-200 h-96 w-96 flex flex-col items-center justify-center rounded-sm"}>
                         <Routes>
                             <Route path="/" element={<Homepage />} />
                             <Route path="/password" element={<Password />} />
@@ -43,7 +30,6 @@ const App = () => {
                     </div>
                 </div>
           </Router>
-      </ThemeContext.Provider>
   );
 };
 
