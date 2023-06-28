@@ -27,10 +27,13 @@ const App = () => {
   return (
       <ThemeContext.Provider value={{ theme, changeTheme }}>
           <Router>
-              <StyledMinId />
+            <div className='flex'>
+                <StyledMinId />
+                <Switcher/>
+            </div>            
                 <div className={themes[theme].mainContainer}>
                     <div className={themes[theme].container}>
-                        <Switcher />
+                        
                         <Routes>
                             <Route path="/" element={<Homepage />} />
                             <Route path="/password" element={<Password />} />
