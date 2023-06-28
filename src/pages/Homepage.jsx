@@ -8,19 +8,17 @@ import ProgressBar from '../components/ProgressBar.jsx';
 
 const Homepage = () => {
   return (
-    <div>
-      <ProgressBar totalTasks={3} completedTasks={1} />
-      <h1>Skriv inn fødselsnummer</h1>
-      <InputField  placeholder={"11 tall"} pattern={"[0-9]+"} />
-      <div>
-        <NextButton>
-          <Link to="/password">Neste</Link>
-        </NextButton>
-        <BackButton>
-          Tilbake
-        </BackButton>
-      </div>
-    </div>
+      <>
+            <ProgressBar totalTasks={3} completedTasks={1} />
+            <h1>Skriv inn fødselsnummer</h1>
+            <InputField  placeholder={"11 tall"} pattern={"[0-9]+"} />
+        <div className={"absolute w-full bottom-0 m-10"}>
+            <NextButton>
+                <Link to="/password">Neste</Link>
+            </NextButton>
+              <BackButton>Tilbake</BackButton>
+        </div>
+      </>
   );
 };
 

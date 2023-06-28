@@ -7,7 +7,7 @@ import UpdateContactInfoField from '../components/UpdateContactInfoField.jsx';
 
 const ContactInfoPage = () => {
   return (
-    <div>
+    <div className={"flex flex-col items-center justify-center h-screen"}>
       <ProgressBar totalTasks={3} completedTasks={3} /> 
       <h1 className='py-5'>Se etter om kontaktinformasjonen stemmer</h1>
       <h1>Telefonnummer</h1>
