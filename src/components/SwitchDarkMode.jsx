@@ -9,14 +9,13 @@ export default function Switcher() {
 	);
 
 	const toggleDarkmode = (checked) => {
-		
 		setTheme(colorTheme);
 		setDarkmode(checked);
 	};
 
 	return (
 		<>
-		<DarkModeSwitch className="m-3 text-red-400 "
+		<DarkModeSwitch className="m-3"
 			checked={darkmode}
 			onChange={toggleDarkmode}
 			size={30}
