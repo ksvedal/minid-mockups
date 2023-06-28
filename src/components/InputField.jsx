@@ -1,10 +1,6 @@
-import React, {useContext} from 'react';
-import {themes} from "../themes"
-import { ThemeContext } from '../store/ThemeContext';
+import React from 'react';
 
 const InputField = ({ placeholder, pattern, type }) => {
-  const { theme, changeTheme } = useContext(ThemeContext);
-
   const handleInputChange = (event) => {
     const inputValue = event.target.value;
     const lastChar = inputValue.slice(-1);
@@ -17,7 +13,8 @@ const InputField = ({ placeholder, pattern, type }) => {
 
   return (
     <div>
-      <input className={themes[theme].input}
+      <input
+        className={"p-3 m-1 bg-white border rounded-full w-full font-semibold"}
         type={type === 'password' ? 'password' : 'text'} // Set the type to 'password' if it's explicitly provided as prop
         placeholder={placeholder}
         onChange={handleInputChange}
