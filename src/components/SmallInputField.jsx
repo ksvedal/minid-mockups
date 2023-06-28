@@ -1,9 +1,4 @@
-import {themes} from "../themes";
-import {useContext} from "react";
-import {ThemeContext} from "../store/ThemeContext";
-
 const SmallInputField = ({ placeholder, pattern }) => {
-    const { theme, changeTheme } = useContext(ThemeContext);
 
     const handleInputChange = (event) => {
       const inputValue = event.target.value;
@@ -18,7 +13,7 @@ const SmallInputField = ({ placeholder, pattern }) => {
     return (
         <div>
             <input
-                className={themes[theme].smallInput}
+                className={"py-1 px-1 w-11 h-11 rounded-full border border-gray-400 text-center bg-white"}
                 type="text"
                 placeholder={placeholder}
                 maxLength={1}
