@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, redirect, useNavigate } from 'react-router-dom';
 import NextButton from "../components/NextButton.jsx"
 import "../index.css"
 import InputField from '../components/InputField.jsx';
@@ -13,21 +13,23 @@ import { useState } from 'react';
 const Homepage = () => {
   const navigate = useNavigate(); 
 
-  const[input, setInput] = useState("");
+  const [input, setInput] = useState("");
   const[errormsg, setErrormsg] = useState("");
 
   const handleInput = (event) => {
+    console.log(event.target.value)
     setInput(event.target.value); 
   };
 
+  
   const handleNextButtonClick = () => {
     if (input.length === 11){
-      console.log('Success, next page!');
-      navigate('/.password');
+      setErrormsg('');
+      navigate("/password"); 
     } 
     else {
-      console.log('Wrong');
-      setErrormsg('Fødselsnummer på inneholde 11 siffer');
+      console.log('Must have 11 digits');
+      setErrormsg('Fødselsnummer må inneholde 11 siffer');
     }
   }
 
@@ -35,10 +37,12 @@ const Homepage = () => {
     <div>
       <ProgressBar totalTasks={3} completedTasks={1} />
       <h1>Skriv inn fødselsnummer</h1>
-      <InputField  placeholder={"11 tall"} pattern={"[0-9]+"} value={input} onChange={handleInput} />
+      <input className={"p-3 m-1 bg-white border rounded-full w-full font-semibold"} 
+      placeholder={"11 tall"} pattern={"[0-9]+"} value={input} onChange={handleInput}>
+      </input>  
       <div>
         <NextButton onClick={handleNextButtonClick}>
-          <Link to="/password">Neste</Link>
+          Neste
         </NextButton>
         <BackButton>
           Tilbake
