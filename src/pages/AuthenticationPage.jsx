@@ -4,10 +4,12 @@ import NextButton from "../components/NextButton.jsx"
 import "../index.css"
 import SmallInputField from '../components/SmallInputField.jsx';
 import BackButton from '../components/BackButton.jsx';
+import ProgressBar from '../components/ProgressBar.jsx';
 
 const AuthenticationPage = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen">
+      <ProgressBar totalTasks={3} completedTasks={3} />
       <img className='py-3' src="/images/grey_smartphone.jpg" width="100px" alt="Grey Smartphone" />
       <h1>Skriv inn engangskode fra sms</h1>
       <div className="flex items-center justify-center space-x-2">
