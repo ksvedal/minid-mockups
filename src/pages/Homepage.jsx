@@ -5,7 +5,6 @@ import "../index.css"
 import InputField from '../components/InputField.jsx';
 import {themes} from "../themes";
 
-
 const Homepage = () => {
   return (
     <div>
