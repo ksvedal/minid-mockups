@@ -16,7 +16,7 @@ const ActivationLetterPage = () => {
             </div>
             <div className={"absolute w-full px-10 bottom-0 m-10"}>
                 <NextButton>Neste</NextButton>
-                <BackButton><Link to="/.">Tilbake</Link></BackButton>
+                <BackButton/>
             </div>
             </div>
         </div>
