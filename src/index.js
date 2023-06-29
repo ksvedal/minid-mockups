@@ -11,6 +11,8 @@ import ActivationLetterPage from './pages/activationLetterPage';
 
 //@ts-ignore Case mismatch idk why, it doesn't look wrong and doesn't affect the program
 import Switcher from './components/SwitchDarkMode';
+import NoActivationLetterPage from "./pages/activationLetter/noActivationLetterPage";
+import NoActivationLetterOrderedPage from "./pages/activationLetter/noActivationLetterOrderedPage";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -31,6 +33,8 @@ const App = () => {
                             <Route path="/authentication" element={<Authentication />} />
                             <Route path="/contactInfo" element={<ContactInfo />} />
                             <Route path="/validationSuccessfull" element={<ValidationSuccessfull />} />
+                            <Route path="/noActivationLetter" element={<NoActivationLetterPage />} />
+                            <Route path="/noActivationLetterOrdered" element={<NoActivationLetterOrderedPage />} />
                             <Route path="/activationLetter" element={<ActivationLetterPage />} />
                         </Routes>
                     </div>
