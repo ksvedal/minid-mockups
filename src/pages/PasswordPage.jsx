@@ -39,9 +39,7 @@ const Password = () => {
             <NextButton onClick={handleClick}>
               Neste
             </NextButton>
-            <BackButton>
-                <Link to="/.">Tilbake</Link>
-            </BackButton>
+            <Link to="/"> <BackButton /> </Link>
         </div>
       </>
   );
