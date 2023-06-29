@@ -23,8 +23,8 @@ const AuthenticationPage = () => {
           <SmallInputField placeholder="0" pattern="[0-9]" />
           <SmallInputField placeholder="0" pattern="[0-9]" />
         </div>
-
-        <div className={"absolute m-10 w-full px-10 bottom-0"}>
+      </div>
+      <div className={"absolute m-10 w-full px-10 bottom-0"}>
           <Link to="/contactInfo">
             <NextButton />
           </Link>
@@ -32,7 +32,6 @@ const AuthenticationPage = () => {
             <BackButton />
           </Link>
         </div>
-      </div>
     </div>
   );
 };
