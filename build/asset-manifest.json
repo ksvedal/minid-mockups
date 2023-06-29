@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.ba1e2b72.css",
-    "main.js": "/static/js/main.9150e2b1.js",
+    "main.js": "/static/js/main.74b8c6a3.js",
     "static/media/grey_smartphone.jpg": "/static/media/grey_smartphone.d043f18acdfa75005ed3.jpg",
     "index.html": "/index.html",
     "main.ba1e2b72.css.map": "/static/css/main.ba1e2b72.css.map",
-    "main.9150e2b1.js.map": "/static/js/main.9150e2b1.js.map"
+    "main.74b8c6a3.js.map": "/static/js/main.74b8c6a3.js.map"
   },
   "entrypoints": [
     "static/css/main.ba1e2b72.css",
-    "static/js/main.9150e2b1.js"
+    "static/js/main.74b8c6a3.js"
   ]
 }
