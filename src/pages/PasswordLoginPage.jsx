@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import InputField from '../components/InputField.jsx';
 import NextButton from "../components/NextButton.jsx"
 import { Link, useNavigate } from 'react-router-dom';
 import BackButton from '../components/BackButton.jsx';

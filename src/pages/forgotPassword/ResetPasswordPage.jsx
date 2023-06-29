@@ -3,7 +3,8 @@ import NextButton from "../../components/NextButton.jsx"
 import { Link } from 'react-router-dom';
 import BackButton from '../../components/BackButton.jsx';
 import ProgressBar from '../../components/ProgressBar.jsx';
-import UpdateContactInfoField from '../../components/UpdateContactInfoField.jsx';
+import InputField from "../../components/InputField.jsx";
+
 
 const ResetPasswordPage = () => {
   return (
@@ -12,9 +13,9 @@ const ResetPasswordPage = () => {
         <div className={"absolute m-10 md:m-16 w-full px-10 top-14"}>
           <h1 className='py-5'>Nytt Passord</h1>
           <h1>Passord</h1>
-          
+          <InputField className='color-black' placeholder="Passord" type={"password"} />
           <h1>Gjenta Passord</h1>
-          
+          <InputField className='color-black' placeholder="Passord" type={"password"} />
         </div>
         <div className={"absolute m-10 w-full px-10 bottom-0"}>
             <Link to="/contactInfo"> <NextButton /> </Link>
