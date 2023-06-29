@@ -8,4 +8,15 @@ module.exports = {
   variants: {},
   plugins: [],
   important: true,
+  theme: {
+    extend: {
+      colors: {
+        // Add your custom colors here
+        'custom-blue': '#0462BA',
+        'custom-light-grey': '#F5F5F5',
+        'custom-dark-grey': '#716E6E',
+      },
+
+    },
+  }
 }

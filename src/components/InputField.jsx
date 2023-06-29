@@ -14,7 +14,7 @@ const InputField = ({ placeholder, pattern, type }) => {
   return (
     <div>
       <input
-        className={"p-3 m-1 bg-white border rounded-full w-full font-semibold"}
+        className={"text-black p-3 m-1 bg-white border rounded-full w-full font-semibold"}
         type={type === 'password' ? 'password' : 'text'} // Set the type to 'password' if it's explicitly provided as prop
         placeholder={placeholder}
         onChange={handleInputChange}

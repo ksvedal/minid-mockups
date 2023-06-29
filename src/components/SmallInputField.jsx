@@ -13,7 +13,7 @@ const SmallInputField = ({ placeholder, pattern }) => {
     return (
         <div>
             <input
-                className={"py-1 px-1 w-11 h-11 rounded-full border border-gray-400 text-center bg-white"}
+                className={"py-1 px-1 w-11 h-11 text-black rounded-full border border-custom-dark-grey-grey text-center bg-white"}
                 type="text"
                 placeholder={placeholder}
                 maxLength={1}
