@@ -19,7 +19,7 @@ const App = () => {
                 <Switcher/>
             </div>            
                 <div className={"flex items-center justify-center mt-12"}>
-                    <div className={"dark:bg-black dark:text-white bg-yellow-200 h-96 w-96 flex flex-col items-center justify-center rounded-sm"}>
+                    <div className={"relative dark:bg-black dark:text-white py-60 bg-white rounded-xl border-custom-light-grey border-2 h-96 w-96 flex flex-col items-center justify-center rounded-sm"}>
                         <Routes>
                             <Route path="/" element={<Homepage />} />
                             <Route path="/password" element={<Password />} />
