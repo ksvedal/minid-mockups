@@ -1,9 +1,9 @@
 import React from 'react';
-import "../index.css"
-import NextButton from "../components/NextButton.jsx"
+import "../../index.css"
+import NextButton from "../../components/NextButton.jsx"
 import { Link } from 'react-router-dom';
-import BackButton from '../components/BackButton';
-import ProgressBar from "../components/ProgressBar";
+import BackButton from '../../components/BackButton';
+import ProgressBar from "../../components/ProgressBar";
 
 const NoActivationLetterPage = () => {
     return (

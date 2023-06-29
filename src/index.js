@@ -10,8 +10,8 @@ import LanguageButton from './components/languageButton';
 
 //@ts-ignore Case mismatch idk why, it doesn't look wrong and doesn't affect the program
 import Switcher from './components/SwitchDarkMode';
-import NoActivationLetterPage from "./pages/noActivationLetterPage";
-import NoActivationLetterOrderedPage from "./pages/noActivationLetterOrderedPage";
+import NoActivationLetterPage from "./pages/activationLetter/noActivationLetterPage";
+import NoActivationLetterOrderedPage from "./pages/activationLetter/noActivationLetterOrderedPage";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 

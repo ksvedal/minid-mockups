@@ -1,8 +1,8 @@
 import React from 'react';
-import "../index.css"
-import NextButton from "../components/NextButton.jsx"
+import "../../index.css"
+import NextButton from "../../components/NextButton.jsx"
 import { Link } from 'react-router-dom';
-import ProgressBar from "../components/ProgressBar";
+import ProgressBar from "../../components/ProgressBar";
 
 const NoActivationLetterOrderedPage = () => {
     return (
