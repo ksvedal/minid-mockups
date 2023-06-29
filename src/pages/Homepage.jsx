@@ -6,6 +6,7 @@ import BackButton from '../components/BackButton.jsx';
 import ProgressBar from '../components/ProgressBar.jsx';
 import { useState } from 'react';
 
+
 const Homepage = () => {
   const navigate = useNavigate();
 

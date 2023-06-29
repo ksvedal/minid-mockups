@@ -6,6 +6,7 @@ import Password from './pages/PasswordPage';
 import Authentication from './pages/AuthenticationPage';
 import ContactInfo from './pages/ContactInfoPage';
 import ValidationSuccessfull from './pages/ValidationSuccessfullPage';
+import LanguageButton from './components/languageButton';
 
 //@ts-ignore Case mismatch idk why, it doesn't look wrong and doesn't affect the program
 import Switcher from './components/SwitchDarkMode';
@@ -17,9 +18,12 @@ const App = () => {
           <Router>
             <div className='flex'>
                 <Switcher/>
-            </div>            
+            </div>
+                <div  className={"absolute top-4 right-4"}>
+                    <LanguageButton />            
+                </div>
                 <div className={"flex items-center justify-center mt-12"}>
-                    <div className={"relative dark:bg-black dark:text-white py-60 bg-white rounded-xl border-custom-light-grey border-2 h-96 w-96 flex flex-col items-center justify-center rounded-sm"}>
+                    <div className={"relative dark:bg-black dark:text-white py-60 bg-white border-custom-light-grey border-2 h-96 w-96 flex flex-col items-center justify-center rounded-sm"}>
                         <Routes>
                             <Route path="/" element={<Homepage />} />
                             <Route path="/password" element={<Password />} />
