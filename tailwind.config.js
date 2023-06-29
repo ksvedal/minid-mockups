@@ -18,8 +18,10 @@ module.exports = {
         'custom-blue': '#0462BA',
         'custom-light-grey': '#F5F5F5',
         'custom-dark-grey': '#716E6E',
-      },
-
-    },
+        'custom-yellow': '#fdb96e',
+        'custom-very-dark-grey': '#313131',
+        'custom-very-darker-grey': '#212121',
+      }
+    }
   }
 }

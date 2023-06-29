@@ -12,23 +12,20 @@ const AuthenticationPage = () => {
     <div className="flex flex-col items-center justify-center h-screen">
       <ProgressBar totalTasks={3} completedTasks={3} />
         <div className={"absolute m-10 w-full px-10 bottom-0"}>
-        <img className='py-3' src={PhoneImage} width="70px" alt="Grey Smartphone" />
+        <img className='py-3 w-full' src={PhoneImage} width="70px" alt="Grey Smartphone" />
 
-      <h1>Skriv inn engangskode fra sms</h1>
+      <h1 className={"text-center"}>Skriv inn engangskode fra sms</h1>
       <div className="flex items-center justify-center space-x-2 m-2">
-        <SmallInputField placeholder={"1"} pattern={"[0-9]"} />
-        <SmallInputField placeholder={"2"} pattern={"[0-9]"} />
-        <SmallInputField placeholder={"3"} pattern={"[0-9]"} />
-        <SmallInputField placeholder={"4"} pattern={"[0-9]"} />
-        <SmallInputField placeholder={"5"} pattern={"[0-9]"} />
+        <SmallInputField placeholder={"0"} pattern={"[0-9]"} />
+        <SmallInputField placeholder={"0"} pattern={"[0-9]"} />
+        <SmallInputField placeholder={"0"} pattern={"[0-9]"} />
+        <SmallInputField placeholder={"0"} pattern={"[0-9]"} />
+        <SmallInputField placeholder={"0"} pattern={"[0-9]"} />
       </div>
-      <NextButton>
-        <Link to="/contactInfo">Neste</Link>
-      </NextButton>
-      <BackButton>
-      <Link to="/password">Tilbake</Link>
-      </BackButton>
-    </div>
+
+            <Link to="/contactInfo"> <NextButton /> </Link>
+            <Link to="/password"> <BackButton /> </Link>
+        </div>
     </div>
   );
 };

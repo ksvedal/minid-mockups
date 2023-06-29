@@ -29,11 +29,14 @@ const Password = () => {
       <div className={"flex flex-col items-center justify-center h-screen"}>
         <ProgressBar totalTasks={3} completedTasks={2} />
       </div>
+          <div className={"flex flex-col items-center justify-center h-screen"}>
+
           <h1>Skriv inn passord</h1>
           <input className={"text-black p-3 m-1 bg-white border rounded-full w-auto font-semibold"}
           placeholder={"Passord"} type={"password"} value={input} onChange={handleInput}>
           </input>
           {errormessage && <p> {errormessage}</p>}
+          </div>
           <div className={"absolute w-full px-10 bottom-0 m-10"}>
             <NextButton onClick={handleClick}>
               Neste
