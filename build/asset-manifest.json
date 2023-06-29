@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.5650f2ca.css",
-    "main.js": "/static/js/main.df25bd63.js",
+    "main.css": "/static/css/main.d0347381.css",
+    "main.js": "/static/js/main.4a0be5cd.js",
+    "static/media/grey_smartphone.jpg": "/static/media/grey_smartphone.d043f18acdfa75005ed3.jpg",
     "index.html": "/index.html",
-    "main.5650f2ca.css.map": "/static/css/main.5650f2ca.css.map",
-    "main.df25bd63.js.map": "/static/js/main.df25bd63.js.map"
+    "main.d0347381.css.map": "/static/css/main.d0347381.css.map",
+    "main.4a0be5cd.js.map": "/static/js/main.4a0be5cd.js.map"
   },
   "entrypoints": [
-    "static/css/main.5650f2ca.css",
-    "static/js/main.df25bd63.js"
+    "static/css/main.d0347381.css",
+    "static/js/main.4a0be5cd.js"
   ]
 }
