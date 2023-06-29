@@ -1,10 +1,10 @@
-const Button = ({ onClick, children }) => {
+const Button = ({ onClick}) => {
   return (
     <button
-        className={"p-3 m-1 bg-emerald-600 rounded-full text-white w-full font-semibold"}
+        className={"p-3 my-2 dark:bg-custom-yellow dark:text-black border-1 bg-custom-blue rounded-full text-white w-full font-semibold"}
         onClick={onClick}
     >
-      {children}
+      Neste
     </button>
   );
 };
