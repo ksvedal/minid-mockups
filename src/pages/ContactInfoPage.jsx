@@ -5,10 +5,11 @@ import BackButton from '../components/BackButton.jsx';
 import ProgressBar from '../components/ProgressBar.jsx';
 import UpdateContactInfoField from '../components/UpdateContactInfoField.jsx';
 
-const ContactInfoPage = () => {
+const ContactInfoPage = ({linkFrom, linkTo, totalTasks}) => {
   return (
     <div className={"flex flex-col items-center justify-center h-screen"}>
-      <ProgressBar totalTasks={3} completedTasks={3} />
+      // ContactInfoPage is always the last step completedTasks = totalTasks
+      <ProgressBar totalTasks={totalTasks} completedTasks={totalTasks} /> 
         <div className={"absolute m-10 md:m-16 w-full px-10 top-14"}>
           <h1 className='py-5'>Se etter om kontaktinformasjonen stemmer</h1>
           <h1>Telefonnummer</h1>
@@ -17,8 +18,8 @@ const ContactInfoPage = () => {
           <UpdateContactInfoField className='color-black' placeholder="ola.nordmann@gmail.com" />
         </div>
         <div className={"absolute m-10 w-full px-10 bottom-0"}>
-            <Link to="/validationSuccessfull"> <NextButton /> </Link>
-            <Link to="/authentication1"> <BackButton/> </Link>
+            <Link to={linkTo}> <NextButton /> </Link>
+            <Link to={linkFrom}> <BackButton/> </Link>
         </div>
     </div>
   );

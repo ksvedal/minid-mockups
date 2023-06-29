@@ -33,12 +33,14 @@ const App = () => {
                         <Routes>
                             <Route path="/" element={<Homepage />} />
                             <Route path="/password" element={<PasswordLoginPage />} />
-                            <Route path="/authentication1" element={<AuthenticationPage linkTo={"/contactInfo"} linkFrom={"/password"} totalTasks={3} completedTasks={3}/>} />
+                            <Route path="/authentication1" element={<AuthenticationPage linkTo={"/contactInfo1"} linkFrom={"/password"} totalTasks={3} completedTasks={3}/>} />
                             <Route path="/authentication2" element={<AuthenticationPage linkTo={"/emailValidation"} linkFrom={"/password"} totalTasks={5} completedTasks={3}/>} />
                             <Route path="/emailValidation" element={<EmailValidationPage />} />
                             <Route path="/resetPassword" element={<ResetPasswordPage/>} />
-                            <Route path="/contactInfo" element={<ContactInfoPage />} />
-                            <Route path="/validationSuccessfull" element={<ValidationSuccessfullPage />} />
+                            <Route path="/contactInfo1" element={<ContactInfoPage totalTasks={3} linkFrom={"/authentication1"} linkTo={"/validationSuccesfull1"}/>} />
+                            <Route path="/contactInfo2" element={<ContactInfoPage  totalTasks={5} linkFrom={"/authentication2"} linkTo={"/validationSuccesfull2"}/>} />
+                            <Route path="/validationSuccessfull1" element={<ValidationSuccessfullPage message={"Gratulerer, du er logget inn!"} linkFrom={"/contactInfo1"}/>} />
+                            <Route path="/validationSuccessfull2" element={<ValidationSuccessfullPage message={"Gratulerer, du har byttet passord!"} linkFrom={"/contactInfo2"}/>} />
                             <Route path="/noActivationLetter" element={<NoActivationLetterPage />} />
                             <Route path="/noActivationLetterOrdered" element={<NoActivationLetterOrderedPage />} />
                         </Routes>

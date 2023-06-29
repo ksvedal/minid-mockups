@@ -18,7 +18,7 @@ const ResetPasswordPage = () => {
           <InputField className='color-black' placeholder="Passord" type={"password"} />
         </div>
         <div className={"absolute m-10 w-full px-10 bottom-0"}>
-            <Link to="/contactInfo"> <NextButton /> </Link>
+            <Link to="/contactInfo2"> <NextButton /> </Link>
             <Link to="/emailValidation"> <BackButton/> </Link>
         </div>
     </div>
