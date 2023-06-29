@@ -17,7 +17,7 @@ const Password = () => {
   const handleClick = () => {
     if (input.length !== 0){
       setErrormessage("");
-      navigate("/authentication");
+      navigate("/authentication1");
     }
     else {
       setErrormessage("Feil passord inntastet");
@@ -35,6 +35,9 @@ const Password = () => {
           <input className={"text-black p-3 m-1 bg-white border rounded-full w-auto font-semibold"}
           placeholder={"Passord"} type={"password"} value={input} onChange={handleInput}>
           </input>
+          <Link to="/authentication2">
+            <h2>Glemt passord</h2>
+          </Link>
           {errormessage && <p> {errormessage}</p>}
           </div>
           <div className={"absolute w-full px-10 bottom-0 m-10"}>

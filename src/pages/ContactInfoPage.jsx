@@ -18,7 +18,7 @@ const ContactInfoPage = () => {
         </div>
         <div className={"absolute m-10 w-full px-10 bottom-0"}>
             <Link to="/validationSuccessfull"> <NextButton /> </Link>
-            <Link to="/authentication"> <BackButton/> </Link>
+            <Link to="/authentication1"> <BackButton/> </Link>
         </div>
     </div>
   );

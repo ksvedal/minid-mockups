@@ -7,11 +7,13 @@ import Authentication from './pages/AuthenticationPage';
 import ContactInfo from './pages/ContactInfoPage';
 import ValidationSuccessfull from './pages/ValidationSuccessfullPage';
 import LanguageButton from './components/languageButton';
+import ValidateEmail from './pages/forgotPassword/ValidateEmailPage';
 
 //@ts-ignore Case mismatch idk why, it doesn't look wrong and doesn't affect the program
 import Switcher from './components/SwitchDarkMode';
 import NoActivationLetterPage from "./pages/activationLetter/noActivationLetterPage";
 import NoActivationLetterOrderedPage from "./pages/activationLetter/noActivationLetterOrderedPage";
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -29,7 +31,9 @@ const App = () => {
                         <Routes>
                             <Route path="/" element={<Homepage />} />
                             <Route path="/password" element={<Password />} />
-                            <Route path="/authentication" element={<Authentication />} />
+                            <Route path="/authentication1" element={<Authentication linkTo={"/contactInfo"} linkFrom={"/password"} totalTasks={3} completedTasks={3}/>} />
+                            <Route path="/authentication2" element={<Authentication linkTo={"/validateEmail"} linkFrom={"/password"} totalTasks={5} completedTasks={3}/>} />
+                            <Route path="/validateEmail" element={<ValidateEmail/>} />
                             <Route path="/contactInfo" element={<ContactInfo />} />
                             <Route path="/validationSuccessfull" element={<ValidationSuccessfull />} />
                             <Route path="/noActivationLetter" element={<NoActivationLetterPage />} />
