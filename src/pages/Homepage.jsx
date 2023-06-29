@@ -34,6 +34,7 @@ const Homepage = () => {
       <input className={"p-3 m-1 bg-white border rounded-full w-full font-semibold"}
       placeholder={"11 tall"} pattern={"[0-9]+"} value={input} onChange={handleInput}>
       </input>
+      {errormsg && <p>{errormsg}</p>}
         <div className={"absolute m-10 w-full px-10 bottom-0"}>
         <NextButton onClick={handleNextButtonClick}>
           Neste
@@ -41,8 +42,6 @@ const Homepage = () => {
         <BackButton>
           Tilbake
         </BackButton>
-            {errormsg && <p>{errormsg}</p>}
-
         </div>
     </div>
   );
