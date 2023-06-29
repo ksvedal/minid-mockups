@@ -9,13 +9,12 @@ const ContactInfoPage = () => {
   return (
     <div className={"flex flex-col items-center justify-center h-screen"}>
       <ProgressBar totalTasks={3} completedTasks={3} />
-        <div className={"absolute m-16 w-full px-10 top-0"}>
-
-        <h1 className='py-5'>Se etter om kontaktinformasjonen stemmer</h1>
-      <h1>Telefonnummer</h1>
-      <UpdateContactInfoField className='color-black' placeholder="+4712345678" pattern="[0-9]+" />
-      <h1>Epost</h1>
-      <UpdateContactInfoField className='color-black' placeholder="ola.nordmann@gmail.com" />
+        <div className={"absolute m-10 md:m-16 w-full px-10 top-14"}>
+          <h1 className='py-5'>Se etter om kontaktinformasjonen stemmer</h1>
+          <h1>Telefonnummer</h1>
+          <UpdateContactInfoField className='color-black' placeholder="+4712345678" pattern="[0-9]+" />
+          <h1>Epost</h1>
+          <UpdateContactInfoField className='color-black' placeholder="ola.nordmann@gmail.com" />
         </div>
         <div className={"absolute m-10 w-full px-10 bottom-0"}>
             <Link to="/validationSuccessfull"> <NextButton /> </Link>

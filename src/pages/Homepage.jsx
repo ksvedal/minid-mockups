@@ -37,15 +37,14 @@ const Homepage = () => {
       <h1>Skriv inn fødselsnummer</h1>
         <p className={"my-2"}> {errormsg && <p>{errormsg}</p>}</p>
 
-        <input className={"p-3 bg-custom-light-grey text-center text-black placeholder-custom-dark-grey my-2 rounded-full w-full font-semibold dark:bg-custom-very-darker-grey dark:text-white"}
+        <input className={"p-3 bg-custom-light-grey text-center text-black placeholder-custom-dark-grey my-2 rounded-full w-auto font-semibold dark:bg-custom-very-darker-grey dark:text-white"}
       placeholder={"11 tall"} pattern={"[0-9]+"} value={input} onChange={handleInput}>
       </input>
-        <div className={"absolute m-10 w-full px-10 bottom-0 text-center"}>
+        <div className={"absolute m-8 w-full px-10 bottom-0 text-center"}>
           <NextButton onClick={handleNextButtonClick}>
           Neste
         </NextButton>
 
-          <BackButton />
         </div>
     </div>
   );
