@@ -5,15 +5,16 @@ import "../index.css"
 import InputField from '../components/InputField.jsx';
 import BackButton from '../components/BackButton.jsx';
 
+
 const Homepage = () => {
   return (
     <div>
       <h1>Skriv inn fødselsnummer</h1>
       <InputField  placeholder={"11 tall"} pattern={"[0-9]+"} />
       <div>
-        <NextButton>
-          <Link to="/password">Neste</Link>
-        </NextButton>
+         <Link to="/password">
+            <NextButton>Neste</NextButton> 
+          </Link>
         <BackButton>
           Tilbake
         </BackButton>

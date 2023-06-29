@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+
 
 // State to manage the menu visibility and selected language
 const LanguageButton = () => {
@@ -6,7 +9,7 @@ const LanguageButton = () => {
   const [selectedLanguage, setSelectedLanguage] = useState('');
 
 // Array of available languages
-  const languages = ['English', 'Spanish', 'French', 'German', 'Italian'];
+  const languages = ['English', 'Norsk Bokmål', 'Norsk Nynorsk', 'Sámegiella'];
 
   // Function to toggle the menu visibility
   const handleMenuToggle = () => {
@@ -22,14 +25,17 @@ const LanguageButton = () => {
   };
 
   return (
-    <div>
-      <div className="bg-red-300 border-yellow-600"   onClick={handleMenuToggle}>
-        Språk: {selectedLanguage || 'Choose language'}
+    <div className=" bg-gray-200 rounded-md">
+     <div className="font-bold text-gray-800 py-2 px-9 rounded-full cursor-pointer" onClick={handleMenuToggle}>
+      Språk {selectedLanguage}
+      <div className="transition-transform transform hover:rotate-90 inline-block">
+        <FontAwesomeIcon icon={faArrowRight} />
       </div>
+    </div>
       {isMenuOpen && (
-        <div className="bg-yellow-300">
+        <div className=" flex justify-center items-center cursor-pointer flex-col ">
           {languages.map((language) => (
-            <div
+            <div className="hover:font-bold"
               key={language}
               onClick={() => handleLanguageSelect(language)}
             >
