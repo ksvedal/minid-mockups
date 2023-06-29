@@ -18,12 +18,8 @@ const ContactInfoPage = () => {
       <UpdateContactInfoField className='color-black' placeholder="ola.nordmann@gmail.com" />
         </div>
         <div className={"absolute m-10 w-full px-10 bottom-0"}>
-            <NextButton>
-                <Link to="/validationSuccessfull">Neste</Link>
-            </NextButton>
-            <BackButton>
-                <Link to="/authentication">Tilbake</Link>
-            </BackButton>
+            <Link to="/validationSuccessfull"> <NextButton /> </Link>
+            <Link to="/authentication"> <BackButton/> </Link>
         </div>
     </div>
   );

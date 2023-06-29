@@ -11,12 +11,9 @@ const ValidationSuccessfullPage = () => {
           <h1 className='py-3'>Gratulerer, du er logget inn!</h1>
          </div>
           <div className={"absolute w-full px-10 m-10 bottom-0"}>
-          <NextButton>
-              <Link to="/">Logg på igjen</Link>
-          </NextButton>
-          <BackButton>
-              <Link to="/contactInfo">Tilbake</Link>
-          </BackButton>
+
+              <Link to="/"><NextButton /></Link>
+              <Link to="/contactInfo"> <BackButton /> </Link>
         </div>
       </>
   );
