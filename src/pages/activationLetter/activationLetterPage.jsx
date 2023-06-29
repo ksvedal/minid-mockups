@@ -11,7 +11,8 @@ const ActivationLetterPage = () => {
             <ProgressBar totalTasks={3} completedTasks={2} />
         
             <div className={"flex flex-col items-center justify-center h-screen"}>
-                <h1>12345678910 har bestilt aktiveringsbrev. Skriv inn aktiveringskoden under.</h1>
+                <p>12345678910 har bestilt aktiveringsbrev. </p>
+                <p>Skriv inn aktiveringskoden under.</p>
                 <InputField />
             </div>
             <div className={"absolute w-full px-10 bottom-0 m-10"}>

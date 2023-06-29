@@ -13,7 +13,7 @@ const NoActivationLetterPage = () => {
 
                 <h1 className='py-3 text-center m-10'>
                     00000000000 har ikkje opprettet en minID-bruker. Trykk på
-                    "bestill aktiveringsbrev for å opprette."
+                    "bestill aktiveringsbrev" for å opprette.
                 </h1>
             </div>
             <div className={"absolute w-full px-10 m-10 bottom-0"}>

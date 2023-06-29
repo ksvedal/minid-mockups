@@ -27,7 +27,7 @@ const App = () => {
                   <LanguageButton />
               </div>
                 <div className={"flex items-center justify-center h-screen"}>
-                    <div className={"relative dark:bg-custom-very-dark-grey dark:text-white m-auto py-60 bg-white rounded-xl border-custom-light-grey border-2 h-[600px] w-[600px] max-w-screen-md flex flex-col items-center justify-center rounded-sm"}>
+                    <div className={"relative dark:bg-custom-very-dark-grey dark:text-white m-auto py-60 bg-white border-custom-light-grey border-2 h-[600px] w-[600px] max-w-screen-md flex flex-col items-center justify-center rounded-sm"}>
                         <Routes>
                             <Route path="/" element={<Homepage />} />
                             <Route path="/password" element={<Password />} />
