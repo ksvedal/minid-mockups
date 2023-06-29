@@ -6,7 +6,8 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 // State to manage the menu visibility and selected language
 const LanguageButton = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState('');
+  const [selectedLanguage, setSelectedLanguage] = useState('NO');
+  
 
 // Array of available languages
   const languages = ['English', 'Norsk Bokmål', 'Norsk Nynorsk', 'Sámegiella'];
@@ -25,15 +26,15 @@ const LanguageButton = () => {
   };
 
   return (
-    <div className=" bg-gray-200 rounded-md">
-     <div className="font-bold text-gray-800 py-2 px-9 rounded-full cursor-pointer" onClick={handleMenuToggle}>
-      Språk {selectedLanguage}
-      <div className="transition-transform transform hover:rotate-90 inline-block">
+    <div>
+     <div className="border-b-2 font-bold text-gray-800 py-2 px-9 cursor-pointer" onClick={handleMenuToggle}>
+      <span className=' '>{selectedLanguage}  </span>
+      <div className="transition-transform transform  hover:rotate-90 inline-block ">
         <FontAwesomeIcon icon={faArrowRight} />
       </div>
     </div>
       {isMenuOpen && (
-        <div className=" flex justify-center items-center cursor-pointer flex-col ">
+        <div className="  ">
           {languages.map((language) => (
             <div className="hover:font-bold"
               key={language}
