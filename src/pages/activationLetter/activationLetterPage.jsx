@@ -16,9 +16,14 @@ const ActivationLetterPage = () => {
             </div>
             <div className={"absolute w-full px-10 bottom-0 m-10"}>
                 <Link to="/registerUser">
-                    <NextButton text={"neste"}/>
+                    <NextButton text={"Neste"}/>
                 </Link>
-                <BackButton/>
+                <Link to="/noactivationletterordered">
+                    <NextButton text={"Bestill nytt aktiveringsbrev"} />
+                </Link>
+                <Link to="/.">
+                    <BackButton />
+                </Link>
             </div>
             
         </div>
