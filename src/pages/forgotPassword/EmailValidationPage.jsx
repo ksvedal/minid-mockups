@@ -13,10 +13,10 @@ const EmailValidationPage = () => {
       <ProgressBar totalTasks={5} completedTasks={4} />
       <div className="w-full px-10 flex flex-col items-center">
         <div className="flex items-center justify-center">
-          <img className="pb-5" src={MailImage} width="100px" alt="Grey Smartphone" />
+          <img className="pb-16" src={MailImage} width="150px" alt="Grey Smartphone" />
         </div>
         <h1 className="text-center">Skriv inn engangskode fra epost</h1>
-        <div className="mb-14 mt-2 flex items-center justify-center space-x-2">
+        <div className="mb-3 mt-2 flex items-center justify-center space-x-2">
           <SmallInputField placeholder="0" pattern="[0-9]" />
           <SmallInputField placeholder="0" pattern="[0-9]" />
           <SmallInputField placeholder="0" pattern="[0-9]" />
