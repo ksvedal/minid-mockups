@@ -24,7 +24,7 @@ const Homepage = () => {
     } else if(input.length === 1){
       navigate("/validationSuccessfull")
     } else if(input.length === 2){
-      navigate("/contactInfo")
+      navigate("/noActivationLetter")
     }
     else {
       setErrormsg('Fødselsnummer må inneholde 11 siffer');
