@@ -10,6 +10,9 @@ module.exports = {
   important: true,
   theme: {
     extend: {
+      rotate: {
+        "no-rotate": "0"
+      },
       colors: {
         // Add your custom colors here
         'custom-blue': '#0462BA',
