@@ -5,7 +5,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import BackButton from '../components/BackButton.jsx';
 import ProgressBar from '../components/ProgressBar.jsx';
 
-const Password = () => {
+const PasswordLoginPage = () => {
   const navigate = useNavigate();
   const [input, setInput] = useState("");
   const [errormessage, setErrormessage] = useState("");
@@ -50,4 +50,4 @@ const Password = () => {
   );
 };
 
-export default Password;
+export default PasswordLoginPage;

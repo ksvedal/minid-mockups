@@ -2,7 +2,6 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import NextButton from "../components/NextButton.jsx"
 import "../index.css"
-import BackButton from '../components/BackButton.jsx';
 import ProgressBar from '../components/ProgressBar.jsx';
 import { useState } from 'react';
 

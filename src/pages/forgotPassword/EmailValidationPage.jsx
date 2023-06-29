@@ -7,7 +7,7 @@ import BackButton from '../../components/BackButton.jsx';
 import ProgressBar from '../../components/ProgressBar.jsx';
 import MailImage from "../../images/envelope.png";
 
-const ValidateEmail = () => {
+const EmailValidationPage = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen">
       <ProgressBar totalTasks={5} completedTasks={4} />
@@ -36,4 +36,4 @@ const ValidateEmail = () => {
     </div>
   );
 };
-export default ValidateEmail;
+export default EmailValidationPage;
