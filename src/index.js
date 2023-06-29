@@ -7,6 +7,7 @@ import Authentication from './pages/AuthenticationPage';
 import ContactInfo from './pages/ContactInfoPage';
 import ValidationSuccessfull from './pages/ValidationSuccessfullPage';
 import LanguageButton from './components/languageButton';
+import ActivationLetterPage from './pages/activationLetterPage';
 
 //@ts-ignore Case mismatch idk why, it doesn't look wrong and doesn't affect the program
 import Switcher from './components/SwitchDarkMode';
@@ -30,6 +31,7 @@ const App = () => {
                             <Route path="/authentication" element={<Authentication />} />
                             <Route path="/contactInfo" element={<ContactInfo />} />
                             <Route path="/validationSuccessfull" element={<ValidationSuccessfull />} />
+                            <Route path="/activationLetter" element={<ActivationLetterPage />} />
                         </Routes>
                     </div>
                 </div>

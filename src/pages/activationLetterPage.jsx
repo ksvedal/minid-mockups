@@ -3,8 +3,9 @@ import ProgressBar from "../components/ProgressBar";
 import InputField from "../components/InputField";
 import BackButton from "../components/BackButton";
 import NextButton from "../components/NextButton";
+import { Link } from "react-router-dom";
 
-const activationLetterPage = () => {
+const ActivationLetterPage = () => {
     return (
         <div className={"flex flex-col items-center justify-center h-screen"}>
             <ProgressBar totalTasks={3} completedTasks={3} />
@@ -22,4 +23,4 @@ const activationLetterPage = () => {
     )
 }
 
-export default activationLetterPage; 
+export default ActivationLetterPage; 

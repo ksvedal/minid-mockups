@@ -22,7 +22,7 @@ const Homepage = () => {
       setErrormsg('');
       navigate("/password");
     } else if(input.length === 1){
-      navigate("/validationSuccessfull")
+      navigate("/activationLetter")
     } else if(input.length === 2){
       navigate("/contactInfo")
     }
