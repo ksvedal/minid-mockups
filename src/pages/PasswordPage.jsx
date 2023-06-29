@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import InputField from '../components/InputField.jsx';
 import NextButton from "../components/NextButton.jsx"
 import { Link, useNavigate } from 'react-router-dom';
 import BackButton from '../components/BackButton.jsx';
@@ -30,7 +29,6 @@ const Password = () => {
         <ProgressBar totalTasks={3} completedTasks={2} />
       </div>
           <div className={"flex flex-col items-center justify-center h-screen"}>
-
           <h1>Skriv inn passord</h1>
           <input className={"text-black p-3 m-1 bg-white border rounded-full w-auto font-semibold"}
           placeholder={"Passord"} type={"password"} value={input} onChange={handleInput}>
