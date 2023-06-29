@@ -16,7 +16,7 @@ const AuthenticationPage = () => {
           <img className="pb-5" src={PhoneImage} width="100px" alt="Grey Smartphone" />
         </div>
         <h1 className="text-center">Skriv inn engangskode fra sms</h1>
-        <div className="mb-14 flex items-center justify-center space-x-2 m-2">
+        <div className="mb-14 mt-2 flex items-center justify-center space-x-2">
           <SmallInputField placeholder="0" pattern="[0-9]" />
           <SmallInputField placeholder="0" pattern="[0-9]" />
           <SmallInputField placeholder="0" pattern="[0-9]" />
