@@ -12,7 +12,7 @@ const Homepage = () => {
             <ProgressBar totalTasks={3} completedTasks={1} />
             <h1>Skriv inn fødselsnummer</h1>
             <InputField  placeholder={"11 tall"} pattern={"[0-9]+"} />
-        <div className={"absolute w-full bottom-0 m-10"}>
+        <div className={"absolute m-10 w-full px-10 bottom-0"}>
             <NextButton>
                 <Link to="/password">Neste</Link>
             </NextButton>

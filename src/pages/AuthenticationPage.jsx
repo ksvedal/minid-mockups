@@ -11,9 +11,11 @@ const AuthenticationPage = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen">
       <ProgressBar totalTasks={3} completedTasks={3} />
-      <img className='py-3' src={PhoneImage} width="70px" alt="Grey Smartphone" />
+        <div className={"absolute m-10 w-full px-10 bottom-0"}>
+        <img className='py-3' src={PhoneImage} width="70px" alt="Grey Smartphone" />
+
       <h1>Skriv inn engangskode fra sms</h1>
-      <div className="flex items-center justify-center space-x-2">
+      <div className="flex items-center justify-center space-x-2 m-2">
         <SmallInputField placeholder={"1"} pattern={"[0-9]"} />
         <SmallInputField placeholder={"2"} pattern={"[0-9]"} />
         <SmallInputField placeholder={"3"} pattern={"[0-9]"} />
@@ -26,6 +28,7 @@ const AuthenticationPage = () => {
       <BackButton>
       <Link to="/password">Tilbake</Link>
       </BackButton>
+    </div>
     </div>
   );
 };
