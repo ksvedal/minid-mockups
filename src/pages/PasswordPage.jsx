@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import InputField from '../components/InputField.jsx';
-import NextButton from "../components/NextButton.jsx"
+import NavigationButton from "../components/NavigationButton.jsx"
 import { Link, useNavigate } from 'react-router-dom';
-import BackButton from '../components/BackButton.jsx';
 import ProgressBar from '../components/ProgressBar.jsx';
 
 const Password = () => {
@@ -38,10 +36,8 @@ const Password = () => {
           {errormessage && <p> {errormessage}</p>}
           </div>
           <div className={"absolute w-full px-10 bottom-0 m-10"}>
-            <NextButton onClick={handleClick}>
-              Neste
-            </NextButton>
-            <Link to="/"> <BackButton /> </Link>
+            <NavigationButton onClick={handleClick} />
+            <NavigationButton text={"Tilbake"} onClick={() => navigate("/.")} />
         </div>
       </>
   );

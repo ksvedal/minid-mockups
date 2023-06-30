@@ -1,19 +1,19 @@
 import React from 'react';
 import "../index.css"
-import NextButton from "../components/NextButton.jsx"
-import { Link } from 'react-router-dom';
-import BackButton from '../components/BackButton';
+import NavigationButton from "../components/NavigationButton.jsx"
+import {Link, useNavigate} from 'react-router-dom';
 
 const ValidationSuccessfullPage = () => {
-  return (
+
+    const navigate = useNavigate();
+
+    return (
       <>
         <div className={"flex flex-col items-center justify-center h-screen"}>
           <h1 className='py-3'>Gratulerer, du er logget inn!</h1>
          </div>
           <div className={"absolute w-full px-10 m-10 bottom-0"}>
-
-              <Link to="/"><NextButton /></Link>
-              <Link to="/contactInfo"> <BackButton /> </Link>
+              <NavigationButton text={"Bekreft"} onClick={() => navigate("/.")}/>
         </div>
       </>
   );

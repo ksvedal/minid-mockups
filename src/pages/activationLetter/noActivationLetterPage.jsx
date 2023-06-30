@@ -1,11 +1,12 @@
 import React from 'react';
 import "../../index.css"
-import NextButton from "../../components/NextButton.jsx"
-import { Link } from 'react-router-dom';
-import BackButton from '../../components/BackButton';
+import NavigationButton from "../../components/NavigationButton.jsx"
+import {Link, useNavigate} from 'react-router-dom';
 import ProgressBar from "../../components/ProgressBar";
 
 const NoActivationLetterPage = () => {
+    const navigate = useNavigate();
+
     return (
         <>
             <div className={"flex flex-col items-center justify-center h-screen"}>
@@ -17,12 +18,9 @@ const NoActivationLetterPage = () => {
                 </h1>
             </div>
             <div className={"absolute w-full px-10 m-10 bottom-0"}>
-                <Link to="/noactivationletterordered">
-                    <NextButton text={"Bestill aktiveringsbrev"} />
-                </Link>
-                <Link to="/.">
-                    <BackButton />
-                </Link>
+                <NavigationButton text={"Bestill aktiveringsbrev"} onClick={() => navigate("/noactivationletterordered")}/>
+                <NavigationButton text={"Tilbake"} onClick={() => navigate("/.")}/>
+
             </div>
         </>
     );

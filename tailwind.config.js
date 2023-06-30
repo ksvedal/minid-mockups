@@ -15,8 +15,9 @@ module.exports = {
       },
       colors: {
         // Add your custom colors here
-        'custom-blue': '#0462BA',
-        'custom-light-grey': '#F5F5F5',
+        'custom-blue': '#166988',
+        'custom-white': '#f3f3f3',
+        'custom-light-grey': '#dadada',
         'custom-dark-grey': '#716E6E',
         'custom-yellow': '#fdb96e',
         'custom-very-dark-grey': '#313131',
