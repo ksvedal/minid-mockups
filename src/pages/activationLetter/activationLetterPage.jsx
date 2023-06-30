@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const ActivationLetterPage = () => {
     return (
         <div className={"flex items-center justify-center h-screen"}>
-            <ProgressBar totalTasks={3} completedTasks={2} />
+            <ProgressBar totalTasks={4} completedTasks={2} />
             <div className={"flex flex-col items-center justify-center h-screen"}>
                 <p>12345678910 har bestilt aktiveringsbrev. </p>
                 <p>Skriv inn aktiveringskoden under.</p>
@@ -25,7 +25,6 @@ const ActivationLetterPage = () => {
                     <BackButton />
                 </Link>
             </div>
-            
         </div>
     )
 }
