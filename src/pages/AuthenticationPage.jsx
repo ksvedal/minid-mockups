@@ -7,10 +7,10 @@ import BackButton from '../components/BackButton.jsx';
 import ProgressBar from '../components/ProgressBar.jsx';
 import PhoneImage from "../images/grey_smartphone.jpg";
 
-const AuthenticationPage = () => {
+const AuthenticationPage = ({linkFrom, linkTo, completedTasks, totalTasks}) => {
   return (
     <div className="flex flex-col items-center justify-center h-screen">
-      <ProgressBar totalTasks={3} completedTasks={3} />
+      <ProgressBar totalTasks={totalTasks} completedTasks={completedTasks} />
       <div className="w-full px-10 flex flex-col items-center">
         <div className="flex items-center justify-center">
           <img className="pb-5" src={PhoneImage} width="100px" alt="Grey Smartphone" />
@@ -25,10 +25,10 @@ const AuthenticationPage = () => {
         </div>
       </div>
       <div className={"absolute m-10 w-full px-10 bottom-0"}>
-          <Link to="/contactInfo">
+          <Link to={linkTo}>
             <NextButton />
           </Link>
-          <Link to="/password">
+          <Link to={linkFrom}>
             <BackButton />
           </Link>
         </div>
