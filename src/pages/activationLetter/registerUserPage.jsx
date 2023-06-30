@@ -7,7 +7,7 @@ import InputField from "../../components/InputField";
 
 const RegisterPage = () => {
     return (
-        <div className="height-[900px] flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center">
         <div className={"flex flex-col items-center justify-center"}>
             <ProgressBar totalTasks={4} completedTasks={3} />
             <p className="p-5">Vennligst fyll inn brukerinformasjon</p>
@@ -25,7 +25,7 @@ const RegisterPage = () => {
             </div>
             </div>
             <div className={"absolute w-1/2 px-10 bottom-0 m-10"}>
-            <Link to="/"><NextButton text={"Neste"}/></Link>
+            <Link to="/doneRegisterUser"><NextButton text={"Neste"}/></Link>
             <Link to="/."><BackButton /></Link>
             </div>
         </div>
