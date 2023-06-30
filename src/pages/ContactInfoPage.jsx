@@ -8,7 +8,7 @@ import UpdateContactInfoField from '../components/UpdateContactInfoField.jsx';
 const ContactInfoPage = ({linkFrom, linkTo, totalTasks}) => {
   return (
     <div className={"flex flex-col items-center justify-center h-screen"}>
-      // ContactInfoPage is always the last step completedTasks = totalTasks
+      {/*ContactInfoPage is always the last step completedTasks = totalTasks*/}
       <ProgressBar totalTasks={totalTasks} completedTasks={totalTasks} /> 
         <div className={"absolute m-10 md:m-16 w-full px-10 top-14"}>
           <h1 className='py-5'>Se etter om kontaktinformasjonen stemmer</h1>
