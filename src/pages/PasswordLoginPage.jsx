@@ -3,7 +3,7 @@ import NavigationButton from "../components/NavigationButton.jsx"
 import { Link, useNavigate } from 'react-router-dom';
 import ProgressBar from '../components/ProgressBar.jsx';
 
-const Password = () => {
+const PasswordLoginPage = () => {
   const navigate = useNavigate();
   const [input, setInput] = useState("");
   const [errormessage, setErrormessage] = useState("");
@@ -15,7 +15,7 @@ const Password = () => {
   const handleClick = () => {
     if (input.length !== 0){
       setErrormessage("");
-      navigate("/authentication");
+      navigate("/authentication1");
     }
     else {
       setErrormessage("Feil passord inntastet");
@@ -29,11 +29,14 @@ const Password = () => {
       </div>
           <div className={"flex flex-col items-center justify-center h-screen"}>
 
-          <h1>Skriv inn passord</h1>
-          <input className={"text-black p-3 m-1 bg-white border rounded-full w-auto font-semibold"}
+          <h1 className='mb-2'>Skriv inn passord</h1>
+          <input className={"text-black bg-custom-light-grey p-3 m-1 dark:bg-custom-very-darker-grey text-center rounded-full w-auto font-semibold"}
           placeholder={"Passord"} type={"password"} value={input} onChange={handleInput}>
           </input>
           {errormessage && <p> {errormessage}</p>}
+          <Link to="/authentication2">
+            <h2 className='mt-10'>Glemt passord</h2>
+          </Link>
           </div>
           <div className={"absolute w-full px-10 bottom-0 m-10"}>
             <NavigationButton onClick={handleClick} />
@@ -43,4 +46,4 @@ const Password = () => {
   );
 };
 
-export default Password;
+export default PasswordLoginPage;

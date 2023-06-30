@@ -6,12 +6,13 @@ import SmallInputField from '../components/SmallInputField.jsx';
 import ProgressBar from '../components/ProgressBar.jsx';
 import PhoneImage from "../images/grey_smartphone.jpg";
 
-const AuthenticationPage = () => {
+const AuthenticationPage = ({linkFrom, linkTo, completedTasks, totalTasks}) => {
     const navigate = useNavigate();
 
-    return (
+
+  return (
     <div className="flex flex-col items-center justify-center h-screen">
-      <ProgressBar totalTasks={3} completedTasks={3} />
+      <ProgressBar totalTasks={totalTasks} completedTasks={completedTasks} />
       <div className="w-full px-10 flex flex-col items-center">
         <div className="flex items-center justify-center">
           <img className="pb-5" src={PhoneImage} width="250px" alt="Grey Smartphone" />
@@ -27,8 +28,8 @@ const AuthenticationPage = () => {
       </div>
       <div className={"absolute m-10 w-full px-10 bottom-0"}>
 
-          <NavigationButton onClick={() => navigate("/contactInfo")}/>
-          <NavigationButton text={"Avbryt"} onClick={() => navigate("/.")}/>
+          <NavigationButton onClick={() => navigate(linkTo)}/>
+          <NavigationButton text={"Avbryt"} onClick={() => navigate(linkFrom)}/>
         </div>
     </div>
   );
