@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import NextButton from "../components/NextButton.jsx"
+import NavigationButton from "../components/NavigationButton.jsx"
 import { Link, useNavigate } from 'react-router-dom';
-import BackButton from '../components/BackButton.jsx';
 import ProgressBar from '../components/ProgressBar.jsx';
 
-const Password = () => {
+const PasswordLoginPage = () => {
   const navigate = useNavigate();
   const [input, setInput] = useState("");
   const [errormessage, setErrormessage] = useState("");
@@ -16,7 +15,7 @@ const Password = () => {
   const handleClick = () => {
     if (input.length !== 0){
       setErrormessage("");
-      navigate("/authentication");
+      navigate("/authentication1");
     }
     else {
       setErrormessage("Feil passord inntastet");
@@ -30,19 +29,20 @@ const Password = () => {
       </div>
           <div className={"flex flex-col items-center justify-center h-screen mb-20"}>
           <h1>Skriv inn passord</h1>
-          <input className={"text-black p-3 m-1 rounded-full w-auto font-semibold dark:bg-custom-very-darker-grey dark:text-white"}
-          placeholder={"Passord"} type={"password"} value={input} onChange={handleInput}>
-          </input>
+              <input className={"text-black bg-custom-light-grey p-3 m-1 dark:bg-custom-very-darker-grey text-center rounded-full w-auto font-semibold"}
+                     placeholder={"Passord"} type={"password"} value={input} onChange={handleInput}>
+              </input>
           <p className={"my-2 text-red-700"}>{errormessage && <p> {errormessage}</p >}</p>
-          </div>
-          <div className={"absolute w-1/2 px-10 bottom-0 m-10"}>
-            <NextButton onClick={handleClick}>
-              Neste
-            </NextButton>
-            <Link to="/"> <BackButton /> </Link>
-        </div>
+      <Link to="/authentication2">
+          <h2 className='mt-10'>Glemt passord</h2>
+      </Link>
+      </div>
+    <div className={"absolute w-1/2 px-10 bottom-0 m-10"}>
+        <NavigationButton onClick={handleClick} />
+        <NavigationButton text={"Tilbake"} onClick={() => navigate("/.")} />
+    </div>
       </>
   );
 };
 
-export default Password;
+export default PasswordLoginPage;

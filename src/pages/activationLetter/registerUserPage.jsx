@@ -1,11 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import NextButton from "../../components/NextButton";
+import {Link, useNavigate} from "react-router-dom";
 import ProgressBar from "../../components/ProgressBar";
-import BackButton from "../../components/BackButton";
 import InputField from "../../components/InputField";
+import NavigationButton from "../../components/NavigationButton";
 
 const RegisterPage = () => {
+    const navigate = useNavigate();
+
     return (
         <div className="flex flex-col justify-center items-center">
         <div className={"flex flex-col items-center justify-center"}>
@@ -25,8 +26,8 @@ const RegisterPage = () => {
             </div>
             </div>
             <div className={"absolute w-1/2 px-10 bottom-0 m-10"}>
-            <Link to="/doneRegisterUser"><NextButton text={"Neste"}/></Link>
-            <Link to="/."><BackButton /></Link>
+                <NavigationButton text={"Neste"} onClick={() => navigate("/doneRegisterUser")}/>
+                <NavigationButton text={"Avbryt"} onClick={() => navigate("/.")} />
             </div>
         </div>
     )

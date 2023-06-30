@@ -1,9 +1,8 @@
 import React from "react";
 import ProgressBar from "../../components/ProgressBar";
 import InputField from "../../components/InputField";
-import BackButton from "../../components/BackButton";
-import NextButton from "../../components/NextButton";
 import { Link } from "react-router-dom";
+import NavigationButton from "../../components/NavigationButton";
 
 const ActivationLetterPage = () => {
     return (
@@ -16,13 +15,13 @@ const ActivationLetterPage = () => {
             </div>
             <div className={"absolute w-1/2 px-10 bottom-0 m-10"}>
                 <Link to="/registerUser">
-                    <NextButton text={"Neste"}/>
+                    <NavigationButton text={"Neste"}/>
                 </Link>
                 <Link to="/noactivationletterordered">
-                    <NextButton text={"Bestill nytt aktiveringsbrev"} />
+                    <NavigationButton text={"Bestill nytt aktiveringsbrev"} />
                 </Link>
                 <Link to="/.">
-                    <BackButton />
+                    <NavigationButton text={"Tilbake"} />
                 </Link>
             </div>
         </div>
