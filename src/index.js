@@ -37,8 +37,8 @@ const App = () => {
                             <Route path="/authentication2" element={<AuthenticationPage linkTo={"/emailValidation"} linkFrom={"/password"} totalTasks={5} completedTasks={3}/>} />
                             <Route path="/emailValidation" element={<EmailValidationPage />} />
                             <Route path="/resetPassword" element={<ResetPasswordPage/>} />
-                            <Route path="/contactInfo1" element={<ContactInfoPage totalTasks={3} linkFrom={"/authentication1"} linkTo={"/validationSuccesfull1"}/>} />
-                            <Route path="/contactInfo2" element={<ContactInfoPage  totalTasks={5} linkFrom={"/authentication2"} linkTo={"/validationSuccesfull2"}/>} />
+                            <Route path="/contactInfo1" element={<ContactInfoPage totalTasks={3} linkFrom={"/authentication1"} linkTo={"/validationSuccessfull1"}/>} />
+                            <Route path="/contactInfo2" element={<ContactInfoPage  totalTasks={5} linkFrom={"/authentication2"} linkTo={"/validationSuccessfull2"}/>} />
                             <Route path="/validationSuccessfull1" element={<ValidationSuccessfullPage message={"Gratulerer, du er logget inn!"} linkFrom={"/contactInfo1"}/>} />
                             <Route path="/validationSuccessfull2" element={<ValidationSuccessfullPage message={"Gratulerer, du har byttet passord!"} linkFrom={"/contactInfo2"}/>} />
                             <Route path="/noActivationLetter" element={<NoActivationLetterPage />} />
