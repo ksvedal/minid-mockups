@@ -10,7 +10,7 @@ const LanguageButton = () => {
   
 
 // Array of available languages
-  const languages = ['English', 'Norsk Bokmål', 'Norsk Nynorsk', 'Sámegiella'];
+  const languages = ['Bokmål', 'Nynorsk','English',  'Sámegiella'];
 
   // Function to toggle the menu visibility
   const handleMenuToggle = () => {
