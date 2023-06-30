@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 
 // State to manage the menu visibility and selected language
@@ -29,12 +29,13 @@ const LanguageButton = () => {
     <div>
      <div className="border-b-2 font-bold text-gray-800 py-2 px-9 cursor-pointer" onClick={handleMenuToggle}>
       <span className=' '>{selectedLanguage}  </span>
-      <div className="transition-transform transform  hover:rotate-90 inline-block ">
-        <FontAwesomeIcon icon={faArrowRight} />
+      <div className="inline-block">
+        <FontAwesomeIcon icon={faArrowRight}
+        className={`transform ${isMenuOpen ? 'rotate-90' : ''} transition-transform duration-200`} />
       </div>
     </div>
       {isMenuOpen && (
-        <div className="  ">
+        <div>
           {languages.map((language) => (
             <div className="hover:font-bold"
               key={language}
