@@ -26,7 +26,7 @@ const AuthenticationPage = ({linkFrom, linkTo, completedTasks, totalTasks}) => {
           <SmallInputField placeholder="0" pattern="[0-9]" />
         </div>
       </div>
-      <div className={"absolute m-10 w-full px-10 bottom-0"}>
+      <div className={"absolute m-10 w-1/2 px-10 bottom-0"}>
 
           <NavigationButton onClick={() => navigate(linkTo)}/>
           <NavigationButton text={"Avbryt"} onClick={() => navigate(linkFrom)}/>

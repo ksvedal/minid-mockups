@@ -4,7 +4,7 @@ import {Link, useNavigate} from 'react-router-dom';
 import ProgressBar from '../components/ProgressBar.jsx';
 import UpdateContactInfoField from '../components/UpdateContactInfoField.jsx';
 
-const ContactInfoPage = ({linkFrom, linkTo, totalTasks}) => {
+const ContactInfoPage = ({linkTo, totalTasks}) => {
     const navigate = useNavigate();
 
     return (
@@ -18,7 +18,7 @@ const ContactInfoPage = ({linkFrom, linkTo, totalTasks}) => {
           <h1>Epost</h1>
           <UpdateContactInfoField className='color-black' placeholder="ola.nordmann@gmail.com" />
         </div>
-        <div className={"absolute m-10 w-full px-10 bottom-0"}>
+        <div className={"absolute m-10 w-1/2 px-10 bottom-0"}>
             <NavigationButton text={"Bekreft"} onClick={() => navigate(linkTo)}/>
         </div>
     </div>

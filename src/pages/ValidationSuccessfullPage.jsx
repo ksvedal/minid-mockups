@@ -11,7 +11,7 @@ const ValidationSuccessfullPage = ({message}) => {
         <div className={"flex flex-col items-center justify-center h-screen"}>
           <h1 className='py-3'>{message}</h1>
          </div>
-          <div className={"absolute w-full px-10 m-10 bottom-0"}>
+          <div className={"absolute w-1/2 px-10 m-10 bottom-0"}>
               <NavigationButton text={"Okidoki"} onClick={() => navigate("/.")}/>
         </div>
       </>
