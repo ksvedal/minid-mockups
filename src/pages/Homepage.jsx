@@ -39,7 +39,7 @@ const Homepage = () => {
       placeholder={"11 tall"} pattern={"[0-9]+"} value={input} onChange={handleInput}>
       </input>
       <p className={"my-2 text-red-700" }> {errormsg && <p>{errormsg}</p>}</p>
-        <div className={"absolute m-8 w-full px-10 bottom-0 text-center"}>
+        <div className={"absolute m-8 w-1/2 px-10 bottom-0 text-center"}>
           <NextButton onClick={handleNextButtonClick}>
           Neste
         </NextButton>

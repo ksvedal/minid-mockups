@@ -14,7 +14,7 @@ const ActivationLetterPage = () => {
                 <p>Skriv inn aktiveringskoden under.</p>
                 <InputField />
             </div>
-            <div className={"absolute w-full px-10 bottom-0 m-10"}>
+            <div className={"absolute w-1/2 px-10 bottom-0 m-10"}>
                 <Link to="/registerUser">
                     <NextButton text={"Neste"}/>
                 </Link>

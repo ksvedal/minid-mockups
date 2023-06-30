@@ -16,7 +16,7 @@ const NoActivationLetterPage = () => {
                     "bestill aktiveringsbrev" for å opprette.
                 </h1>
             </div>
-            <div className={"absolute w-full px-10 m-10 bottom-0"}>
+            <div className={"absolute w-1/2 px-10 m-10 bottom-0"}>
                 <Link to="/noactivationletterordered">
                     <NextButton text={"Bestill aktiveringsbrev"} />
                 </Link>

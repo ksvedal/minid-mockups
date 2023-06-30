@@ -35,7 +35,7 @@ const Password = () => {
           </input>
           <p className={"my-2 text-red-700"}>{errormessage && <p> {errormessage}</p >}</p>
           </div>
-          <div className={"absolute w-full px-10 bottom-0 m-10"}>
+          <div className={"absolute w-1/2 px-10 bottom-0 m-10"}>
             <NextButton onClick={handleClick}>
               Neste
             </NextButton>

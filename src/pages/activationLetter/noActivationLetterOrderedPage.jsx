@@ -9,7 +9,6 @@ const NoActivationLetterOrderedPage = () => {
         <>
             <div className={"flex flex-col items-center justify-center h-screen"}>
                 <ProgressBar totalTasks={3} completedTasks={3} />
-
                 <h1 className='py-3 text-center m-10'>
                     MinID Aktiveringsbrev blir bare sendt per post til din folkeregistrerte
                     adresse. Er du registrert med både postadresse og bostedsadresse,
@@ -20,8 +19,7 @@ const NoActivationLetterOrderedPage = () => {
                     Normal leveringstid er 10 virkedager.
                 </h1>
             </div>
-            <div className={"absolute w-full px-10 m-10 bottom-0"}>
-
+            <div className={"absolute w-1/2 px-10 m-10 bottom-0"}>
                 <Link to="/."> <NextButton text={"Hjem"} /></Link>
             </div>
         </>

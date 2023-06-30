@@ -10,8 +10,7 @@ const ValidationSuccessfullPage = () => {
         <div className={"flex flex-col items-center justify-center h-screen"}>
           <h1 className='py-3'>Gratulerer, du er logget inn!</h1>
          </div>
-          <div className={"absolute w-full px-10 m-10 bottom-0"}>
-
+          <div className={"absolute w-1/2 px-10 m-10 bottom-0"}>
               <Link to="/"><NextButton /></Link>
               <Link to="/contactInfo"> <BackButton /> </Link>
         </div>

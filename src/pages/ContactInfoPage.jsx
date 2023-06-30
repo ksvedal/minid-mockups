@@ -16,7 +16,7 @@ const ContactInfoPage = () => {
           <h1>Epost</h1>
           <UpdateContactInfoField className='color-black' placeholder="ola.nordmann@gmail.com" />
         </div>
-        <div className={"absolute m-10 w-full px-10 bottom-0"}>
+        <div className={"absolute m-10 w-1/2 px-10 bottom-0"}>
             <Link to="/validationSuccessfull"> <NextButton /> </Link>
             <Link to="/authentication"> <BackButton/> </Link>
         </div>
