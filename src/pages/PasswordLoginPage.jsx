@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import NextButton from "../components/NextButton.jsx"
+import NavigationButton from "../components/NavigationButton.jsx"
 import { Link, useNavigate } from 'react-router-dom';
-import BackButton from '../components/BackButton.jsx';
 import ProgressBar from '../components/ProgressBar.jsx';
 
 const PasswordLoginPage = () => {
@@ -31,7 +30,7 @@ const PasswordLoginPage = () => {
           <div className={"flex flex-col items-center justify-center h-screen"}>
 
           <h1 className='mb-2'>Skriv inn passord</h1>
-          <input className={"text-black p-3 m-1 bg-white border rounded-full w-auto font-semibold"}
+          <input className={"text-black bg-custom-light-grey p-3 m-1 dark:bg-custom-very-darker-grey text-center rounded-full w-auto font-semibold"}
           placeholder={"Passord"} type={"password"} value={input} onChange={handleInput}>
           </input>
           {errormessage && <p> {errormessage}</p>}
@@ -40,10 +39,8 @@ const PasswordLoginPage = () => {
           </Link>
           </div>
           <div className={"absolute w-full px-10 bottom-0 m-10"}>
-            <NextButton onClick={handleClick}>
-              Neste
-            </NextButton>
-            <Link to="/"> <BackButton /> </Link>
+            <NavigationButton onClick={handleClick} />
+            <NavigationButton text={"Tilbake"} onClick={() => navigate("/.")} />
         </div>
       </>
   );

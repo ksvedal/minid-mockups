@@ -1,9 +1,8 @@
 import React from 'react';
-import NextButton from "../../components/NextButton.jsx"
 import { Link } from 'react-router-dom';
-import BackButton from '../../components/BackButton.jsx';
 import ProgressBar from '../../components/ProgressBar.jsx';
 import InputField from "../../components/InputField.jsx";
+import NavigationButton from "../../components/NavigationButton";
 
 
 const ResetPasswordPage = () => {
@@ -18,8 +17,8 @@ const ResetPasswordPage = () => {
           <InputField className='color-black' placeholder="Passord" type={"password"} />
         </div>
         <div className={"absolute m-10 w-full px-10 bottom-0"}>
-            <Link to="/contactInfo2"> <NextButton /> </Link>
-            <Link to="/emailValidation"> <BackButton/> </Link>
+            <Link to="/contactInfo2"> <NavigationButton /> </Link>
+            <Link to="/."> <NavigationButton text={"Avbryt"}/> </Link>
         </div>
     </div>
   );
