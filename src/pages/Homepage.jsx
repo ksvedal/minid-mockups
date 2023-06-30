@@ -7,9 +7,10 @@ import { useState } from 'react';
 
 
 const Homepage = () => {
+  const regex = /^[0-9]+$/;
   const navigate = useNavigate();
 
-  const [input, setInput] = useState("");
+  const [input, setInput] = useState();
   const[errormsg, setErrormsg] = useState("");
 
   const handleInput = (event) => {
@@ -17,15 +18,14 @@ const Homepage = () => {
   };
 
   const handleNextButtonClick = () => {
-    if (input.length === 11) {
-      setErrormsg('');
+    if (input && input.length === 11 && regex.test(input)) {
       navigate("/password");
     } else if (input.length === 1) {
       navigate("/activationLetter");
     } else if (input.length === 2) {
       navigate("/noActivationLetter");
     } else {
-      setErrormsg('Fødselsnummer må inneholde 11 siffer');
+      setErrormsg('Fødselsnummer må inneholde 11 siffer og kun tall');
     }
   };
 
