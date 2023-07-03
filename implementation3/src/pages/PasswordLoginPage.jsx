@@ -24,39 +24,40 @@ const PasswordLoginPage = () => {
   }
 
   return (
-
-<>
   <div className="flex flex-col items-center justify-center h-screen">
     <ProgressBar totalTasks={3} completedTasks={2} />
-  </div>
-  <div className="flex flex-col items-center h-screen mb-20">
-    <h1 className="text-3xl font-bold mb-16">{t('password')}</h1>
-    <div className="flex flex-col items-start w-full">
-      <p className=" mb-2">{t('enterPassword')}</p>
-      <div className="relative">
-        <input
-          className="text-custom-black bg-custom-white border-2 border-custom-lightgrey p-4 w-full font-semibold"
-          placeholder={t('password')}
-          type="password"
-          value={input}
-          onChange={handleInput}
-        />
-        {errormessage && (
-          <p className="text-red-700 mt-2">{errormessage}</p>
-        )}
+    <h1 className="absolute top-52 text-3xl font-bold">{t('password')}</h1>
+    <div className="absolute top-64">
+      
+      <div className="flex flex-col items-start w-full">
+        <p className=" mb-2">{t('enterPassword')}</p>
+        <div>
+          <input
+            className="text-custom-black bg-custom-white border-2 border-custom-lightgrey p-4 w-full font-semibold"
+            placeholder={t('password')}
+            type="password"
+            value={input}
+            onChange={handleInput}
+          />
+          {errormessage && (
+            <p className="text-red-700 mt-2">{errormessage}</p>
+          )}
+        </div>
       </div>
     </div>
-    <Link to="/authentication2" className="mt-2 self-start">
-      <h2>{t('forgottenPassword')}</h2>
-    </Link>
-  </div>
-  <div className="absolute w-1/2 px-10 bottom-0 m-10">
-    <NavigationButton onClick={handleClick} />
-    <NavigationButton text={t('back')} onClick={() => navigate("/")} />
-  </div>
-</>
+      <div className={"absolute w-7/12 bottom-56 text-center right-0 "}>
+        <NavigationButton onClick={navigate("/authentication1")}/>
+      </div>
 
- 
+      <div className={"absolute w-7/12 bottom-32 text-center right-0 "}>
+        <NavigationButton text="Glemt passord" onClick={handleClick}/>
+      </div>
+
+      <div className={"absolute w-7/12 bottom-8 text-center left-0 "}>
+        <NavigationButton text="Tilbake" onClick={navigate("/")}/>
+      </div>  
+   
+  </div>
   );
 };
 
