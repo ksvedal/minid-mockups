@@ -1,15 +1,16 @@
 import React from 'react';
 import "../../index.css"
-import NextButton from "../../components/NextButton.jsx"
-import { Link } from 'react-router-dom';
+import NavigationButton from "../../components/NavigationButton.jsx"
 import ProgressBar from "../../components/ProgressBar";
+import {useNavigate} from "react-router-dom";
 
 const NoActivationLetterOrderedPage = () => {
+    const navigate = useNavigate();
+
     return (
         <>
             <div className={"flex flex-col items-center justify-center h-screen"}>
                 <ProgressBar totalTasks={3} completedTasks={3} />
-
                 <h1 className='py-3 text-center m-10'>
                     MinID Aktiveringsbrev blir bare sendt per post til din folkeregistrerte
                     adresse. Er du registrert med både postadresse og bostedsadresse,
@@ -20,9 +21,8 @@ const NoActivationLetterOrderedPage = () => {
                     Normal leveringstid er 10 virkedager.
                 </h1>
             </div>
-            <div className={"absolute w-full px-10 m-10 bottom-0"}>
-
-                <Link to="/."> <NextButton text={"Hjem"} /></Link>
+            <div className={"absolute w-1/2 px-10 m-10 bottom-0"}>
+                <NavigationButton text={"Hjem"} onClick={() => navigate("/.")}/>
             </div>
         </>
     );

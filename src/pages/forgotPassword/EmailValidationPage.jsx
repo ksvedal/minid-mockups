@@ -1,11 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import NextButton from "../../components/NextButton.jsx"
 import "../../index.css"
 import SmallInputField from '../../components/SmallInputField.jsx';
-import BackButton from '../../components/BackButton.jsx';
 import ProgressBar from '../../components/ProgressBar.jsx';
 import MailImage from "../../images/envelope.png";
+import NavigationButton from "../../components/NavigationButton";
 
 const EmailValidationPage = () => {
   return (
@@ -25,12 +24,12 @@ const EmailValidationPage = () => {
           <SmallInputField placeholder="0" pattern="[0-9]" />
         </div>
       </div>
-      <div className={"absolute m-10 w-full px-10 bottom-0"}>
+      <div className={"absolute m-10 w-1/2 px-10 bottom-0"}>
           <Link to="/resetPassword">
-            <NextButton />
+            <NavigationButton />
           </Link>
-          <Link to="/authentication2">
-            <BackButton />
+          <Link to="/.">
+            <NavigationButton text={"Avbryt"}/>
           </Link>
         </div>
     </div>

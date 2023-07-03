@@ -1,12 +1,13 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import NextButton from "../components/NextButton.jsx"
+import NavigationButton from "../components/NavigationButton.jsx"
 import "../index.css"
 import ProgressBar from '../components/ProgressBar.jsx';
 import { useState } from 'react';
 
 
 const Homepage = () => {
+  const regex = /^[0-9]+$/;
   const navigate = useNavigate();
 
   const [input, setInput] = useState("");
@@ -17,35 +18,29 @@ const Homepage = () => {
   };
 
   const handleNextButtonClick = () => {
-    if (input.length === 11){
-      setErrormsg('');
+    if (input.length === 11 && regex.test(input)) {
       navigate("/password");
-    } else if(input.length === 1){
-      navigate("/validationSuccessfull")
-    } else if(input.length === 2){
-      navigate("/noActivationLetter")
-    }
-    else {
+    } else if (input.length === 1) {
+      navigate("/activationLetter");
+    } else if (input.length === 2) {
+      navigate("/noActivationLetter");
+    } else {
       setErrormsg('Fødselsnummer må inneholde 11 siffer');
     }
-  }
+  };
 
   return (
       <div className={"flex flex-col items-center justify-center h-screen"}>
-      <ProgressBar totalTasks={3} completedTasks={1} />
-      <h1>Skriv inn fødselsnummer</h1>
-        <p className={"my-2"}> {errormsg && <p>{errormsg}</p>}</p>
-
-        <input className={"p-3 bg-custom-light-grey text-center text-black placeholder-custom-dark-grey my-2 rounded-full w-auto font-semibold dark:bg-custom-very-darker-grey dark:text-white"}
-      placeholder={"11 tall"} pattern={"[0-9]+"} value={input} onChange={handleInput}>
-      </input>
-        <div className={"absolute m-8 w-full px-10 bottom-0 text-center"}>
-          <NextButton onClick={handleNextButtonClick}>
-          Neste
-        </NextButton>
-
+        <ProgressBar totalTasks={3} completedTasks={1} />
+        <h1>Skriv inn fødselsnummer</h1>
+        <input maxLength={11} className={"p-3 bg-custom-light-grey text-center text-black placeholder-custom-dark-grey my-2 rounded-full w-auto font-semibold dark:bg-custom-very-darker-grey dark:text-white"}
+               placeholder={"11 tall"} pattern={"[0-9]"} value={input} onChange={handleInput}>
+        </input>
+        <p className={"my-2 text-red-700" }> {errormsg && <p>{errormsg}</p>}</p>
+        <div className={"absolute m-8 w-1/2 px-10 bottom-0 text-center"}>
+          <NavigationButton onClick={handleNextButtonClick}/>
         </div>
-    </div>
+      </div>
   );
 };
 
