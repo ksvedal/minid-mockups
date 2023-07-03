@@ -58,7 +58,7 @@ const AuthenticationPage = ({ linkFrom, linkTo, completedTasks, totalTasks }) =>
           <input
             ref={(ref) => inputRefs.current[0] = ref} // Store the input reference in inputRefs.current[0]
             placeholder="0"
-            pattern="[a-zA-Z0-9]" // Accept digits only
+            pattern="[a-zA-Z0-9]" 
             maxLength={1}
             onChange={(event) => handleInputChange(0, event)}
             onKeyDown={(event) => handleKeyDown(0, event)}
