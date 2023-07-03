@@ -38,6 +38,14 @@ const AuthenticationPage = ({ linkFrom, linkTo, completedTasks, totalTasks }) =>
     navigate(linkTo);
   };
 
+  const handleKeyDown = (index, event) => {
+    if (event.key === 'Backspace' && event.target.value === '') {
+      if (index > 0) {
+        inputRefs.current[index - 1].focus(); // Move focus to the previous input
+      }
+    }
+  };
+   
   return (
     <div className="flex flex-col items-center justify-center h-screen">
       <ProgressBar totalTasks={totalTasks} completedTasks={completedTasks} />
@@ -53,6 +61,7 @@ const AuthenticationPage = ({ linkFrom, linkTo, completedTasks, totalTasks }) =>
             pattern="[0-9]" // Accept digits only
             maxLength={1}
             onChange={(event) => handleInputChange(0, event)}
+            onKeyDown={(event) => handleKeyDown(0, event)}
             className="py-6 mb-4 w-11 h-11 bg-custom-light-grey text-black rounded-full border-custom-dark-grey-grey text-center dark:bg-custom-very-darker-grey dark:text-white"
           />
           {/* Repeat the above pattern for the remaining inputs (1, 2, 3, 4) */}
@@ -62,6 +71,7 @@ const AuthenticationPage = ({ linkFrom, linkTo, completedTasks, totalTasks }) =>
             pattern="[0-9]"
             maxLength={1}
             onChange={(event) => handleInputChange(1, event)}
+            onKeyDown={(event) => handleKeyDown(1, event)}
             className="py-6 mb-4 w-11 h-11 bg-custom-light-grey text-black rounded-full border-custom-dark-grey-grey text-center dark:bg-custom-very-darker-grey dark:text-white"
           />
           <input
@@ -70,6 +80,7 @@ const AuthenticationPage = ({ linkFrom, linkTo, completedTasks, totalTasks }) =>
             pattern="[0-9]"
             maxLength={1}
             onChange={(event) => handleInputChange(2, event)}
+            onKeyDown={(event) => handleKeyDown(2, event)}
             className="py-6 mb-4 w-11 h-11 bg-custom-light-grey text-black rounded-full border-custom-dark-grey-grey text-center dark:bg-custom-very-darker-grey dark:text-white"
           />
           <input
@@ -78,6 +89,7 @@ const AuthenticationPage = ({ linkFrom, linkTo, completedTasks, totalTasks }) =>
             pattern="[0-9]"
             maxLength={1}
             onChange={(event) => handleInputChange(3, event)}
+            onKeyDown={(event) => handleKeyDown(3, event)}
             className="py-6 mb-4 w-11 h-11 bg-custom-light-grey text-black rounded-full border-custom-dark-grey-grey text-center dark:bg-custom-very-darker-grey dark:text-white"
           />
           <input
@@ -86,6 +98,7 @@ const AuthenticationPage = ({ linkFrom, linkTo, completedTasks, totalTasks }) =>
             pattern="[0-9]"
             maxLength={1}
             onChange={(event) => handleInputChange(4, event)}
+            onKeyDown={(event) => handleKeyDown(4, event)}
             className="py-6 mb-4 w-11 h-11 bg-custom-light-grey text-black rounded-full border-custom-dark-grey-grey text-center dark:bg-custom-very-darker-grey dark:text-white"
           />
         </div>
