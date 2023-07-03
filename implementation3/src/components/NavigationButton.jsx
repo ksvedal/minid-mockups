@@ -13,8 +13,8 @@ const NavigationButton = ({ text, onClick }) => {
     }
 
     const buttonClass = (text === t('back')) || (text === t('cancel')) ?
-        "p-5 my-4 text-custom-black bg-custom-blue w-full font-bold dark:bg-custom-yellow" :
-        "p-5 my-4 text-custom-black bg-custom-blue w-full font-bold dark:bg-custom-yellow";
+        "py-5 my-10 dark:bg-custom-very-darker-grey dark:text-white text-black border-1 bg-custom-light-grey w-full font-semibold " :
+        "py-5 my-10 dark:bg-custom-yellow dark:text-black border-1 bg-custom-blue text-white w-full font-semibold ";
 
     return (
         <button
