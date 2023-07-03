@@ -9,6 +9,9 @@ module.exports = {
   plugins: [],
   important: true,
   theme: {
+    fontFamily: {
+      'custom-font': 'Titillium Web',
+    },
     extend: {
       rotate: {
         "no-rotate": "0"
@@ -32,7 +35,7 @@ module.exports = {
         //DM
         'custom-yellow': "#FFF3C8",
 
-      }
+      },
     }
   }
 }
