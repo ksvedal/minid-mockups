@@ -3,8 +3,10 @@ import "../../index.css"
 import NavigationButton from "../../components/NavigationButton.jsx"
 import {Link, useNavigate} from 'react-router-dom';
 import ProgressBar from "../../components/ProgressBar";
+import {useTranslation} from "react-i18next";
 
 const NoActivationLetterPage = () => {
+    const {t} = useTranslation()
     const navigate = useNavigate();
 
     return (
@@ -13,13 +15,12 @@ const NoActivationLetterPage = () => {
                 <ProgressBar totalTasks={3} completedTasks={2} />
 
                 <h1 className='py-3 text-center m-10'>
-                    00000000000 har ikkje opprettet en minID-bruker. Trykk på
-                    "bestill aktiveringsbrev" for å opprette.
+                    {t('hasNotCreatedUserPressOrderToCreate')}
                 </h1>
             </div>
             <div className={"absolute w-1/2 px-10 m-10 bottom-0"}>
-                <NavigationButton text={"Bestill aktiveringsbrev"} onClick={() => navigate("/noactivationletterordered")}/>
-                <NavigationButton text={"Tilbake"} onClick={() => navigate("/.")}/>
+                <NavigationButton text={t('orderActivationLetter')} onClick={() => navigate("/noactivationletterordered")}/>
+                <NavigationButton text={t('back')} onClick={() => navigate("/.")}/>
             </div>
         </>
     );

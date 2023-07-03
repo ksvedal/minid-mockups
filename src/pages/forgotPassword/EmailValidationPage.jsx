@@ -4,8 +4,10 @@ import '../../index.css';
 import ProgressBar from '../../components/ProgressBar.jsx';
 import MailImage from '../../images/envelope.png';
 import NavigationButton from '../../components/NavigationButton';
+import {useTranslation} from "react-i18next";
 
 const EmailValidationPage = () => {
+    const {t} = useTranslation()
   const [inputValues, setInputValues] = useState(['', '', '', '', '', '']);
   const inputRefs = useRef([]);
 
@@ -32,7 +34,7 @@ const EmailValidationPage = () => {
         <div className="flex items-center justify-center">
           <img className="pb-16" src={MailImage} width="150px" alt="Envelope" />
         </div>
-        <h1 className="text-center">Skriv inn engangskode fra epost</h1>
+        <h1 className="text-center">{t('enterActivationCodeByEmail')}</h1>
         <div className="mb-3 mt-2 flex items-center justify-center space-x-2">
           <input
             ref={(ref) => (inputRefs.current[0] = ref)}
@@ -90,7 +92,7 @@ const EmailValidationPage = () => {
           <NavigationButton />
         </Link>
         <Link to="/.">
-          <NavigationButton text="Avbryt" />
+          <NavigationButton text={t('cancel')} />
         </Link>
       </div>
     </div>
