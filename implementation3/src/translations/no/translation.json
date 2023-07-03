@@ -2,12 +2,12 @@
   "back": "Tilbake",
   "cancel": "Avbryt",
   "home": "Hjem",
-  "insertBirthNumber": "Skriv inn fødselsnummer",
+  "insertBirthNumber": "Tast inn fødselsnummer (11 siffer)",
   "next": "Neste",
   "confirm": "Godkjenn",
   "orderActivationLetter": "Bestill aktiveringsbrev",
   "orderNewActivationLetter": "Bestill nytt aktiveringsbrev",
-  "numbers": "tall",
+  "numbers": "siffer",
   "change": "Endre",
   "save": "Lagre",
   "password": "Passord",
@@ -16,6 +16,7 @@
   "seeTerms": "Se Bruksvilkår",
   "newPassword": "Nytt passord",
   "passwordTitle": "Passord",
+  "birthnumber": "Fødselsnummer",
 
   "errorBirthNumber": "Fødselsnummer må inneholde 11 siffer",
 
