@@ -42,10 +42,6 @@ const Homepage = () => {
           </input>
         </div>
         
-        <div className={"absolute w-7/12 bottom-56 text-center right-0 "}>
-          <NavigationButton onClick={handleNextButtonClick}/>
-        </div>
-
         <div className={"absolute w-7/12 bottom-32 text-center right-0 "}>
           <NavigationButton onClick={handleNextButtonClick}/>
         </div>
