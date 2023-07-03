@@ -4,9 +4,11 @@ import NavigationButton from "../components/NavigationButton.jsx"
 import "../index.css"
 import ProgressBar from '../components/ProgressBar.jsx';
 import { useState } from 'react';
+import { useTranslation } from "react-i18next";
 
 
 const Homepage = () => {
+    const { t, i18n } = useTranslation()
   const regex = /^[0-9]+$/;
   const navigate = useNavigate();
 
@@ -32,9 +34,9 @@ const Homepage = () => {
   return (
       <div className={"flex flex-col items-center justify-center h-screen"}>
         <ProgressBar totalTasks={3} completedTasks={1} />
-        <h1>Skriv inn fødselsnummer</h1>
+        <h1>{t('insertBirthNumber')}</h1>
         <input maxLength={11} className={"p-3 bg-custom-light-grey text-center text-black placeholder-custom-dark-grey my-2 rounded-full w-auto font-semibold dark:bg-custom-very-darker-grey dark:text-white"}
-               placeholder={"11 tall"} pattern={"[0-9]"} value={input} onChange={handleInput}>
+               placeholder={`11 ${t('numbers')}`} pattern={"[0-9]"} value={input} onChange={handleInput}>
         </input>
         <p className={"my-2 text-red-700" }> {errormsg && <p>{errormsg}</p>}</p>
         <div className={"absolute m-8 w-1/2 px-10 bottom-0 text-center"}>
