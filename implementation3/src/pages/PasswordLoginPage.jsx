@@ -24,7 +24,15 @@ const PasswordLoginPage = () => {
   }
 
   return (
-    <>
+    <div>
+      <div className='flex flex-col items-center justify-center h-screen'>
+        <ProgressBar totalTasks={3} completedTasks={2} />
+        <h1 className='text-3xl text-bold'>{t("passwordTitle")}</h1>
+        
+      </div>
+
+    </div>
+/*     <>
       <div className={"flex flex-col items-center justify-center h-screen"}>
         <ProgressBar totalTasks={3} completedTasks={2} />
       </div>
@@ -41,7 +49,7 @@ const PasswordLoginPage = () => {
         <NavigationButton onClick={handleClick} />
         <NavigationButton text={t('back')} onClick={() => navigate("/.")} />
       </div>
-    </>
+    </> */
   );
 };
 
