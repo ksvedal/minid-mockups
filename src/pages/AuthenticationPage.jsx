@@ -89,7 +89,7 @@ const AuthenticationPage = ({ linkFrom, linkTo, completedTasks, totalTasks }) =>
             className="py-6 mb-4 w-11 h-11 bg-custom-light-grey text-black rounded-full border-custom-dark-grey-grey text-center dark:bg-custom-very-darker-grey dark:text-white"
           />
         </div>
-        {errorMessage && <p className="text-red-700">{errorMessage}</p>}
+        <p className={"my-2 text-red-700 absolute top-40"}>{errorMessage && <p> {errorMessage}</p >}</p>
       </div>
       <div className="absolute m-10 w-1/2 px-10 bottom-0">
         <NavigationButton onClick={handleNextClick} />
