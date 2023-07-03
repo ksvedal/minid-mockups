@@ -7,6 +7,7 @@ import NavigationButton from '../../components/NavigationButton';
 import {useTranslation} from "react-i18next";
 
 const EmailValidationPage = () => {
+  const {t} = useTranslation();
   const navigate = useNavigate();
   const [inputValues, setInputValues] = useState(['', '', '', '', '']);
   const [errorMessage, setErrorMessage] = useState('');
