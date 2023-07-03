@@ -35,12 +35,23 @@ const Homepage = () => {
       <div className={"flex flex-col items-center justify-center h-screen"}>
         <p className={"my-2 text-red-700 absolute top-80"}>{errormsg && <p> {errormsg}</p >}</p>
         <ProgressBar totalTasks={3} completedTasks={1} />
+        <div className='bg-blue-200 p-8 rounded-xl border-2 border-solid border-black absolute top-60'>
         <h1>{t('insertBirthNumber')}</h1>
-        <input maxLength={11} className={"p-3 bg-custom-light-grey text-center text-black placeholder-custom-dark-grey my-2 rounded-full w-auto font-semibold dark:bg-custom-very-darker-grey dark:text-white"}
-               placeholder={`11 ${t('numbers')}`} pattern={"[0-9]"} value={input} onChange={handleInput}>
-        </input>
-        <div className={"absolute m-8 w-1/2 px-10 bottom-0 text-center"}>
+          <input maxLength={11} className={"p-3 bg-custom-light-grey text-center text-black placeholder-custom-dark-grey my-2 w-full font-semibold dark:bg-custom-very-darker-grey dark:text-white rounded-xl"}
+                placeholder={`11 ${t('numbers')}`} pattern={"[0-9]"} value={input} onChange={handleInput}>
+          </input>
+        </div>
+        
+        <div className={"absolute w-7/12 bottom-56 text-center right-0 "}>
           <NavigationButton onClick={handleNextButtonClick}/>
+        </div>
+
+        <div className={"absolute w-7/12 bottom-32 text-center right-0 "}>
+          <NavigationButton onClick={handleNextButtonClick}/>
+        </div>
+
+        <div className={"absolute w-7/12 bottom-8 text-center left-0 "}>
+          <NavigationButton text="Trykk for å lære mer om MinID" onClick={handleNextButtonClick}/>
         </div>
       </div>
   );
