@@ -15,13 +15,24 @@ module.exports = {
       },
       colors: {
         // Add your custom colors here
-        'custom-blue': '#166988',
-        'custom-white': '#f3f3f3',
         'custom-light-grey': '#dadada',
         'custom-dark-grey': '#716E6E',
         'custom-yellow': '#fdb96e',
         'custom-very-dark-grey': '#313131',
         'custom-very-darker-grey': '#212121',
+
+        //LM
+        'custom-bg': "#EDE6E3",
+        'custom-blue': "#91BBD9",
+        'custom-white': "#F0F0F0",
+        'custom-black': "#1F1F1F",
+        'custom-darkgrey': "#878787",
+        'custom-lightgrey': "#BFBFBF",
+        'custom-error': "#FF8744",
+        
+        //DM
+        'dark-yellow': "#FFF3C8",
+
       }
     }
   }
