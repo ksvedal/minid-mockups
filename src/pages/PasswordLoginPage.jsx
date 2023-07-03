@@ -30,9 +30,7 @@ const PasswordLoginPage = () => {
         <h1>Skriv inn passord</h1>
         <input className={`text-black bg-custom-light-grey p-3 m-1 dark:bg-custom-very-darker-grey text-center rounded-full w-auto font-semibold`}
           placeholder={"Passord"} type={"password"} value={input} onChange={handleInput} />        
-          <div className={`${errormessage ? 'absolute inset-0 flex items-center justify-center mt-14' : 'h-0'}`}>
-            <p className="my-2 text-red-700">{errormessage}</p>
-        </div>
+          <p className={"my-2 text-red-700 absolute mt-14"}>{errormessage && <p> {errormessage}</p >}</p>
         <Link to="/authentication2">
           <h2 className='mt-10'>Glemt passord</h2>
         </Link>

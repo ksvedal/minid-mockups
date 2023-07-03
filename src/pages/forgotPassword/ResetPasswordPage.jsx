@@ -16,7 +16,7 @@ const ResetPasswordPage = () => {
           <h1>Gjenta Passord</h1>
           <InputField className='color-black' placeholder="Passord" type={"password"} />
         </div>
-        <div className={"absolute m-10 w-full px-10 bottom-0"}>
+        <div className={"absolute m-10 w-1/2 px-10 bottom-0"}>
             <Link to="/contactInfo2"> <NavigationButton /> </Link>
             <Link to="/."> <NavigationButton text={"Avbryt"}/> </Link>
         </div>
