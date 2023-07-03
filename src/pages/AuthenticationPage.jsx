@@ -58,7 +58,7 @@ const AuthenticationPage = ({ linkFrom, linkTo, completedTasks, totalTasks }) =>
           <input
             ref={(ref) => inputRefs.current[0] = ref} // Store the input reference in inputRefs.current[0]
             placeholder="0"
-            pattern="[0-9]" // Accept digits only
+            pattern="[a-zA-Z0-9]" // Accept digits only
             maxLength={1}
             onChange={(event) => handleInputChange(0, event)}
             onKeyDown={(event) => handleKeyDown(0, event)}
@@ -68,7 +68,7 @@ const AuthenticationPage = ({ linkFrom, linkTo, completedTasks, totalTasks }) =>
           <input
             ref={(ref) => inputRefs.current[1] = ref}
             placeholder="0"
-            pattern="[0-9]"
+            pattern="[a-zA-Z0-9]"
             maxLength={1}
             onChange={(event) => handleInputChange(1, event)}
             onKeyDown={(event) => handleKeyDown(1, event)}
@@ -77,7 +77,7 @@ const AuthenticationPage = ({ linkFrom, linkTo, completedTasks, totalTasks }) =>
           <input
             ref={(ref) => inputRefs.current[2] = ref}
             placeholder="0"
-            pattern="[0-9]"
+            pattern="[a-zA-Z0-9]"
             maxLength={1}
             onChange={(event) => handleInputChange(2, event)}
             onKeyDown={(event) => handleKeyDown(2, event)}
@@ -86,7 +86,7 @@ const AuthenticationPage = ({ linkFrom, linkTo, completedTasks, totalTasks }) =>
           <input
             ref={(ref) => inputRefs.current[3] = ref}
             placeholder="0"
-            pattern="[0-9]"
+            pattern="[a-zA-Z0-9]"
             maxLength={1}
             onChange={(event) => handleInputChange(3, event)}
             onKeyDown={(event) => handleKeyDown(3, event)}
@@ -95,7 +95,7 @@ const AuthenticationPage = ({ linkFrom, linkTo, completedTasks, totalTasks }) =>
           <input
             ref={(ref) => inputRefs.current[4] = ref}
             placeholder="0"
-            pattern="[0-9]"
+            pattern="[a-zA-Z0-9]"
             maxLength={1}
             onChange={(event) => handleInputChange(4, event)}
             onKeyDown={(event) => handleKeyDown(4, event)}
