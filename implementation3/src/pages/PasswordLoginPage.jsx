@@ -24,32 +24,39 @@ const PasswordLoginPage = () => {
   }
 
   return (
-    <div>
-      <div className='flex flex-col items-center justify-center h-screen'>
-        <ProgressBar totalTasks={3} completedTasks={2} />
-        <h1 className='text-3xl font-bold'>{t("passwordTitle")}</h1>
-        
-      </div>
 
+<>
+  <div className="flex flex-col items-center justify-center h-screen">
+    <ProgressBar totalTasks={3} completedTasks={2} />
+  </div>
+  <div className="flex flex-col items-center h-screen mb-20">
+    <h1 className="text-3xl font-bold mb-16">{t('password')}</h1>
+    <div className="flex flex-col items-start w-full">
+      <p className=" mb-2">{t('enterPassword')}</p>
+      <div className="relative">
+        <input
+          className="text-custom-black bg-custom-white border-2 border-custom-lightgrey p-4 w-full font-semibold"
+          placeholder={t('password')}
+          type="password"
+          value={input}
+          onChange={handleInput}
+        />
+        {errormessage && (
+          <p className="text-red-700 mt-2">{errormessage}</p>
+        )}
+      </div>
     </div>
-/*     <>
-      <div className={"flex flex-col items-center justify-center h-screen"}>
-        <ProgressBar totalTasks={3} completedTasks={2} />
-      </div>
-      <div className={"flex flex-col items-center justify-center h-screen mb-20"}>
-        <h1>{t('enterPassword')}</h1>
-        <input className={`text-black bg-custom-light-grey p-3 m-1 dark:bg-custom-very-darker-grey dark:text-white text-center rounded-full w-auto font-semibold`}
-          placeholder={t('password')} type={"password"} value={input} onChange={handleInput} />
-          <p className={"my-2 text-red-700 absolute mt-14"}>{errormessage && <p> {errormessage}</p >}</p>
-        <Link to="/authentication2">
-          <h2 className='mt-10'>{t('forgottenPassword')}</h2>
-        </Link>
-      </div>
-      <div className={"absolute w-1/2 px-10 bottom-0 m-10"}>
-        <NavigationButton onClick={handleClick} />
-        <NavigationButton text={t('back')} onClick={() => navigate("/.")} />
-      </div>
-    </> */
+    <Link to="/authentication2" className="mt-2 self-start">
+      <h2>{t('forgottenPassword')}</h2>
+    </Link>
+  </div>
+  <div className="absolute w-1/2 px-10 bottom-0 m-10">
+    <NavigationButton onClick={handleClick} />
+    <NavigationButton text={t('back')} onClick={() => navigate("/")} />
+  </div>
+</>
+
+ 
   );
 };
 
