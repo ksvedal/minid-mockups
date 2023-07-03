@@ -19,7 +19,7 @@ const LanguageButton = () => {
         'Bokmål': 'no',
         'Nynorsk': 'nn',
         'English': 'en',
-        'Sámegiella': 'se',
+        'Sámegiella': 'smi',
     };
 
     // Function to toggle the menu visibility

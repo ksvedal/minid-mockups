@@ -18,10 +18,12 @@ import Switcher from './components/SwitchDarkMode';
 import NoActivationLetterPage from "./pages/activationLetter/noActivationLetterPage";
 import NoActivationLetterOrderedPage from "./pages/activationLetter/noActivationLetterOrderedPage";
 import ResetPasswordPage from './pages/forgotPassword/ResetPasswordPage';
+import {useTranslation} from "react-i18next";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const App = () => {
+    const {t} = useTranslation()
   return (
           <Router>
                 <div className={"flex items-center justify-center h-screen"}>
@@ -41,8 +43,8 @@ const App = () => {
                             <Route path="/resetPassword" element={<ResetPasswordPage/>} />
                             <Route path="/contactInfo1" element={<ContactInfoPage totalTasks={3} linkFrom={"/authentication1"} linkTo={"/validationSuccessfull1"}/>} />
                             <Route path="/contactInfo2" element={<ContactInfoPage  totalTasks={5} linkFrom={"/authentication2"} linkTo={"/validationSuccessfull2"}/>} />
-                            <Route path="/validationSuccessfull1" element={<ValidationSuccessfullPage message={"Gratulerer, du er logget inn!"} linkFrom={"/contactInfo1"}/>} />
-                            <Route path="/validationSuccessfull2" element={<ValidationSuccessfullPage message={"Gratulerer, du har byttet passord!"} linkFrom={"/contactInfo2"}/>} />
+                            <Route path="/validationSuccessfull1" element={<ValidationSuccessfullPage message={t('bravoLoggedIn')} linkFrom={"/contactInfo1"}/>} />
+                            <Route path="/validationSuccessfull2" element={<ValidationSuccessfullPage message={t('bravoChangedPassword')} linkFrom={"/contactInfo2"}/>} />
                             <Route path="/noActivationLetter" element={<NoActivationLetterPage />} />
                             <Route path="/noActivationLetterOrdered" element={<NoActivationLetterOrderedPage />} />
                             <Route path="/activationLetter" element={<ActivationLetterPage />} />

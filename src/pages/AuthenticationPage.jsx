@@ -4,8 +4,10 @@ import NavigationButton from "../components/NavigationButton.jsx"
 import "../index.css"
 import ProgressBar from '../components/ProgressBar.jsx';
 import PhoneImage from "../images/grey_smartphone.jpg";
+import {useTranslation} from "react-i18next";
 
 const AuthenticationPage = ({linkFrom, linkTo, completedTasks, totalTasks}) => {
+    const {t} = useTranslation()
     const navigate = useNavigate();
     const [inputValues, setInputValues] = useState(["","","","",""]);
     const [errorMessage, setErrorMessage] = useState('');
@@ -20,7 +22,7 @@ const AuthenticationPage = ({linkFrom, linkTo, completedTasks, totalTasks}) => {
     const handleNextClick = () => {
       const isAnyFieldEmpty = inputValues.some((value) => value === "");
       if (isAnyFieldEmpty) {
-        setErrorMessage("Feil kode inntastet");
+        setErrorMessage(t('wrongAuthenticationCodeEntered'));
         return; 
       }
       navigate(linkTo);
@@ -33,7 +35,7 @@ const AuthenticationPage = ({linkFrom, linkTo, completedTasks, totalTasks}) => {
         <div className="flex items-center justify-center">
           <img className="pb-5" src={PhoneImage} width="250px" alt="Grey Smartphone" />
         </div>
-        <h1 className="text-center">Skriv inn engangskode fra sms</h1>
+        <h1 className="text-center">{t('enterAuthenticationCode')}</h1>
         <div className="mb-14 mt-2 flex items-center justify-center space-x-2">
           <input placeholder="0" pattern="[a-zA-Z0-9]" onChange={(value) => handleInputChange(0, value)} 
           className={"py-6 mb-4 w-11 h-11 bg-custom-light-grey text-black rounded-full border-custom-dark-grey-grey text-center dark:bg-custom-very-darker-grey dark:text-white"}/>
@@ -50,7 +52,7 @@ const AuthenticationPage = ({linkFrom, linkTo, completedTasks, totalTasks}) => {
       </div>
       <div className={"absolute m-10 w-1/2 px-10 bottom-0"}>
         <NavigationButton onClick={handleNextClick}/>
-        <NavigationButton text={"Avbryt"} onClick={() => navigate(linkFrom)}/>
+        <NavigationButton text={t('cancel')} onClick={() => navigate(linkFrom)}/>
       </div>
     </div>
   );

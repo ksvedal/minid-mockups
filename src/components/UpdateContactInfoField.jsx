@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import {useTranslation} from "react-i18next";
 
 const UpdateContactInfoField = ({ placeholder, pattern }) => {
+  const {t} = useTranslation()
   const [value, setValue] = useState('');
   const [isEditing, setIsEditing] = useState(false);
 
@@ -38,14 +40,14 @@ const UpdateContactInfoField = ({ placeholder, pattern }) => {
         <button className="p-3 my-2 ml-1 dark:bg-custom-yellow dark:text-black border-1 bg-custom-blue rounded-full
         text-white font-semibold"
                 onClick={handleEdit}>
-          Endre
+          {t('change')}
         </button>
       )}
       {isEditing && (
         <button className="p-3 my-2 ml-1 dark:bg-custom-yellow dark:text-black border-1 bg-custom-blue rounded-full
         text-white font-semibold"
                 onClick={handleSave}>
-          Lagre
+          {t('save')}
         </button>
       )}
     </div>

@@ -5,8 +5,10 @@ import SmallInputField from '../../components/SmallInputField.jsx';
 import ProgressBar from '../../components/ProgressBar.jsx';
 import MailImage from "../../images/envelope.png";
 import NavigationButton from "../../components/NavigationButton";
+import {useTranslation} from "react-i18next";
 
 const EmailValidationPage = () => {
+    const {t} = useTranslation()
   return (
     <div className="flex flex-col items-center justify-center h-screen">
       <ProgressBar totalTasks={5} completedTasks={4} />
@@ -14,7 +16,7 @@ const EmailValidationPage = () => {
         <div className="flex items-center justify-center">
           <img className="pb-16" src={MailImage} width="150px" alt="Grey Smartphone" />
         </div>
-        <h1 className="text-center">Skriv inn engangskode fra epost</h1>
+        <h1 className="text-center">{t('enterActivationCodeByEmail')}</h1>
         <div className="mb-3 mt-2 flex items-center justify-center space-x-2">
           <SmallInputField placeholder="0" pattern="[0-9]" />
           <SmallInputField placeholder="0" pattern="[0-9]" />
@@ -29,7 +31,7 @@ const EmailValidationPage = () => {
             <NavigationButton />
           </Link>
           <Link to="/.">
-            <NavigationButton text={"Avbryt"}/>
+            <NavigationButton text={t('cancel')}/>
           </Link>
         </div>
     </div>

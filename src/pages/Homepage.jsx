@@ -27,7 +27,7 @@ const Homepage = () => {
     } else if (input.length === 2) {
       navigate("/noActivationLetter");
     } else {
-      setErrormsg('Fødselsnummer må inneholde 11 siffer');
+      setErrormsg(t('errorBirthNumber'));
     }
   };
 

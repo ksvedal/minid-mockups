@@ -6,6 +6,9 @@ import { initReactI18next } from "react-i18next";
 
 import translationEN from "./translations/en/translation.json";
 import translationHE from "./translations/no/translation.json";
+import translationNN from "./translations/nn/translation.json";
+import translationSMI from "./translations/smi/translation.json";
+
 
 
 //Creating object with the variables of imported translation files
@@ -16,6 +19,12 @@ const resources = {
     no: {
         translation: translationHE,
     },
+    nn: {
+        translation: translationNN,
+    },
+    smi: {
+        translation: translationSMI,
+    }
 };
 
 //i18N Initialization
