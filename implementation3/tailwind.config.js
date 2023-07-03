@@ -9,6 +9,9 @@ module.exports = {
   plugins: [],
   important: true,
   theme: {
+    fontFamily: {
+      'custom-font': 'Titillium Web',
+    },
     extend: {
       rotate: {
         "no-rotate": "0"
@@ -17,7 +20,6 @@ module.exports = {
         // Add your custom colors here
         'custom-light-grey': '#dadada',
         'custom-dark-grey': '#716E6E',
-        'custom-yellow': '#fdb96e',
         'custom-very-dark-grey': '#313131',
         'custom-very-darker-grey': '#212121',
 
@@ -31,9 +33,9 @@ module.exports = {
         'custom-error': "#FF8744",
         
         //DM
-        'dark-yellow': "#FFF3C8",
+        'custom-yellow': "#FFF3C8",
 
-      }
+      },
     }
   }
 }
