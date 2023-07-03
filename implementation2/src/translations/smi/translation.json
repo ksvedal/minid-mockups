@@ -1,0 +1,41 @@
+{
+  "back": "Máhccat",
+  "cancel": "Searvva",
+  "home": "Ruvdi",
+  "insertBirthNumber": "Čálit ráđđádusnummar",
+  "next": "Seamma",
+  "confirm": "Doarjja",
+  "orderActivationLetter": "Mearrid aktivašuvdnabrev",
+  "orderNewActivationLetter": "Mearrid ođđa aktivašuvdnabrev",
+  "numbers": "Numeriid",
+  "change": "Rievdat",
+  "save": "Vurke",
+  "password": "Suodjalanlávlla",
+  "repeatPassword": "Geahča suodjalanlávlla",
+  "byPressingNextYouAcceptTerms": "Liigegeažis doarjat eará sátnegirjji",
+  "seeTerms": "Oaidnaleađgásatnogirji",
+
+  "errorBirthNumber": "Ráđđádusnummar galgá leat 11 nummara",
+  "enterPassword": "Čále suodjalanlávlla",
+  "errorWrongPassword": "Sukkel suodjalanlávlla",
+  "forgottenPassword": "Heivehan suodjalanlávlla",
+  "enterAuthenticationCode": "Čále authentiserejuvvon koda",
+  "wrongAuthenticationCodeEntered": "Čállán authentiserejuvvon koda lea vašálaš",
+
+  "confirmContactInformation": "Doarjja kontaktinformašuvnna",
+  "phoneNumber": "Telefonnummar",
+  "email": "E-boasta",
+  "emailOptional": "E-boasta (valimin)",  
+  "enterActivationCodeByEmail": "Čále aktivašuvdnakoda e-boastta",
+
+  "bravoLoggedIn": "Bargái, leat loggen sisa",
+  "hasOrderedActivationLetter": "Aktivašuvdnabrev lea mearridat du iežat",
+  "enterActivationCode": "Čále aktivašuvdnakoda vuolábeale",
+  "pleaseEnterUserInformation": "Čále geavaheaddjinformášuvdna",
+  "welcomeAsMinIdUser": "Boahtemii minID-geavaheaddjin",
+  "userRegistered": "Du geavaheaddji lea dál ođđasit. Sáhtat dál logget sisa digitála diensttaid alde govven",
+
+  "hasNotCreatedUserPressOrderToCreate": "00000000000 ii leat ođasmahttan minID geavaheaddji. Mearrid 'aktivašuvdnabrev' ođasmahttit.",
+  "normalWorkingTime10Days": "Normála bellodat lea 10 bargobeivviid",
+  "activationSendByMailExplanation": "MinID Aktivašuvdnabrev bidjá sudno iežat poasttadressii. Jus leat registrerejuvvon maid poastta- ja bostadadatádusain, de boahtá brev poasttadressii. Searvvagatvuođaid dihtii, ii MinID Aktivašuvdnabrev bidjá nuppiin datádusain."
+}
