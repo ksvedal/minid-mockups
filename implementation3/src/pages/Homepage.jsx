@@ -35,7 +35,7 @@ const Homepage = () => {
       <div className={"flex flex-col items-center justify-center h-screen"}>
         <p className={"my-2 text-red-700 absolute top-80"}>{errormsg && <p> {errormsg}</p >}</p>
         <ProgressBar totalTasks={3} completedTasks={1} />
-        <div className='bg-blue-200 p-8 rounded-xl border-2 border-solid border-black absolute top-60'>
+        <div className='p-8 rounded-xl absolute top-60'>
         <h1>{t('insertBirthNumber')}</h1>
           <input maxLength={11} className={"p-3 bg-custom-light-grey text-center text-black placeholder-custom-dark-grey my-2 w-full font-semibold dark:bg-custom-very-darker-grey dark:text-white rounded-xl"}
                 placeholder={`11 ${t('numbers')}`} pattern={"[0-9]"} value={input} onChange={handleInput}>
