@@ -4,12 +4,18 @@ import '../../index.css';
 import ProgressBar from '../../components/ProgressBar.jsx';
 import MailImage from '../../images/envelope.png';
 import NavigationButton from '../../components/NavigationButton';
+import {useTranslation} from "react-i18next";
 
 const EmailValidationPage = () => {
+<<<<<<< HEAD
   const navigate = useNavigate();
   const [inputValues, setInputValues] = useState(['', '', '', '', '']);
   const [errorMessage, setErrorMessage] = useState('');
 
+=======
+    const {t} = useTranslation()
+  const [inputValues, setInputValues] = useState(['', '', '', '', '', '']);
+>>>>>>> 96a6004bc6b5d6e9aeca787bf42e3de918615de3
   const inputRefs = useRef([]);
 
   const handleInputChange = (index, event) => {
@@ -53,7 +59,7 @@ const EmailValidationPage = () => {
         <div className="flex items-center justify-center">
           <img className="pb-16" src={MailImage} width="150px" alt="Envelope" />
         </div>
-        <h1 className="text-center">Skriv inn engangskode fra epost</h1>
+        <h1 className="text-center">{t('enterActivationCodeByEmail')}</h1>
         <div className="mb-3 mt-2 flex items-center justify-center space-x-2">
         <input
             ref={(ref) => inputRefs.current[0] = ref} // Store the input reference in inputRefs.current[0]
@@ -106,7 +112,7 @@ const EmailValidationPage = () => {
       </div>
       <div className="absolute m-10 w-1/2 px-10 bottom-0">
         <NavigationButton onClick={handleNextClick} />
-        <NavigationButton text="Avbryt" onClick={() => navigate("/authentication2")} />
+        <NavigationButton text={t('cancel')} onClick={() => navigate("/authentication2")} />
       </div>
     </div>
   );

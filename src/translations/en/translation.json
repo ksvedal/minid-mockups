@@ -1,0 +1,42 @@
+{
+  "back": "Back",
+  "cancel": "Cancel",
+  "home": "Home",
+  "insertBirthNumber": "Enter birth number",
+  "next": "Next",
+  "confirm": "Approve",
+  "orderActivationLetter": "Order activation letter",
+  "orderNewActivationLetter": "Order new activation letter",
+  "numbers": "numbers",
+  "change": "Change",
+  "save": "Save",
+  "password": "Password",
+  "repeatPassword": "Repeat password",
+  "byPressingNextYouAcceptTerms": "By pressing next, you accept the terms of use",
+  "seeTerms": "See Terms of Use",
+
+  "errorBirthNumber": "Birth number must contain 11 digits",
+
+  "enterPassword": "Enter password",
+  "errorWrongPassword": "Wrong password",
+  "forgottenPassword": "Forgotten password",
+
+  "enterAuthenticationCode": "Enter authentication code",
+  "wrongAuthenticationCodeEntered": "Incorrect authentication code entered",
+
+  "confirmContactInformation": "Confirm contact information",
+  "phoneNumber": "Phone number",
+  "email": "Email",
+
+  "bravoLoggedIn": "Congratulations, you have logged in.",
+
+  "hasOrderedActivationLetter": "An activation letter has been ordered to your address.",
+  "enterActivationCode": "Enter activation code below",
+  "pleaseEnterUserInformation": "Please enter user information",
+  "welcomeAsMinIdUser": "Welcome as a minID user",
+  "userRegistered": "Your user is now created. You can now log into digital services from the public.",
+
+  "hasNotCreatedUserPressOrderToCreate": "00000000000 has not created a minID user. Press 'order activation letter' to create.",
+  "normalWorkingTime10Days": "Normal delivery time is 10 working days.",
+  "activationSendByMailExplanation": "MinID Activation Letter is only sent by mail to your registered address. If you are registered with both mailing address and residence address, the letter is sent to the mailing address. For security reasons, the MinID Activation Letter is not sent to another address."
+}
