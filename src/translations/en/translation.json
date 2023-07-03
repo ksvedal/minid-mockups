@@ -23,7 +23,8 @@
 
   "enterAuthenticationCode": "Enter authentication code",
   "wrongAuthenticationCodeEntered": "Incorrect authentication code entered",
-
+  "enterActivationCodeByEmail": "Enter activation code from email",
+  
   "confirmContactInformation": "Confirm contact information",
   "phoneNumber": "Phone number",
   "email": "Email",

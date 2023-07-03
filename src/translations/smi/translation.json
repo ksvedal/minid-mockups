@@ -25,6 +25,8 @@
   "confirmContactInformation": "Doarjja kontaktinformašuvnna",
   "phoneNumber": "Telefonnummar",
   "email": "E-boasta",
+  "emailOptional": "E-boasta (valimin)",  
+  "enterActivationCodeByEmail": "Čále aktivašuvdnakoda e-boastta",
 
   "bravoLoggedIn": "Bargái, leat loggen sisa",
   "hasOrderedActivationLetter": "Aktivašuvdnabrev lea mearridat du iežat",

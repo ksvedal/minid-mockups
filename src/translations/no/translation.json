@@ -14,6 +14,7 @@
   "repeatPassword": "Gjenta passord",
   "byPressingNextYouAcceptTerms": "Ved å trykke neste godtar du bruksvilkårene",
   "seeTerms": "Se Bruksvilkår",
+  "newPassword": "Nytt passord",
 
   "errorBirthNumber": "Fødselsnummer må inneholde 11 siffer",
 
@@ -27,6 +28,7 @@
   "confirmContactInformation": "Godkjenn kontaktinformasjon",
   "phoneNumber": "Telefonnummer",
   "email": "Epost",
+  "enterActivationCodeByEmail": "Skriv inn aktiveringskode som du har mottatt på epost",
 
   "bravoLoggedIn": "Gradulereer du har logget inn.",
 

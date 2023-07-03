@@ -27,7 +27,7 @@
   "confirmContactInformation": "Godkjenn kontaktinformasjon",
   "phoneNumber": "Telefonnummer",
   "email": "Epost",
-
+  "enterActivationCodeByEmail": "Skriv inn aktiveringskode som du har fått på epost",
   "bravoLoggedIn": "Gratulerar, du har logga inn.",
 
   "hasOrderedActivationLetter": "Aktiveringsbrev er bestilt til di adresse.",
