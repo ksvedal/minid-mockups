@@ -12,7 +12,7 @@ const ValidationSuccessfullPage = ({message}) => {
           <h1 className='py-3'>{message}</h1>
          </div>
           <div className={"absolute w-1/2 px-10 m-10 bottom-0"}>
-              <NavigationButton text={"Okidoki"} onClick={() => navigate("/.")}/>
+              <NavigationButton text={"Hjem"} onClick={() => navigate("/.")}/>
         </div>
       </>
   );

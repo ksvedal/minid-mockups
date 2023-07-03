@@ -29,7 +29,7 @@ const PasswordLoginPage = () => {
       </div>
           <div className={"flex flex-col items-center justify-center h-screen mb-20"}>
           <h1>Skriv inn passord</h1>
-              <input className={"text-black bg-custom-light-grey p-3 m-1 dark:bg-custom-very-darker-grey text-center rounded-full w-auto font-semibold"}
+              <input className={"text-black bg-custom-light-grey p-3 m-1 dark:bg-custom-very-darker-grey dark:text-white text-center rounded-full w-auto font-semibold"}
                      placeholder={"Passord"} type={"password"} value={input} onChange={handleInput}>
               </input>
           <p className={"my-2 text-red-700"}>{errormessage && <p> {errormessage}</p >}</p>
