@@ -16,6 +16,9 @@
   "seeTerms": "Oaidnaleađgásatnogirji",
   "passwordTitle": "beassansátni",
   "birthnumber": "Riegádusnummar",
+  "emailcode": "Kode fra e-post",
+  "smscode": "Kode fra SMS",
+  "activation": "Aktiveringsbrev",
 
   "errorBirthNumber": "Ráđđádusnummar galgá leat 11 nummara",
   "enterPassword": "Čále suodjalanlávlla",
