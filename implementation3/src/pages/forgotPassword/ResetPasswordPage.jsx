@@ -24,7 +24,7 @@ const ResetPasswordPage = () => {
       <Mountains />
     
       <div className={"absolute w-7/12 bottom-32 text-center right-0 "}>
-        <NavigationButton text={t('confirm')} onClick={() => navigate("/contactInfo2")}/>
+        <NavigationButton  text={t('confirm')} onClick={() => navigate("/contactInfo2")}/>
       </div>
 
       <div className={"absolute w-7/12 bottom-8 text-center left-0 "}>
