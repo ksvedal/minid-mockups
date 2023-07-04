@@ -50,7 +50,7 @@ const PasswordLoginPage = () => {
     </div>
   
       <div className={"absolute w-7/12 bottom-32 text-center right-0 "}>
-        <NavigationButton text="Glemt passord" onClick={() => navigate("/authentication2")}/>
+        <NavigationButton onClick={handleClick}/>
       </div>
 
       <div className={"absolute w-7/12 bottom-8 text-center left-0 "}>
