@@ -17,6 +17,7 @@
   "newPassword": "Nytt passord",
   "passwordTitle": "Passord",
   "birthnumber": "Fødselsnummer",
+  "emailcode": "Kode fra e-post",
 
   "errorBirthNumber": "Fødselsnummer må inneholde 11 siffer",
 
@@ -24,13 +25,13 @@
   "errorWrongPassword": "Feil passord",
   "forgottenPassword": "Glemt passord",
 
-  "enterAuthenticationCode": "Skriv inn autentiseringskode",
+  "enterAuthenticationCode": "Tast inn kode tilsendt på SMS",
   "wrongAuthenticationCodeEntered": "Feil autentiseringskode skrevet inn",
 
   "confirmContactInformation": "Godkjenn kontaktinformasjon",
   "phoneNumber": "Telefonnummer",
   "email": "Epost",
-  "enterActivationCodeByEmail": "Skriv inn aktiveringskode som du har mottatt på epost",
+  "enterActivationCodeByEmail": "Tast inn kode tilsendt på e-post",
 
   "bravoLoggedIn": "Gradulereer du har logget inn.",
 

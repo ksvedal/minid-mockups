@@ -16,6 +16,7 @@
   "seeTerms": "See Terms of Use",
   "passwordTitle": "Password",
   "birthnumber": "Birth number",
+  "emailcode": "Code from email",
 
   "errorBirthNumber": "Birth number must contain 11 digits",
 

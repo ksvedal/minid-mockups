@@ -24,6 +24,11 @@ body {
     @apply font-custom-font
   }
 
+  
+  h2 {
+    @apply font-custom-font
+  }
+
   p {
     @apply font-custom-font
   }
