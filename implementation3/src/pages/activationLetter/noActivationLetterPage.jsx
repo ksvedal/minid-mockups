@@ -3,6 +3,7 @@ import "../../index.css"
 import NavigationButton from "../../components/NavigationButton.jsx"
 import {Link, useNavigate} from 'react-router-dom';
 import ProgressBar from "../../components/ProgressBar";
+import Mountains from "../../components/Icons/Mountains.jsx";
 import {useTranslation} from "react-i18next";
 
 const NoActivationLetterPage = () => {

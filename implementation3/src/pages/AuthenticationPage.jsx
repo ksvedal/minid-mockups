@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import NavigationButton from '../components/NavigationButton.jsx';
 import '../index.css';
+import Mountains from '../components/Icons/Mountains.jsx';
 import ProgressBar from '../components/ProgressBar.jsx';
 import PhoneImage from "../images/grey_smartphone.jpg";
 import {useTranslation} from "react-i18next";
@@ -107,6 +108,8 @@ const AuthenticationPage = ({linkFrom, linkTo, completedTasks, totalTasks}) => {
         </div>
         <p className={"my-2 text-red-700 absolute top-40"}>{errorMessage && <p> {errorMessage}</p >}</p>
       </div>
+
+      <Mountains />
       <div className="absolute m-10 w-1/2 px-10 bottom-0">
         <NavigationButton onClick={handleNextClick} />
         <NavigationButton text={t('cancel')} onClick={() => navigate(linkFrom)} />

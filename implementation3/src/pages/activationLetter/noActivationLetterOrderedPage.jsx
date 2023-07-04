@@ -1,7 +1,8 @@
 import React from 'react';
 import "../../index.css"
 import NavigationButton from "../../components/NavigationButton.jsx"
-import ProgressBar from "../../components/ProgressBar";
+import ProgressBar from "../../components/ProgressBar"
+import Mountains from "../../components/Icons/Mountains.jsx";
 import {useNavigate} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 
@@ -20,6 +21,9 @@ const NoActivationLetterOrderedPage = () => {
                     {t('normalWorkingTime10Days')}
                 </h1>
             </div>
+
+            <Mountains />
+            
             <div className={"absolute w-1/2 px-10 m-10 bottom-0"}>
                 <NavigationButton text={t('home')} onClick={() => navigate("/.")}/>
             </div>

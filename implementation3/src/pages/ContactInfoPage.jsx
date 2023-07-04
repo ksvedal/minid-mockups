@@ -2,6 +2,7 @@ import React from 'react';
 import NavigationButton from "../components/NavigationButton.jsx"
 import {Link, useNavigate} from 'react-router-dom';
 import ProgressBar from '../components/ProgressBar.jsx';
+import Mountains from "../components/Icons/Mountains.jsx";
 import UpdateContactInfoField from '../components/UpdateContactInfoField.jsx';
 import {useTranslation} from "react-i18next";
 
@@ -20,7 +21,10 @@ const ContactInfoPage = ({linkTo, totalTasks}) => {
           <h1>{t('email')}</h1>
           <UpdateContactInfoField className='color-black' placeholder="ola.nordmann@gmail.com" />
         </div>
-        <div className={"absolute w-7/12 bottom-32 text-center right-0 "}>
+
+        <Mountains />
+
+      <div className={"absolute w-7/12 bottom-32 text-center right-0 "}>
         <NavigationButton text={t('confirm')} onClick={() => navigate(linkTo)}/>
       </div>
 

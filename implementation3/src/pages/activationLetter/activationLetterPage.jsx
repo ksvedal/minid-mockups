@@ -2,6 +2,7 @@ import React from "react";
 import ProgressBar from "../../components/ProgressBar";
 import InputField from "../../components/InputField";
 import { Link } from "react-router-dom";
+import Mountains from "../../components/Icons/Mountains";
 import NavigationButton from "../../components/NavigationButton";
 import {useTranslation} from "react-i18next";
 
@@ -15,6 +16,9 @@ const ActivationLetterPage = () => {
                 <p>{t('enterActivationCode')}</p>
                 <InputField />
             </div>
+
+            <Mountains />
+            
             <div className={"absolute w-1/2 px-10 bottom-0 m-10"}>
                 <Link to="/registerUser">
                     <NavigationButton text={t('next')}/>

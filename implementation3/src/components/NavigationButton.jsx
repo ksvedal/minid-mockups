@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from "react-i18next";
 
-const NavigationButton = ({ text, onClick }) => {
+const NavigationButton = ({ text, onClick, postionRight }) => {
     const { t } = useTranslation();
     let buttonText;
 

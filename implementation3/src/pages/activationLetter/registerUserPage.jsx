@@ -2,8 +2,10 @@ import React from "react";
 import {Link, useNavigate} from "react-router-dom";
 import ProgressBar from "../../components/ProgressBar";
 import InputField from "../../components/InputField";
+import Mountains from "../../components/Icons/Mountains";
 import NavigationButton from "../../components/NavigationButton";
 import {useTranslation} from "react-i18next";
+
 
 const RegisterPage = () => {
     const {t} = useTranslation()
@@ -27,6 +29,8 @@ const RegisterPage = () => {
                 <a href="https://eid.difi.no/nb/minid/brukervilkar" className="underline">{t('seeTerms')}</a>
             </div>
             </div>
+
+            <Mountains />
             <div className={"absolute w-1/2 px-10 bottom-0 m-10"}>
                 <NavigationButton text={t('next')} onClick={() => navigate("/doneRegisterUser")}/>
                 <NavigationButton text={t('cancel')} onClick={() => navigate("/.")} />

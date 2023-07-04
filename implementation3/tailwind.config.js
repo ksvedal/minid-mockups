@@ -26,14 +26,16 @@ module.exports = {
         //LM
         'custom-bg': "#EDE6E3",
         'custom-blue': "#91BBD9",
+        'custom-darker-blue': "#6D9EBA",
         'custom-white': "#F0F0F0",
         'custom-black': "#1F1F1F",
-        'custom-darkgrey': "#878787",
-        'custom-lightgrey': "#BFBFBF",
+        'custom-dark-grey': "#878787",
+        'custom-light-grey': "#BFBFBF",
         'custom-error': "#FF8744",
         
         //DM
         'custom-yellow': "#FFF3C8",
+        'custom-darker-yellow': "#C7B67B",
 
       },
     }

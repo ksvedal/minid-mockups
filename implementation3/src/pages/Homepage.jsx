@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import NavigationButton from "../components/NavigationButton.jsx"
+import Mountains from "../components/Icons/Mountains.jsx";
 import "../index.css"
 import ProgressBar from '../components/ProgressBar.jsx';
 import { useState } from 'react';
@@ -37,12 +38,13 @@ const Homepage = () => {
         <h1 className="text-3xl font-bold mb-8">{t('birthnumber')}</h1>
         <div className='p-6'>
         <h1>{t('insertBirthNumber')}</h1>
-          <input maxLength={11} className={"p-4 bg-custom-white text-custom-black placeholder-custom-darkgrey my-2 w-full dark:text-custom-white border-2 border-custom-lightgrey"}
+          <input maxLength={11} className={"p-4 bg-custom-white text-custom-black placeholder-custom-darkgrey my-2 w-full dark:text-custom-black border-2 border-custom-lightgrey"}
                 placeholder={`11 ${t('numbers')}`} pattern={"[0-9]"} value={input} onChange={handleInput}>
           </input>
           <p className={"my-1 text-red-700 absolute"}>{errormsg && <p> {errormsg}</p >}</p>
         </div>
-        
+
+        <Mountains />
         <div className={"absolute w-7/12 bottom-32 text-center right-0 "}>
           <NavigationButton onClick={handleNextButtonClick}/>
         </div>
