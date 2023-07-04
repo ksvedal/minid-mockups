@@ -34,7 +34,8 @@
   "email": "Epost",
   "enterActivationCodeByEmail": "Tast inn kode tilsendt på e-post",
 
-  "bravoLoggedIn": "Gradulereer du har logget inn.",
+  "bravoLoggedIn": "Gratulerer, du har logget inn.",
+  "bravoChangedPassword": "Gratulerer, du har endret passord.",
 
   "hasOrderedActivationLetter": "Aktiveringsbrev er bestilt til din adresse.",
   "enterActivationCode": "Skriv inn aktiveringskode under",
