@@ -20,9 +20,13 @@ const ContactInfoPage = ({linkTo, totalTasks}) => {
           <h1>{t('email')}</h1>
           <UpdateContactInfoField className='color-black' placeholder="ola.nordmann@gmail.com" />
         </div>
-        <div className={"absolute m-10 w-1/2 px-10 bottom-0"}>
-            <NavigationButton text={t('confirm')} onClick={() => navigate(linkTo)}/>
-        </div>
+        <div className={"absolute w-7/12 bottom-32 text-center right-0 "}>
+        <NavigationButton text={t('confirm')} onClick={() => navigate(linkTo)}/>
+      </div>
+
+      <div className={"absolute w-7/12 bottom-8 text-center left-0 "}>
+        <NavigationButton text={t('back')} onClick={() => navigate("/.")}/>
+      </div> 
     </div>
   );
 };
