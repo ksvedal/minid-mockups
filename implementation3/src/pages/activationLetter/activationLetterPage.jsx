@@ -26,7 +26,7 @@ const ActivationLetterPage = () => {
             </div>
             <div>
                 <div className={"absolute w-7/12 bottom-32 text-center right-0 "}>
-                <NavigationButton/>
+                <NavigationButton text={t('next')} onClick={() => navigate("/registerUser")}/>
                 </div>
 
                 <div className={"absolute w-7/12 bottom-8 text-center left-0 "}>
