@@ -10,7 +10,7 @@ const RegisterPage = () => {
     const navigate = useNavigate();
 
     return (
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center text-custom-black dark:text-custom-white">
         <div className={"flex flex-col items-center justify-center"}>
             <ProgressBar totalTasks={4} completedTasks={3} />
             <p className="p-5">{t('pleaseEnterUserInformation')}</p>
@@ -27,9 +27,14 @@ const RegisterPage = () => {
                 <a href="https://eid.difi.no/nb/minid/brukervilkar" className="underline">{t('seeTerms')}</a>
             </div>
             </div>
-            <div className={"absolute w-1/2 px-10 bottom-0 m-10"}>
+
+            <div>
+                <div className={"absolute w-7/12 bottom-32 text-center right-0 "}>
                 <NavigationButton text={t('next')} onClick={() => navigate("/doneRegisterUser")}/>
+                </div>
+                <div className={"absolute w-7/12 bottom-8 text-center left-0 "}>
                 <NavigationButton text={t('cancel')} onClick={() => navigate("/.")} />
+                </div>
             </div>
         </div>
     )

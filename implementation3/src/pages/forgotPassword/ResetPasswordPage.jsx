@@ -10,7 +10,7 @@ const ResetPasswordPage = () => {
     const {t} = useTranslation()
     const navigate = useNavigate();
   return (
-    <div className={"flex flex-col items-center justify-center h-screen"}>
+    <div className={"flex flex-col items-center justify-center h-screen text-custom-black dark:text-custom-white"}>
       <ProgressBar totalTasks={5} completedTasks={5} />
       <div className={"absolute m-10 md:m-16 w-full px-10 top-14"}>
         <h1 className="text-3xl font-bold mb-12 text-center text-custom-black">{t('newPassword')}</h1>

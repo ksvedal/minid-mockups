@@ -11,7 +11,7 @@ const NoActivationLetterOrderedPage = () => {
 
     return (
         <>
-            <div className={"flex flex-col items-center justify-center h-screen"}>
+            <div className={"flex flex-col items-center justify-center h-screen text-custom-black dark:text-custom-white"}>
                 <ProgressBar totalTasks={3} completedTasks={3} />
                 <h1 className='py-3 text-center m-10'>
                     {t('activationSendByMailExplanation')}

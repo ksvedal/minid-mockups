@@ -49,7 +49,7 @@ const AuthenticationPage = ({linkFrom, linkTo, completedTasks, totalTasks}) => {
   };
    
   return (
-    <div className="flex flex-col items-center h-screen">
+    <div className="flex flex-col items-center h-screen text-custom-black dark:text-custom-white">
       <ProgressBar totalTasks={totalTasks} completedTasks={completedTasks} />
       <h1 className="text-3xl font-bold mb-12 text-custom-black">{t('smscode')}</h1>
       <div className="w-full px-10 flex flex-col items-center">

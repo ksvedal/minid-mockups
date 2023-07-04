@@ -26,7 +26,7 @@ module.exports = {
 
         //LM
         'custom-bg': "#F2E9DC",
-        'custom-blue': "#0E9594",
+        'custom-blue': "#51BDBC",
         'custom-white': "#F0F0F0",
         'custom-black': "#190B28",
         'custom-darkgrey': "#878787",

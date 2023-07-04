@@ -12,7 +12,7 @@ const ActivationLetterPage = () => {
     const navigate = useNavigate();
   
     return (
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center text-custom-black dark:text-custom-white">
         <ProgressBar totalTasks={4} completedTasks={2} />
         <div className="flex flex-col items-center justify-center">
           <h1 className="absolute top-52 text-3xl font-bold">{t('activation')}</h1>

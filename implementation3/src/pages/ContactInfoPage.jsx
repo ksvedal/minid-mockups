@@ -10,7 +10,7 @@ const ContactInfoPage = ({linkTo, totalTasks}) => {
     const navigate = useNavigate();
 
     return (
-    <div className={"flex flex-col items-center justify-center h-screen text-custom-black"}>
+    <div className={"flex flex-col items-center justify-center h-screen text-custom-black dark:text-custom-white"}>
       {/*ContactInfoPage is always the last step completedTasks = totalTasks*/}
       <ProgressBar totalTasks={totalTasks} completedTasks={totalTasks} />
         <div className={"absolute m-10 md:m-16 w-full px-10 top-14"}>
