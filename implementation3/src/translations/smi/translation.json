@@ -19,6 +19,8 @@
   "emailcode": "Kode fra e-post",
   "smscode": "Kode fra SMS",
   "activation": "Aktiveringsbrev",
+  "activationcode": "Aktiveringskode",
+  "newPassword": "Nytt passord",
 
   "errorBirthNumber": "Ráđđádusnummar galgá leat 11 nummara",
   "enterPassword": "Čále suodjalanlávlla",

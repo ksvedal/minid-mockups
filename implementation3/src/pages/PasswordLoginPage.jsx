@@ -24,7 +24,7 @@ const PasswordLoginPage = () => {
   }
 
   return (
-  <div className="flex flex-col items-center justify-center h-screen">
+  <div className="flex flex-col items-center justify-center h-screen text-custom-black dark:text-custom-white">
     <ProgressBar totalTasks={3} completedTasks={2} />
     <h1 className="absolute top-52 text-3xl font-bold">{t('password')}</h1>
     <div className="absolute top-64">
@@ -33,14 +33,14 @@ const PasswordLoginPage = () => {
         <p className=" mb-2">{t('enterPassword')}</p>
         <div>
           <input
-            className="text-custom-black bg-custom-white border-2 border-custom-lightgrey p-4 w-full font-semibold"
+            className=" bg-custom-white border-2 border-custom-lightgrey p-4 w-full font-semibold"
             placeholder={t('password')}
             type="password"
             value={input}
             onChange={handleInput}
           />
           {errormessage && (
-            <p className="text-red-700 mt-2">{errormessage}</p>
+            <p className="text-custom-red mt-2">{errormessage}</p>
           )}
           <Link to="/authentication2">
           <h2 className='mt-2'>{t('forgottenPassword')}</h2>

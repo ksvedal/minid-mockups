@@ -51,7 +51,7 @@ const AuthenticationPage = ({linkFrom, linkTo, completedTasks, totalTasks}) => {
   return (
     <div className="flex flex-col items-center h-screen">
       <ProgressBar totalTasks={totalTasks} completedTasks={completedTasks} />
-      <h1 className="text-3xl font-bold mb-12">{t('smscode')}</h1>
+      <h1 className="text-3xl font-bold mb-12 text-custom-black">{t('smscode')}</h1>
       <div className="w-full px-10 flex flex-col items-center">
         <div className="flex items-center">
           <img className="pb-16" src={PhoneImage} width="250px" alt="Grey Smartphone" />

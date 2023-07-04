@@ -19,6 +19,8 @@
   "emailcode": "Kode frå e-post",
   "smscode": "Kode frå SMS",
   "activation": "Aktiveringsbrev",
+  "activationcode": "Aktiveringskode",
+  "newPassword": "Nytt passord",
 
   "errorBirthNumber": "Fødselsnummer må innehalde 11 siffer",
 

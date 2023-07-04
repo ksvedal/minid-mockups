@@ -20,6 +20,7 @@
   "emailcode": "Kode fra e-post",
   "smscode": "Kode fra SMS",
   "activation": "Aktiveringsbrev",
+  "activationcode": "Aktiveringskode",
 
   "errorBirthNumber": "Fødselsnummer må inneholde 11 siffer",
 

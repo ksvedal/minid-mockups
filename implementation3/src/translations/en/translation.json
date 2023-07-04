@@ -19,6 +19,8 @@
   "emailcode": "Code from email",
   "smscode": "Code from SMS",
   "activation": "Activation letter",
+  "activationcode": "Activation code",
+  "newPassword": "New password",
 
   "errorBirthNumber": "Birth number must contain 11 digits",
 
