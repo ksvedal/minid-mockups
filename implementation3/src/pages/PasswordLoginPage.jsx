@@ -42,19 +42,19 @@ const PasswordLoginPage = () => {
           {errormessage && (
             <p className="text-red-700 mt-2">{errormessage}</p>
           )}
+          <Link to="/authentication2">
+          <h2 className='mt-2'>{t('forgottenPassword')}</h2>
+          </Link>
         </div>
       </div>
     </div>
-      <div className={"absolute w-7/12 bottom-56 text-center right-0 "}>
-        <NavigationButton onClick={navigate("/authentication1")}/>
-      </div>
-
+  
       <div className={"absolute w-7/12 bottom-32 text-center right-0 "}>
-        <NavigationButton text="Glemt passord" onClick={handleClick}/>
+        <NavigationButton text="Glemt passord" onClick={() => navigate("/authentication2")}/>
       </div>
 
       <div className={"absolute w-7/12 bottom-8 text-center left-0 "}>
-        <NavigationButton text="Tilbake" onClick={navigate("/")}/>
+        <NavigationButton text="Tilbake" onClick={() => navigate("/.")}/>
       </div>  
    
   </div>
