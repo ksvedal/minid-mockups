@@ -11,6 +11,7 @@ module.exports = {
   theme: {
     fontFamily: {
       'custom-font': 'Titillium Web',
+      'custom-bold': 'Titillium Web'
     },
     extend: {
       rotate: {

@@ -57,7 +57,7 @@ const EmailValidationPage = () => {
           <img className="pb-16" src={MailImage} width="150px" alt="Envelope" />
         </div>
         <h1 className={`my-2 ${errorMessage ? 'text-custom-red' : 'text-custom-black'} absolute bottom-96 left-32`}> 
-        {errorMessage ? errorMessage : t('enterAuthenticationCode')}</h1>
+        {errorMessage ? errorMessage : t('enterActivationCodeByEmail')}</h1>
         <div className="mb-32 mt-2 flex items-center space-x-2">
         <input
             ref={(ref) => inputRefs.current[0] = ref} // Store the input reference in inputRefs.current[0]

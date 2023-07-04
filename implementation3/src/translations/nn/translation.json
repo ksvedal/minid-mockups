@@ -18,6 +18,7 @@
   "birthnumber": "Fødselsnummer",
   "emailcode": "Kode frå e-post",
   "smscode": "Kode frå SMS",
+  "activation": "Aktiveringsbrev",
 
   "errorBirthNumber": "Fødselsnummer må innehalde 11 siffer",
 
@@ -35,7 +36,7 @@
   "bravoLoggedIn": "Gratulerar, du har logga inn.",
 
   "hasOrderedActivationLetter": "Aktiveringsbrev er bestilt til di adresse.",
-  "enterActivationCode": "Skriv inn aktiveringskode under",
+  "enterActivationCode": "Skriv inn aktiveringskoda under.",
   "pleaseEnterUserInformation": "Vennligst skriv inn brukarinformasjon",
   "welcomeAsMinIdUser": "Velkommen som minID-brukar",
   "userRegistered": "Din brukar er no oppretta. Du vil no kunne logge inn på digitale tenester frå det offentlege.",

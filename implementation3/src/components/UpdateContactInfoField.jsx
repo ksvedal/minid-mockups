@@ -29,7 +29,7 @@ const UpdateContactInfoField = ({ placeholder, pattern }) => {
   return (
     <div className="flex items-center">
       <input
-        className="p-3 bg-custom-light-grey text-black placeholder-custom-dark-grey m-1 px-10 rounded-full w-full font-semibold dark:bg-custom-very-darker-grey dark:text-white"
+        className="p-3 bg-custom-white text-custom-black placeholder-custom-darkgrey m-1 px-10 w-full font-semibold border-2 border-custom-lightgrey"
         type="text"
         placeholder={isEditing ? '' : placeholder}
         value={value}
@@ -37,15 +37,15 @@ const UpdateContactInfoField = ({ placeholder, pattern }) => {
         readOnly={!isEditing}
       />
       {!isEditing && (
-        <button className="p-3 my-2 ml-1 dark:bg-custom-yellow dark:text-black border-1 bg-custom-blue rounded-full
-        text-white font-semibold"
+        <button className="p-3 my-4 ml-1 dark:bg-custom-yellow bg-custom-blue 
+        text-custom-black font-semibold border-2 border-custom-blue dark:border-custom-yellow"
                 onClick={handleEdit}>
           {t('change')}
         </button>
       )}
       {isEditing && (
-        <button className="p-3 my-2 ml-1 dark:bg-custom-yellow dark:text-black border-1 bg-custom-blue rounded-full
-        text-white font-semibold"
+        <button className=" dark:bg-custom-yellow bg-custom-blue 
+        text-custom-black font-semibold border-2 border-custom-blue"
                 onClick={handleSave}>
           {t('save')}
         </button>
