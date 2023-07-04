@@ -19,6 +19,8 @@ const ResetPasswordPage = () => {
         <h1>Gjenta Passord</h1>
         <InputField className='color-black' placeholder="Passord" type={"password"} />
       </div>
+      <div className={"absolute w-20 bottom-44 text-center h-12 bg-amber-200 left-32"}>
+      </div>
       <div className={"absolute w-7/12 bottom-32 text-center right-0 "}>
         <NavigationButton text={t('confirm')} onClick={() => navigate("/contactInfo2")}/>
       </div>
