@@ -3,7 +3,7 @@ import React from 'react';
 const ProgressBar = ({ totalTasks, completedTasks }) => {
 
   return (
-      <div className={"absolute top-0 m-8 flex items-center justify-center space-x-0"}>
+      <div className={"absolute top-0 m-7 flex items-center justify-center space-x-0"}>
           {[...Array(totalTasks)].map((_, index) => {
             const isCompleted = index < completedTasks;
             const isFirstCompleted = index === 0;

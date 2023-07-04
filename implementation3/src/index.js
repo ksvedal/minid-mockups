@@ -28,7 +28,7 @@ const App = () => {
           <Router>
                 <div className={"flex items-center justify-center h-screen"}>
                     <div className={"relative dark:bg-custom-very-dark-grey dark:text-white m-auto py-60 bg-custom-bg h-[800px] w-[560px] max-w-screen-md flex flex-col items-center justify-center"}>
-                    <div  className={"absolute top-4 right-4"}>
+                    <div  className={"absolute top-4 right-0"}>
                             <LanguageButton />
                         </div>
                         <div className=' absolute top-4 left-4'>
