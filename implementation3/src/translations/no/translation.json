@@ -18,6 +18,7 @@
   "passwordTitle": "Passord",
   "birthnumber": "Fødselsnummer",
   "emailcode": "Kode fra e-post",
+  "smscode": "Kode fra SMS",
 
   "errorBirthNumber": "Fødselsnummer må inneholde 11 siffer",
 
@@ -26,7 +27,7 @@
   "forgottenPassword": "Glemt passord",
 
   "enterAuthenticationCode": "Tast inn kode tilsendt på SMS",
-  "wrongAuthenticationCodeEntered": "Feil autentiseringskode skrevet inn",
+  "wrongAuthenticationCodeEntered": "Feil kode inntastet",
 
   "confirmContactInformation": "Godkjenn kontaktinformasjon",
   "phoneNumber": "Telefonnummer",

@@ -17,6 +17,7 @@
   "passwordTitle": "Password",
   "birthnumber": "Birth number",
   "emailcode": "Code from email",
+  "smscode": "Code from SMS",
 
   "errorBirthNumber": "Birth number must contain 11 digits",
 

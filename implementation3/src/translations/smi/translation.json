@@ -17,6 +17,7 @@
   "passwordTitle": "beassansátni",
   "birthnumber": "Fødselsnummer",
   "emailcode": "Kode fra e-post",
+  "smscode": "Kode fra SMS",
 
   "errorBirthNumber": "Ráđđádusnummar galgá leat 11 nummara",
   "enterPassword": "Čále suodjalanlávlla",
