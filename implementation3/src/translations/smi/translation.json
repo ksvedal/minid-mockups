@@ -7,7 +7,7 @@
   "confirm": "Doarjja",
   "orderActivationLetter": "Mearrid aktivašuvdnabrev",
   "orderNewActivationLetter": "Mearrid ođđa aktivašuvdnabrev",
-  "numbers": "Numeriid",
+  "numbers": "numeriid",
   "change": "Rievdat",
   "save": "Vurke",
   "password": "Suodjalanlávlla",
@@ -15,7 +15,7 @@
   "byPressingNextYouAcceptTerms": "Liigegeažis doarjat eará sátnegirjji",
   "seeTerms": "Oaidnaleađgásatnogirji",
   "passwordTitle": "beassansátni",
-  "birthnumber": "Fødselsnummer",
+  "birthnumber": "Riegádusnummar",
 
   "errorBirthNumber": "Ráđđádusnummar galgá leat 11 nummara",
   "enterPassword": "Čále suodjalanlávlla",
