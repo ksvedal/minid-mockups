@@ -54,7 +54,7 @@ const PasswordLoginPage = () => {
       </div>
 
       <div className={"absolute w-7/12 bottom-8 text-center left-0 "}>
-        <NavigationButton text="Tilbake" onClick={() => navigate("/.")}/>
+        <NavigationButton text={t('back')} onClick={() => navigate("/.")}/>
       </div>  
    
   </div>

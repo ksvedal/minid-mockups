@@ -62,6 +62,7 @@ const EmailValidationPage = () => {
             placeholder="0"
             pattern="[a-zA-Z0-9]" 
             maxLength={1}
+            autoFocus={true}
             onChange={(event) => handleInputChange(0, event)}
             onKeyDown={(event) => handleKeyDown(0, event)}
             className="py-6 mb-4 w-11 h-11 bg-custom-light-grey text-black rounded-full border-custom-dark-grey-grey text-center dark:bg-custom-very-darker-grey dark:text-white"

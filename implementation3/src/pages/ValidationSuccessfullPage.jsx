@@ -1,7 +1,7 @@
 import React from 'react';
 import "../index.css"
 import NavigationButton from "../components/NavigationButton.jsx"
-import {Link, useNavigate} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 import {useTranslation} from "react-i18next";
 
 const ValidationSuccessfullPage = ({message}) => {
