@@ -56,7 +56,8 @@ const EmailValidationPage = () => {
         <div className="flex items-center">
           <img className="pb-16" src={MailImage} width="150px" alt="Envelope" />
         </div>
-        <h1 className="absolute bottom-96 left-32">{t('enterActivationCodeByEmail')}</h1>
+        <h1 className={`my-2 ${errorMessage ? 'text-custom-red' : 'text-custom-black'} absolute bottom-96 left-32`}> 
+        {errorMessage ? errorMessage : t('enterAuthenticationCode')}</h1>
         <div className="mb-32 mt-2 flex items-center space-x-2">
         <input
             ref={(ref) => inputRefs.current[0] = ref} // Store the input reference in inputRefs.current[0]
@@ -66,7 +67,8 @@ const EmailValidationPage = () => {
             autoFocus={true}
             onChange={(event) => handleInputChange(0, event)}
             onKeyDown={(event) => handleKeyDown(0, event)}
-            className="py-6 mb-4 w-11 h-11 bg-custom-white text-custom-black border-custom-lightgrey border-2 text-center"
+            className={`py-6 mb-4 w-11 h-11 bg-custom-white text-custom-black border-2 text-center 
+            ${errorMessage ? 'border-custom-red' : 'border-custom-lightgrey'}`}
           />
           {/* Repeat the above pattern for the remaining inputs (1, 2, 3, 4) */}
           <input
@@ -76,7 +78,8 @@ const EmailValidationPage = () => {
             maxLength={1}
             onChange={(event) => handleInputChange(1, event)}
             onKeyDown={(event) => handleKeyDown(1, event)}
-            className="py-6 mb-4 w-11 h-11 bg-custom-white text-custom-black border-custom-lightgrey border-2 text-center"
+            className={`py-6 mb-4 w-11 h-11 bg-custom-white text-custom-black border-2 text-center 
+            ${errorMessage ? 'border-custom-red' : 'border-custom-lightgrey'}`}
           />
           <input
             ref={(ref) => inputRefs.current[2] = ref}
@@ -85,7 +88,8 @@ const EmailValidationPage = () => {
             maxLength={1}
             onChange={(event) => handleInputChange(2, event)}
             onKeyDown={(event) => handleKeyDown(2, event)}
-            className="py-6 mb-4 w-11 h-11 bg-custom-white text-custom-black border-custom-lightgrey border-2 text-center"
+            className={`py-6 mb-4 w-11 h-11 bg-custom-white text-custom-black border-2 text-center 
+            ${errorMessage ? 'border-custom-red' : 'border-custom-lightgrey'}`}
           />
           <input
             ref={(ref) => inputRefs.current[3] = ref}
@@ -94,7 +98,8 @@ const EmailValidationPage = () => {
             maxLength={1}
             onChange={(event) => handleInputChange(3, event)}
             onKeyDown={(event) => handleKeyDown(3, event)}
-            className="py-6 mb-4 w-11 h-11 bg-custom-white text-custom-black border-custom-lightgrey border-2 text-center"
+            className={`py-6 mb-4 w-11 h-11 bg-custom-white text-custom-black border-2 text-center 
+            ${errorMessage ? 'border-custom-red' : 'border-custom-lightgrey'}`}
           />
           <input
             ref={(ref) => inputRefs.current[4] = ref}
@@ -103,7 +108,8 @@ const EmailValidationPage = () => {
             maxLength={1}
             onChange={(event) => handleInputChange(4, event)}
             onKeyDown={(event) => handleKeyDown(4, event)}
-            className="py-6 mb-4 w-11 h-11 bg-custom-white text-custom-black border-custom-lightgrey border-2 text-center"
+            className={`py-6 mb-4 w-11 h-11 bg-custom-white text-custom-black border-2 text-center 
+            ${errorMessage ? 'border-custom-red' : 'border-custom-lightgrey'}`}
           />
            <input
             ref={(ref) => inputRefs.current[5] = ref}
@@ -112,10 +118,11 @@ const EmailValidationPage = () => {
             maxLength={1}
             onChange={(event) => handleInputChange(5, event)}
             onKeyDown={(event) => handleKeyDown(5, event)}
-            className="py-6 mb-4 w-11 h-11 bg-custom-white text-custom-black border-custom-lightgrey border-2 text-center"
+            className={`py-6 mb-4 w-11 h-11 bg-custom-white text-custom-black border-2 text-center 
+            ${errorMessage ? 'border-custom-red' : 'border-custom-lightgrey'}`}
           />
         </div>
-        <p className={"my-2 text-red-700 absolute bottom-1/3 left-32"}>{errorMessage && <p> {errorMessage}</p >}</p>
+    {/*     <p className={"my-2 text-red-700 absolute bottom-1/3 left-32"}>{errorMessage && <p> {errorMessage}</p >}</p> */}
       </div>
       <div className={"absolute w-7/12 bottom-32 text-center right-0 "}>
         <NavigationButton onClick={handleNextClick} />

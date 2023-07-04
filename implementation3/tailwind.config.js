@@ -24,13 +24,14 @@ module.exports = {
         'custom-very-darker-grey': '#212121',
 
         //LM
-        'custom-bg': "#EDE6E3",
-        'custom-blue': "#91BBD9",
+        'custom-bg': "#F8F2D8",
+        'custom-blue': "#73ADAD",
         'custom-white': "#F0F0F0",
         'custom-black': "#1F1F1F",
         'custom-darkgrey': "#878787",
         'custom-lightgrey': "#BFBFBF",
         'custom-error': "#FF8744",
+        'custom-red': "#F2392D",
         
         //DM
         'custom-yellow': "#FFF3C8",
