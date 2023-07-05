@@ -103,6 +103,8 @@ const Homepage = ( {linkTo} ) => {
                 <p className={"my-2 text-custom-red dark:text-custom-neon-red font-semibold absolute top-40"}>{errorMessage && <p> {errorMessage}</p >}</p>
             </div>
             <NavigationButton onClick={handleNextClick} />
+            <div className=' absolute bottom-0'>
+            </div>
 
             <a className="text-center my-4 text-2xl underline font-semibold text-bold font-sans subpixel-antialiased text-custom-purple dark:text-custom-yellow"
                 href="./password"> {t('orUseSMS')}

@@ -26,17 +26,17 @@ const App = () => {
   const { t } = useTranslation();
   return (
           <Router>
-                <div className={"flex items-center justify-center h-screen"}>
+                <div className={"flex items-center justify-center h-screen h"}>
                     <div className={"relative dark:bg-custom-very-dark-grey dark:text-white m-auto py-60 bg-custom-white border-custom-light-grey rounded-2xl h-[800px] w-[800px] max-w-screen-md flex flex-col items-center justify-center overflow-hidden"}>
-                      <div className={"absolute top-12 left-0 rotate-180"}>
-                        <Mountains bigMountainColor={"custom-light-purple"} smallMountainColor={'custom-light-purple'} />
+                      <div className={"absolute top-48 left-1 rotate-180"}>
+                        <Mountains bigMountainWidth="34" smallMountainHeight={"80"} bigMountainHeight={"80"} bigMountainColor={"custom-light-purple"} smallMountainColor={'custom-light-purple'} />
                      </div>
-                     <div className={"absolute bottom-12 right-0"}>
-                       <Mountains bigMountainColor="custom-purple" smallMountainColor={"custom-light-purple"} />
+                     <div className={"absolute bottom-16 right-0"}>
+                       <Mountains smallMountainHeight={"32"} bigMountainHeight={"32"} bigMountainColor="custom-purple" smallMountainColor={"custom-light-purple"} />
                      </div>
-                    <div  className={"absolute top-4 right-4"}>
+                      <div  className={"absolute top-4 right-4"}>
                             <LanguageButton />
-                        </div>
+                      </div>
                         <div className=' absolute top-4 left-4'>
                             <Switcher/>
                         </div>
