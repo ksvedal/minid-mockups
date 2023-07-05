@@ -22,7 +22,10 @@ module.exports = {
         'custom-yellow': '#fdb96e',
         'custom-very-dark-grey': '#313131',
         'custom-very-darker-grey': '#212121',
+        'custom-purple': '#785190',
+        'custom-light-purple': '#F5EDEA',
+        'custom-beige-background': '#FFFBF2',
       }
     }
   }
-}
+};

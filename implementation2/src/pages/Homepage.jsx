@@ -5,6 +5,8 @@ import "../index.css"
 import ProgressBar from '../components/ProgressBar.jsx';
 import { useState } from 'react';
 import { useTranslation } from "react-i18next";
+import Mountains from '../components/Icons/mountains.jsx';
+import Forest from '../components/Icons/forest.jsx';
 
 
 const Homepage = () => {
@@ -41,6 +43,9 @@ const Homepage = () => {
         </input>
         <div className={"absolute m-8 w-1/2 px-10 bottom-0 text-center"}>
           <NavigationButton onClick={handleNextButtonClick}/>
+        </div>
+        <div className=" absolute bottom-0">
+          <Forest  />
         </div>
       </div>
   );
