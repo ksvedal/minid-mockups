@@ -1,54 +1,119 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import { useNavigate } from 'react-router-dom';
 import NavigationButton from "../components/NavigationButton.jsx"
 import "../index.css"
 import ProgressBar from '../components/ProgressBar.jsx';
 import { useState } from 'react';
 import { useTranslation } from "react-i18next";
-import Mountains from '../components/Icons/mountains.jsx';
-import Forest from '../components/Icons/forest.jsx';
 
+const Homepage = ( {linkTo} ) => {
+    const {t} = useTranslation()
+    const navigate = useNavigate();
+    const [inputValues, setInputValues] = useState(['', '', '', '', '']);
+    const [errorMessage, setErrorMessage] = useState('');
 
-const Homepage = () => {
-  const { t, i18n } = useTranslation()
-  const regex = /^[0-9]+$/;
-  const navigate = useNavigate();
+    const inputRefs = useRef([]);
 
-  const [input, setInput] = useState("");
-  const[errormsg, setErrormsg] = useState("");
+    const handleInputChange = (index, event) => {
+        const inputValue = event.target.value;
 
-  const handleInput = (event) => {
-    setInput(event.target.value);
-  };
+        if (inputValue.length > 1) {
+            event.target.value = inputValue.slice(0, 1); // Keep only the first character
+        }
 
-  const handleNextButtonClick = () => {
-    if (input.length === 11 && regex.test(input)) {
-      navigate("/password");
-    } else if (input.length === 1) {
-      navigate("/activationLetter");
-    } else if (input.length === 2) {
-      navigate("/noActivationLetter");
-    } else {
-      setErrormsg(t('errorBirthNumber'));
-    }
-  };
+        const newInputValues = [...inputValues];
+        newInputValues[index] = event.target.value;
+        setInputValues(newInputValues);
+        setErrorMessage('');
 
-  return (
-      <div className={"flex flex-col items-center justify-center h-screen"}>
-        <p className={"my-2 text-red-700 absolute top-80"}>{errormsg && <p> {errormsg}</p >}</p>
-        <ProgressBar totalTasks={3} completedTasks={1} />
-        <h1>{t('insertBirthNumber')}</h1>
-        <input maxLength={11} className={"p-3 bg-custom-light-grey text-center text-black placeholder-custom-dark-grey my-2 rounded-full w-auto font-semibold dark:bg-custom-very-darker-grey dark:text-white"}
-               placeholder={`11 ${t('numbers')}`} pattern={"[0-9]"} value={input} onChange={handleInput}>
-        </input>
-        <div className={"absolute m-8 w-1/2 px-10 bottom-0 text-center"}>
-          <NavigationButton onClick={handleNextButtonClick}/>
+        if (inputValue.length === 1 && index < inputRefs.current.length - 1) {
+            inputRefs.current[index + 1].focus(); // Move focus to the next input
+        }
+    };
+
+    const handleNextClick = () => {
+        const isAnyFieldEmpty = inputValues.some((value) => value === '');
+        if (isAnyFieldEmpty) {
+            setErrorMessage(t('wrongAuthenticationCodeEntered'));
+            return;
+        }
+        navigate(linkTo);
+    };
+
+    const handleKeyDown = (index, event) => {
+        if (event.key === 'Backspace' && event.target.value === '') {
+            if (index > 0) {
+                inputRefs.current[index - 1].focus(); // Move focus to the previous input
+            }
+        }
+    };
+
+    return (
+        <div className="flex flex-col items-center justify-center h-screen">
+            <ProgressBar totalTasks={3} completedTasks={1} />
+            <div className="w-full px-10 flex flex-col items-center">
+                <p className="text-center my-4 text-3xl font-semibold text-bold font-sans subpixel-antialiased text-custom-purple dark:text-custom-yellow">{t('enterAuthenticationCode')}</p>
+                <div className="my-4 flex items-center justify-center space-x-4">
+                    <input
+                        ref={(ref) => inputRefs.current[0] = ref} // Store the input reference in inputRefs.current[0]
+                        placeholder="0"
+                        pattern="[a-zA-Z0-9]"
+                        maxLength={1}
+                        onChange={(event) => handleInputChange(0, event)}
+                        onKeyDown={(event) => handleKeyDown(0, event)}
+                        className="py-6 subpixel-antialiased focus:outline-none border-transparent ring-4 ring-transparent focus:ring-custom-golden w-16 h-16 bg-white text-black font-semibold rounded-full border-custom-dark-grey-grey text-center dark:bg-custom-very-darker-grey dark:text-white"
+                    />
+                    <input
+                        ref={(ref) => inputRefs.current[1] = ref}
+                        placeholder="0"
+                        pattern="[a-zA-Z0-9]"
+                        maxLength={1}
+                        onChange={(event) => handleInputChange(1, event)}
+                        onKeyDown={(event) => handleKeyDown(1, event)}
+                        className="py-6 subpixel-antialiased focus:outline-none border-transparent ring-4 ring-transparent focus:ring-custom-golden w-16 h-16 bg-white text-black font-semibold rounded-full border-custom-dark-grey-grey text-center dark:bg-custom-very-darker-grey dark:text-white"
+                    />
+                    <input
+                        ref={(ref) => inputRefs.current[2] = ref}
+                        placeholder="0"
+                        pattern="[a-zA-Z0-9]"
+                        maxLength={1}
+                        onChange={(event) => handleInputChange(2, event)}
+                        onKeyDown={(event) => handleKeyDown(2, event)}
+                        className="py-6 subpixel-antialiased focus:outline-none border-transparent ring-4 ring-transparent focus:ring-custom-golden w-16 h-16 bg-white text-black font-semibold rounded-full border-custom-dark-grey-grey text-center dark:bg-custom-very-darker-grey dark:text-white"
+                    />
+                    <input
+                        ref={(ref) => inputRefs.current[3] = ref}
+                        placeholder="0"
+                        pattern="[a-zA-Z0-9]"
+                        maxLength={1}
+                        onChange={(event) => handleInputChange(3, event)}
+                        onKeyDown={(event) => handleKeyDown(3, event)}
+                        className="py-6 subpixel-antialiased focus:outline-none border-transparent ring-4 ring-transparent focus:ring-custom-golden w-16 h-16 bg-white text-black font-semibold rounded-full border-custom-dark-grey-grey text-center dark:bg-custom-very-darker-grey dark:text-white"
+                    />
+                    <input
+                        ref={(ref) => inputRefs.current[4] = ref}
+                        placeholder="0"
+                        pattern="[a-zA-Z0-9]"
+                        maxLength={1}
+                        onChange={(event) => handleInputChange(4, event)}
+                        onKeyDown={(event) => handleKeyDown(4, event)}
+                        className="py-6 subpixel-antialiased focus:outline-none border-transparent ring-4 ring-transparent focus:ring-custom-golden w-16 h-16 bg-white text-black font-semibold rounded-full border-custom-dark-grey-grey text-center dark:bg-custom-very-darker-grey dark:text-white"
+                    />
+                </div>
+                <p className={"my-2 text-custom-red dark:text-custom-neon-red font-semibold absolute top-40"}>{errorMessage && <p> {errorMessage}</p >}</p>
+            </div>
+            <NavigationButton onClick={handleNextClick} />
+
+            <a className="text-center my-4 text-2xl underline font-semibold text-bold font-sans subpixel-antialiased text-custom-purple dark:text-custom-yellow"
+                href="./password"> {t('orUseSMS')}
+            </a>
+
+            <a className="text-center my-4 font-semibold underline text-bold font-sans subpixel-antialiased text-custom-purple dark:text-custom-yellow"
+               href="./password"> {t('haveYouNotMinIdUser')}
+            </a>
+
         </div>
-        <div className=" absolute bottom-0">
-          <Forest  />
-        </div>
-      </div>
-  );
+    );
 };
 
 export default Homepage;

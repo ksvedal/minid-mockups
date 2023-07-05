@@ -14,7 +14,7 @@ const ContactInfoPage = ({linkTo, totalTasks}) => {
       {/*ContactInfoPage is always the last step completedTasks = totalTasks*/}
       <ProgressBar totalTasks={totalTasks} completedTasks={totalTasks} />
         <div className={"absolute m-10 md:m-16 w-full px-10 top-14"}>
-          <h1 className='py-5'>{t('confirmContactInformation')}</h1>
+          <h1 className='text-3xl font-bold mb-12 text-center'>{t('confirmContactInformation')}</h1>
           <h1>{t('phoneNumber')}</h1>
           <UpdateContactInfoField className='color-black' placeholder="+4712345678" pattern="[0-9]+" />
           <h1>{t('email')}</h1>
