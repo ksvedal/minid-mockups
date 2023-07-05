@@ -15,8 +15,8 @@ const ActivationLetterPage = () => {
       <div className="flex flex-col items-center justify-center text-custom-black dark:text-custom-white">
         <ProgressBar totalTasks={4} completedTasks={2} />
         <div className="flex flex-col items-center justify-center">
-          <h1 className="absolute top-52 text-3xl font-bold">{t('activation')}</h1>
-          <div className="text-left">
+          <h1 className="absolute top-52 text-3xl font-bold">{t('activationofMinID')}</h1>
+          <div className="text-center mb-4">
             <p>{t('hasOrderedActivationLetter')}</p>
             <p>{t('enterActivationCode')}</p>
           </div>

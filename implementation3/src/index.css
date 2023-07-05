@@ -36,5 +36,9 @@ body {
   input {
     @apply font-custom-font
   }
+
+  a {
+    @apply font-custom-font
+  }
   
 }
