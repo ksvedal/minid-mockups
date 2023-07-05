@@ -16,9 +16,9 @@ const ValidationSuccessfullPage = ({message}) => {
          </div>
 
          <Mountains />
-          <div className={"absolute w-1/2 px-10 m-10 bottom-0"}>
-              <NavigationButton text={t('home')} onClick={() => navigate("/.")}/>
-        </div>
+        
+         <NavigationButton position={'center'} text={t('home')} onClick={() => navigate("/.")}/>
+
       </>
   );
 };

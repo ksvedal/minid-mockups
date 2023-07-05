@@ -110,10 +110,10 @@ const AuthenticationPage = ({linkFrom, linkTo, completedTasks, totalTasks}) => {
       </div>
 
       <Mountains />
-      <div className="absolute m-10 w-1/2 px-10 bottom-0">
-        <NavigationButton onClick={handleNextClick} />
-        <NavigationButton text={t('cancel')} onClick={() => navigate(linkFrom)} />
-      </div>
+
+      <NavigationButton position={'right'} onClick={handleNextClick} />
+      <NavigationButton position={'left'} text={t('cancel')} onClick={() => navigate(linkFrom)} />
+
     </div>
   );
 };

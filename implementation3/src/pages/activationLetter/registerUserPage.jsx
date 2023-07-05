@@ -31,10 +31,10 @@ const RegisterPage = () => {
             </div>
 
             <Mountains />
-            <div className={"absolute w-1/2 px-10 bottom-0 m-10"}>
-                <NavigationButton text={t('next')} onClick={() => navigate("/doneRegisterUser")}/>
-                <NavigationButton text={t('cancel')} onClick={() => navigate("/.")} />
-            </div>
+            
+            <NavigationButton position={'right'} text={t('next')} onClick={() => navigate("/doneRegisterUser")}/>
+            <NavigationButton position={'left'} text={t('cancel')} onClick={() => navigate("/.")} />
+           
         </div>
     )
 }

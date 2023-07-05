@@ -14,23 +14,20 @@ const ContactInfoPage = ({linkTo, totalTasks}) => {
     <div className={"flex flex-col items-center justify-center h-screen"}>
       {/*ContactInfoPage is always the last step completedTasks = totalTasks*/}
       <ProgressBar totalTasks={totalTasks} completedTasks={totalTasks} />
-        <div className={"absolute m-10 md:m-16 w-full px-10 top-14"}>
-          <h1 className='py-5'>{t('confirmContactInformation')}</h1>
-          <h1>{t('phoneNumber')}</h1>
-          <UpdateContactInfoField className='color-black' placeholder="+4712345678" pattern="[0-9]+" />
-          <h1>{t('email')}</h1>
-          <UpdateContactInfoField className='color-black' placeholder="ola.nordmann@gmail.com" />
-        </div>
-
-        <Mountains />
-
-      <div className={"absolute w-7/12 bottom-32 text-center right-0 "}>
-        <NavigationButton text={t('confirm')} onClick={() => navigate(linkTo)}/>
+      
+      <div className={"absolute m-10 md:m-16 w-full px-10 top-14"}>
+        <h1 className='py-5'>{t('confirmContactInformation')}</h1>
+        <h1>{t('phoneNumber')}</h1>
+        <UpdateContactInfoField className='color-black' placeholder="+4712345678" pattern="[0-9]+" />
+        <h1>{t('email')}</h1>
+        <UpdateContactInfoField className='color-black' placeholder="ola.nordmann@gmail.com" />
       </div>
 
-      <div className={"absolute w-7/12 bottom-8 text-center left-0 "}>
-        <NavigationButton text={t('back')} onClick={() => navigate("/.")}/>
-      </div> 
+      <Mountains />
+    
+      <NavigationButton position={'right'} text={t('confirm')} onClick={() => navigate(linkTo)}/>
+      <NavigationButton position={'left'} text={t('back')} onClick={() => navigate("/.")}/>
+  
     </div>
   );
 };

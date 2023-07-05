@@ -22,14 +22,9 @@ const ResetPasswordPage = () => {
       </div>
 
       <Mountains />
-    
-      <div className={"absolute w-7/12 bottom-32 text-center right-0 "}>
-        <NavigationButton  text={t('confirm')} onClick={() => navigate("/contactInfo2")}/>
-      </div>
+      <NavigationButton position={'right'} text={t('confirm')} onClick={() => navigate("/contactInfo2")}/>
+      <NavigationButton position={'left'} text={t('cancel')} onClick={() => navigate("/.")}/>
 
-      <div className={"absolute w-7/12 bottom-8 text-center left-0 "}>
-        <NavigationButton text={t('cancel')} onClick={() => navigate("/.")}/>
-      </div> 
     </div>
   );
 };

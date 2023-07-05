@@ -19,10 +19,10 @@ const NoActivationLetterPage = () => {
                     {t('hasNotCreatedUserPressOrderToCreate')}
                 </h1>
             </div>
-            <div className={"absolute w-1/2 px-10 m-10 bottom-0"}>
-                <NavigationButton text={t('orderActivationLetter')} onClick={() => navigate("/noactivationletterordered")}/>
-                <NavigationButton text={t('back')} onClick={() => navigate("/.")}/>
-            </div>
+           
+            <NavigationButton position={'right'} text={t('orderActivationLetter')} onClick={() => navigate("/noactivationletterordered")}/>
+            <NavigationButton position={'left'} text={t('back')} onClick={() => navigate("/.")}/>
+        
         </>
     );
 };
