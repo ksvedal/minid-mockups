@@ -25,7 +25,7 @@
   "errorBirthNumber": "Fødselsnummer må inneholde 11 siffer",
 
   "enterPassword": "Tast inn passord",
-  "errorWrongPassword": "Feil passord",
+  "errorWrongPassword": "Feil passord inntastet",
   "forgottenPassword": "Glemt passord",
 
   "enterAuthenticationCode": "Tast inn kode tilsendt på SMS",

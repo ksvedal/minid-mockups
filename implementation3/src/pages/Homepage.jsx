@@ -38,7 +38,6 @@ const Homepage = () => {
         <div className='p-6'>
         <h1 className={`mt-10 ${errormsg ? 'text-custom-red' : 'text-custom-black dark:text-custom-white'}`}> 
         {errormsg ? errormsg : t('insertBirthNumber')}</h1>
-
           <input maxLength={11} 
                 className={`p-4 bg-custom-white text-custom-black border-2 w-full my-2 
                 ${errormsg ? 'border-custom-red' : 'border-custom-lightgrey'}`}

@@ -25,7 +25,7 @@
   "errorBirthNumber": "Birth number must contain 11 digits",
 
   "enterPassword": "Enter password",
-  "errorWrongPassword": "Wrong password",
+  "errorWrongPassword": "Wrong password entered",
   "forgottenPassword": "Forgotten password",
 
   "enterAuthenticationCode": "Enter authentication code",

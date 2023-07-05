@@ -30,18 +30,21 @@ const PasswordLoginPage = () => {
     <div className="absolute top-64">
       
       <div className="flex flex-col items-start w-full">
-        <p className=" mb-2 mt-10">{t('enterPassword')}</p>
+        <p className={`mt-10 ${errormessage ? 'text-custom-red' : 'text-custom-black dark:text-custom-white'}`}>
+        {errormessage ? errormessage : t('enterPassword')}
+        </p>
         <div>
           <input
-            className=" bg-custom-white border-2 border-custom-lightgrey p-4 w-full font-semibold"
+            className={`p-4 bg-custom-white text-custom-black border-2 w-full my-2 
+            ${errormessage ? 'border-custom-red' : 'border-custom-lightgrey'}`}
             placeholder={t('password')}
             type="password"
             value={input}
             onChange={handleInput}
           />
-          {errormessage && (
+         {/*  {errormessage && (
             <p className="text-custom-red mt-2">{errormessage}</p>
-          )}
+          )} */}
           <Link to="/authentication2">
           <h2 className='mt-2 underline'>{t('forgottenPassword')}</h2>
           </Link>
