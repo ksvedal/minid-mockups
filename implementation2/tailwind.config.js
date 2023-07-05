@@ -9,19 +9,25 @@ module.exports = {
   plugins: [],
   important: true,
   theme: {
+    fontFamily: {
+      'sans': 'Arial',
+    },
     extend: {
       rotate: {
         "no-rotate": "0"
       },
       colors: {
         // Add your custom colors here
-        'custom-blue': '#166988',
-        'custom-white': '#f3f3f3',
-        'custom-light-grey': '#dadada',
+        'custom-purple': '#785190',
+        'custom-white': '#fff8e7',
+        'custom-light-grey': '#F5F5F5',
         'custom-dark-grey': '#716E6E',
-        'custom-yellow': '#fdb96e',
+        'custom-yellow': '#e6c2ff',
         'custom-very-dark-grey': '#313131',
         'custom-very-darker-grey': '#212121',
+        'custom-red': '#c53a3a',
+        'custom-neon-red': '#ff8989',
+        'custom-golden': '#ffc541'
       }
     }
   }

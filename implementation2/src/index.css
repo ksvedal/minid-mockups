@@ -6,10 +6,8 @@
 /* Global styles */
 
 body {
-  background: #e1e1e1;
+  background: #ffffff;
 }
-
-
 
 /* Global styles but in tailwind */
 
@@ -17,6 +15,4 @@ body {
   button {
     @apply bg-amber-100 py-2 px-3 rounded-full hover:scale-[1.05] active:scale-[0.97]
   }
-
-  
 }

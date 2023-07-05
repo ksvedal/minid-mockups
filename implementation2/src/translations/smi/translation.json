@@ -21,6 +21,8 @@
   "forgottenPassword": "Heivehan suodjalanlávlla",
   "enterAuthenticationCode": "Čále authentiserejuvvon koda",
   "wrongAuthenticationCodeEntered": "Čállán authentiserejuvvon koda lea vašálaš",
+  "orUseSMS": "Dahje geavahit SMS",
+  "haveYouNotMinIdUser": "Ii leat du minID-geavaheaddji?",
 
   "confirmContactInformation": "Doarjja kontaktinformašuvnna",
   "phoneNumber": "Telefonnummar",
