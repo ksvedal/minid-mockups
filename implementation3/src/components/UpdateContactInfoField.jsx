@@ -44,8 +44,8 @@ const UpdateContactInfoField = ({ placeholder, pattern }) => {
         </button>
       )}
       {isEditing && (
-        <button className=" dark:bg-custom-yellow bg-custom-blue 
-        text-custom-black font-semibold border-2 border-custom-blue"
+        <button className="p-3 my-4 ml-1 dark:bg-custom-yellow bg-custom-blue 
+        text-custom-black font-semibold border-2 border-custom-blue dark:border-custom-yellow"
                 onClick={handleSave}>
           {t('save')}
         </button>
