@@ -11,20 +11,16 @@ const NoActivationLetterPage = () => {
 
     return (
         <>
-            <div className={"flex flex-col items-center justify-center h-screen text-custom-black dark:text-custom-white"}>
+            <div className={"flex flex-col items-center justify-center h-screen"}>
                 <ProgressBar totalTasks={3} completedTasks={2} />
-                <h1 className="absolute top-52 text-3xl font-bold">{t('activationofMinID')}</h1>
-                <h1 className='py-3 text-center m-32'>
+
+                <h1 className='py-3 text-center m-10'>
                     {t('hasNotCreatedUserPressOrderToCreate')}
                 </h1>
             </div>
-            <div>
-                <div className="absolute w-7/12 bottom-32 text-center right-0">
-                    <NavigationButton text={t('orderActivationLetter')} onClick={() => navigate("/noactivationletterordered")}/>
-                </div>
-                <div className="absolute w-7/12 bottom-8 text-center left-0">
-                    <NavigationButton text={t('back')} onClick={() => navigate("/.")}/>
-                </div>
+            <div className={"absolute w-1/2 px-10 m-10 bottom-0"}>
+                <NavigationButton text={t('orderActivationLetter')} onClick={() => navigate("/noactivationletterordered")}/>
+                <NavigationButton text={t('back')} onClick={() => navigate("/.")}/>
             </div>
         </>
     );
