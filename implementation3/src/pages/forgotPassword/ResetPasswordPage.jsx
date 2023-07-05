@@ -13,11 +13,11 @@ const ResetPasswordPage = () => {
     <div className={"flex flex-col items-center justify-center h-screen text-custom-black dark:text-custom-white"}>
       <ProgressBar totalTasks={5} completedTasks={5} />
       <div>
-        <h1 className="absolute top-52 text-3xl font-bold text-center text-custom-black">{t('newPassword')}</h1>
+        <h1 className="absolute top-52 text-3xl font-bold text-center">{t('newPassword')}</h1>
         <h1>{t('password')}</h1>
-        <InputField className='text-custom-black' placeholder={t('password')} type={"password"} />
-        <h1 className='text-custom-black'>Gjenta Passord</h1>
-        <InputField className='text-custom-black' placeholder={t('password')} type={"password"} />
+        <InputField  placeholder={t('password')} type={"password"} />
+        <h1>Gjenta Passord</h1>
+        <InputField placeholder={t('password')} type={"password"} />
       </div>
       {/* <div className={"absolute w-20 bottom-44 text-center h-12 bg-amber-200 left-32"}> //Auduns boks
       </div> */}

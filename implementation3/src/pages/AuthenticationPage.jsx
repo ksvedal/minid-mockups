@@ -51,12 +51,12 @@ const AuthenticationPage = ({linkFrom, linkTo, completedTasks, totalTasks}) => {
   return (
     <div className="flex flex-col items-center h-screen text-custom-black dark:text-custom-white">
       <ProgressBar totalTasks={totalTasks} completedTasks={completedTasks} />
-      <h1 className="absolute top-52 text-3xl font-bold text-custom-black">{t('smscode')}</h1>
+      <h1 className="absolute top-52 text-3xl font-bold">{t('smscode')}</h1>
       <div className="w-full px-10 flex flex-col items-center">
         <div className="flex items-center">
           <img className="pb-16 mt-28" src={PhoneImage} width="250px" alt="Grey Smartphone" />
         </div>
-        <h1 className={`my-2 ${errorMessage ? 'text-custom-red' : 'text-custom-black'} absolute bottom-96 left-40`}> 
+        <h1 className={`my-2 ${errorMessage ? 'text-custom-red' : 'text-custom-black dark:text-custom-white'} absolute bottom-96 left-40`}> 
         {errorMessage ? errorMessage : t('enterAuthenticationCode')}
         </h1>
         <div className=''>
