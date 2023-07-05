@@ -36,11 +36,15 @@ const Homepage = () => {
         <ProgressBar totalTasks={3} completedTasks={1} />
         <h1 className="absolute top-52 text-3xl font-bold">{t('birthnumber')}</h1>
         <div className='p-6'>
-        <h1 className='mt-10'>{t('insertBirthNumber')}</h1>
-          <input maxLength={11} className={"p-4 bg-custom-white text-custom-black placeholder-custom-darkgrey my-2 w-full border-2 border-custom-lightgrey"}
+        <h1 className={`mt-10 ${errormsg ? 'text-custom-red' : 'text-custom-black dark:text-custom-white'}`}> 
+        {errormsg ? errormsg : t('insertBirthNumber')}</h1>
+
+          <input maxLength={11} 
+                className={`p-4 bg-custom-white text-custom-black border-2 w-full my-2 
+                ${errormsg ? 'border-custom-red' : 'border-custom-lightgrey'}`}
                 placeholder={`11 ${t('numbers')}`} pattern={"[0-9]"} value={input} onChange={handleInput}>
           </input>
-          <p className={"my-1 text-custom-red absolute"}>{errormsg && <p> {errormsg}</p >}</p>
+          {/* <p className={"my-1 text-custom-red absolute"}>{errormsg && <p> {errormsg}</p >}</p> */}
         </div>
         
         <div className={"absolute w-7/12 bottom-32 text-center right-0 "}>

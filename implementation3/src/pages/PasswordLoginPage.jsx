@@ -43,7 +43,7 @@ const PasswordLoginPage = () => {
             <p className="text-custom-red mt-2">{errormessage}</p>
           )}
           <Link to="/authentication2">
-          <h2 className='mt-2'>{t('forgottenPassword')}</h2>
+          <h2 className='mt-2 underline'>{t('forgottenPassword')}</h2>
           </Link>
         </div>
       </div>
