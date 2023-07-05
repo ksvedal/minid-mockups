@@ -18,6 +18,7 @@ import NoActivationLetterOrderedPage from "./pages/activationLetter/noActivation
 import ResetPasswordPage from './pages/forgotPassword/ResetPasswordPage';
 import { useTranslation } from "react-i18next";
 import Mountains from './components/Icons/mountains';
+import SmsPage from "./pages/sms/smsPage";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -27,7 +28,7 @@ const App = () => {
   return (
           <Router>
                 <div className={"flex items-center justify-center h-screen"}>
-                    <div className={"relative dark:bg-custom-very-dark-grey dark:text-white m-auto py-60 bg-custom-white border-custom-light-grey rounded-2xl h-[800px] w-[800px] max-w-screen-md flex flex-col items-center justify-center overflow-hidden"}>
+                    <div className={"relative dark:bg-custom-very-dark-grey dark:text-white m-auto py-60 bg-custom-white shadow-2xl border-1 border-white rounded-2xl h-[800px] w-[800px] max-w-screen-md flex flex-col items-center justify-center overflow-hidden"}>
                       <div className={"absolute top-12 left-0 rotate-180"}>
                         <Mountains bigMountainColor={"custom-light-purple"} smallMountainColor={'custom-light-purple'} />
                      </div>
@@ -43,6 +44,7 @@ const App = () => {
                         <Routes>
                             <Route path="/" element={<Homepage linkTo={"/password"} />} />
                             <Route path="/password" element={<PasswordLoginPage linkFrom={"/"} />} />
+                            <Route path="/sms" element={<SmsPage linkTo={"/password"} linkFrom={"/"} />} />
                             <Route path="/emailValidation" element={<EmailValidationPage />} />
                             <Route path="/resetPassword" element={<ResetPasswordPage/>} />
                             <Route path="/contactInfo1" element={<ContactInfoPage totalTasks={3} linkFrom={"/authentication1"} linkTo={"/validationSuccessfull1"}/>} />

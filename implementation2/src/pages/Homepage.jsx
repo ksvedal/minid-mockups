@@ -1,5 +1,5 @@
 import React, {useRef} from 'react';
-import { useNavigate } from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import NavigationButton from "../components/NavigationButton.jsx"
 import "../index.css"
 import ProgressBar from '../components/ProgressBar.jsx';
@@ -56,61 +56,65 @@ const Homepage = ( {linkTo} ) => {
                 <div className="my-4 flex items-center justify-center space-x-4">
                     <input
                         ref={(ref) => inputRefs.current[0] = ref} // Store the input reference in inputRefs.current[0]
-                        placeholder="0"
+                        placeholder=""
                         pattern="[a-zA-Z0-9]"
                         maxLength={1}
                         onChange={(event) => handleInputChange(0, event)}
                         onKeyDown={(event) => handleKeyDown(0, event)}
-                        className="py-6 subpixel-antialiased focus:outline-none border-transparent ring-4 ring-transparent focus:ring-custom-golden w-16 h-16 bg-white text-black font-semibold rounded-full border-custom-dark-grey-grey text-center dark:bg-custom-very-darker-grey dark:text-white"
+                        className="py-6 shadow-md subpixel-antialiased focus:outline-none border-transparent ring-4 ring-transparent focus:shadow-2xl w-16 h-16 bg-white text-black font-semibold rounded-full border-custom-dark-grey-grey text-center dark:bg-custom-very-darker-grey dark:text-white"
                     />
                     <input
                         ref={(ref) => inputRefs.current[1] = ref}
-                        placeholder="0"
+                        placeholder=""
                         pattern="[a-zA-Z0-9]"
                         maxLength={1}
                         onChange={(event) => handleInputChange(1, event)}
                         onKeyDown={(event) => handleKeyDown(1, event)}
-                        className="py-6 subpixel-antialiased focus:outline-none border-transparent ring-4 ring-transparent focus:ring-custom-golden w-16 h-16 bg-white text-black font-semibold rounded-full border-custom-dark-grey-grey text-center dark:bg-custom-very-darker-grey dark:text-white"
+                        className="py-6 shadow-md subpixel-antialiased focus:outline-none border-transparent ring-4 ring-transparent focus:shadow-2xl w-16 h-16 bg-white text-black font-semibold rounded-full border-custom-dark-grey-grey text-center dark:bg-custom-very-darker-grey dark:text-white"
                     />
                     <input
                         ref={(ref) => inputRefs.current[2] = ref}
-                        placeholder="0"
+                        placeholder=""
                         pattern="[a-zA-Z0-9]"
                         maxLength={1}
                         onChange={(event) => handleInputChange(2, event)}
                         onKeyDown={(event) => handleKeyDown(2, event)}
-                        className="py-6 subpixel-antialiased focus:outline-none border-transparent ring-4 ring-transparent focus:ring-custom-golden w-16 h-16 bg-white text-black font-semibold rounded-full border-custom-dark-grey-grey text-center dark:bg-custom-very-darker-grey dark:text-white"
+                        className="py-6 shadow-md subpixel-antialiased focus:outline-none border-transparent ring-4 ring-transparent focus:shadow-2xl w-16 h-16 bg-white text-black font-semibold rounded-full border-custom-dark-grey-grey text-center dark:bg-custom-very-darker-grey dark:text-white"
                     />
                     <input
                         ref={(ref) => inputRefs.current[3] = ref}
-                        placeholder="0"
+                        placeholder=""
                         pattern="[a-zA-Z0-9]"
                         maxLength={1}
                         onChange={(event) => handleInputChange(3, event)}
                         onKeyDown={(event) => handleKeyDown(3, event)}
-                        className="py-6 subpixel-antialiased focus:outline-none border-transparent ring-4 ring-transparent focus:ring-custom-golden w-16 h-16 bg-white text-black font-semibold rounded-full border-custom-dark-grey-grey text-center dark:bg-custom-very-darker-grey dark:text-white"
+                        className="py-6 shadow-md subpixel-antialiased focus:outline-none border-transparent ring-4 ring-transparent focus:shadow-2xl w-16 h-16 bg-white text-black font-semibold rounded-full border-custom-dark-grey-grey text-center dark:bg-custom-very-darker-grey dark:text-white"
                     />
                     <input
                         ref={(ref) => inputRefs.current[4] = ref}
-                        placeholder="0"
+                        placeholder=""
                         pattern="[a-zA-Z0-9]"
                         maxLength={1}
                         onChange={(event) => handleInputChange(4, event)}
                         onKeyDown={(event) => handleKeyDown(4, event)}
-                        className="py-6 subpixel-antialiased focus:outline-none border-transparent ring-4 ring-transparent focus:ring-custom-golden w-16 h-16 bg-white text-black font-semibold rounded-full border-custom-dark-grey-grey text-center dark:bg-custom-very-darker-grey dark:text-white"
+                        className="py-6 shadow-md subpixel-antialiased focus:outline-none border-transparent ring-4 ring-transparent focus:shadow-2xl w-16 h-16 bg-white text-black font-semibold rounded-full border-custom-dark-grey-grey text-center dark:bg-custom-very-darker-grey dark:text-white"
                     />
                 </div>
                 <p className={"my-2 text-custom-red dark:text-custom-neon-red font-semibold absolute top-40"}>{errorMessage && <p> {errorMessage}</p >}</p>
             </div>
             <NavigationButton onClick={handleNextClick} />
 
-            <a className="text-center my-4 text-2xl underline font-semibold text-bold font-sans subpixel-antialiased text-custom-purple dark:text-custom-yellow"
-                href="./password"> {t('orUseSMS')}
-            </a>
+            <Link
+                className="text-center m-2 hover:text-custom-golden font-semibold underline text-bold font-sans subpixel-antialiased text-custom-purple dark:text-custom-yellow"
+                to={"./sms"}>
+                {t('orUseSMS')}
+            </Link>
 
-            <a className="text-center my-4 font-semibold underline text-bold font-sans subpixel-antialiased text-custom-purple dark:text-custom-yellow"
-               href="./password"> {t('haveYouNotMinIdUser')}
-            </a>
+            <Link
+                className="text-center m-2 hover:text-custom-golden font-semibold underline text-bold font-sans subpixel-antialiased text-custom-purple dark:text-custom-yellow"
+                  to={"./noActivationLetter"}>
+                 {t('haveYouNotMinIdUser')}
+            </Link>
 
         </div>
     );
