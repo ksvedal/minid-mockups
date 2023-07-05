@@ -49,16 +49,16 @@ const EmailValidationPage = () => {
   };
    
   return (
-    <div className="flex flex-col items-center h-screen">
+    <div className="flex flex-col items-center h-screen text-custom-black dark:text-custom-white">
       <ProgressBar totalTasks={5} completedTasks={4} />
-      <h1 className="text-3xl font-bold mb-12">{t('emailcode')}</h1>
+      <h1 className="absolute top-52 text-3xl font-bold">{t('emailcode')}</h1>
       <div className="w-full px-10 flex flex-col items-center">
         <div className="flex items-center">
-          <img className="pb-16" src={MailImage} width="150px" alt="Envelope" />
+          <img className="pb-16 mt-44" src={MailImage} width="150px" alt="Envelope" />
         </div>
-        <h1 className={`my-2 ${errorMessage ? 'text-custom-red' : 'text-custom-black'} absolute bottom-96 left-32`}> 
+        <h1 className={`my-2 ${errorMessage ? 'text-custom-red' : 'text-custom-black dark:text-custom-white'} absolute bottom-96 left-40`}> 
         {errorMessage ? errorMessage : t('enterActivationCodeByEmail')}</h1>
-        <div className="mb-32 mt-2 flex items-center space-x-2">
+        <div className="mb-28 mt-2 flex items-center space-x-2">
         <input
             ref={(ref) => inputRefs.current[0] = ref} // Store the input reference in inputRefs.current[0]
             placeholder="0"
