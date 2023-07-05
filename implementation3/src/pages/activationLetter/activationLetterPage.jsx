@@ -20,7 +20,7 @@ const ActivationLetterPage = () => {
             <p>{t('hasOrderedActivationLetter')}</p>
             <p>{t('enterActivationCode')}</p>
           </div>
-          <InputField placeholder={`${t('activationcode')}`} />
+          <InputField placeholder={`${t('activationcode')}`} autofocus={true}  />
   
           <Link to="/noactivationletterordered">
             <h2 className="underline text-left">{t('orderNewActivationLetter')}</h2>

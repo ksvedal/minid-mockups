@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {useTranslation} from "react-i18next";
 
-const UpdateContactInfoField = ({ placeholder, pattern }) => {
+const UpdateContactInfoField = ({ placeholder, pattern, autofocus }) => {
   const {t} = useTranslation()
   const [value, setValue] = useState('');
   const [isEditing, setIsEditing] = useState(false);
@@ -35,6 +35,7 @@ const UpdateContactInfoField = ({ placeholder, pattern }) => {
         value={value}
         onChange={handleInputChange}
         readOnly={!isEditing}
+        autoFocus={autofocus}
       />
       {!isEditing && (
         <button className="p-3 my-4 ml-1 dark:bg-custom-yellow bg-custom-blue 
