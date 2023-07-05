@@ -8,10 +8,10 @@ const Forest = () => {
 
   return (
     <div>
-        <FontAwesomeIcon icon={faTree} className=' text-3xl'/>
-        <FontAwesomeIcon icon={faTree} className=' text-3xl'/>
-        <FontAwesomeIcon icon={faTree} className=' text-3xl'/>
-        <FontAwesomeIcon icon={faTree} className=' text-3xl'/>
+        <FontAwesomeIcon icon={faTree} className=' bg-custom-purple text-3xl'/>
+        <FontAwesomeIcon icon={faTree} className=' bg-custom-light-purple text-3xl'/>
+        <FontAwesomeIcon icon={faTree} className=' bg-custom-purple text-3xl'/>
+        <FontAwesomeIcon icon={faTree} className=' bg-custom-light-purple text-3xl'/>
     </div>
   );
 };
