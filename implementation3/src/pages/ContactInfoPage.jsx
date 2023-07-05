@@ -13,12 +13,13 @@ const ContactInfoPage = ({linkTo, totalTasks}) => {
     <div className={"flex flex-col items-center justify-center h-screen text-custom-black dark:text-custom-white"}>
       {/*ContactInfoPage is always the last step completedTasks = totalTasks*/}
       <ProgressBar totalTasks={totalTasks} completedTasks={totalTasks} />
-        <div className={"absolute m-10 md:m-16 w-full px-10 top-14"}>
-          <h1 className='text-3xl font-bold mb-12 text-center'>{t('confirmContactInformation')}</h1>
+        <div>
+        <h1 className='absolute top-52 left-1/2 transform -translate-x-1/2 text-3xl font-bold text-center'>{t('confirmContactInformation')}</h1>
+
           <h1>{t('phoneNumber')}</h1>
-          <UpdateContactInfoField className='color-black' placeholder="+4712345678" pattern="[0-9]+" />
+          <UpdateContactInfoField className='text-left' placeholder="+4712345678" pattern="[0-9]+" />
           <h1>{t('email')}</h1>
-          <UpdateContactInfoField className='color-black' placeholder="ola.nordmann@gmail.com" />
+          <UpdateContactInfoField className='text-left' placeholder="ola.nordmann@gmail.com" />
         </div>
         <div className={"absolute w-7/12 bottom-32 text-center right-0 "}>
         <NavigationButton text={t('confirm')} onClick={() => navigate(linkTo)}/>

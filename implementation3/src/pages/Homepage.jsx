@@ -34,9 +34,9 @@ const Homepage = () => {
   return (
       <div className={"text-custom-black flex flex-col items-center dark:text-custom-white h-screen"}>
         <ProgressBar totalTasks={3} completedTasks={1} />
-        <h1 className="text-3xl font-bold mb-8">{t('birthnumber')}</h1>
+        <h1 className="absolute top-52 text-3xl font-bold">{t('birthnumber')}</h1>
         <div className='p-6'>
-        <h1>{t('insertBirthNumber')}</h1>
+        <h1 className='mt-10'>{t('insertBirthNumber')}</h1>
           <input maxLength={11} className={"p-4 bg-custom-white text-custom-black placeholder-custom-darkgrey my-2 w-full border-2 border-custom-lightgrey"}
                 placeholder={`11 ${t('numbers')}`} pattern={"[0-9]"} value={input} onChange={handleInput}>
           </input>

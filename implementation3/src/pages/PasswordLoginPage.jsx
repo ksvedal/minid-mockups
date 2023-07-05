@@ -30,7 +30,7 @@ const PasswordLoginPage = () => {
     <div className="absolute top-64">
       
       <div className="flex flex-col items-start w-full">
-        <p className=" mb-2">{t('enterPassword')}</p>
+        <p className=" mb-2 mt-10">{t('enterPassword')}</p>
         <div>
           <input
             className=" bg-custom-white border-2 border-custom-lightgrey p-4 w-full font-semibold"
