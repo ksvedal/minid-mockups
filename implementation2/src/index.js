@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Homepage from './pages/Homepage';
 import PasswordLoginPage from './pages/PasswordLoginPage';
-import AuthenticationPage from './pages/AuthenticationPage';
 import ContactInfoPage from './pages/ContactInfoPage';
 import ValidationSuccessfullPage from './pages/ValidationSuccessfullPage';
 import LanguageButton from './components/languageButton';
@@ -27,7 +26,7 @@ const App = () => {
   return (
           <Router>
                 <div className={"flex items-center justify-center h-screen"}>
-                    <div className={"relative dark:bg-custom-very-dark-grey dark:text-white m-auto py-60 bg-white border-custom-light-grey rounded-2xl h-[800px] w-[800px] max-w-screen-md flex flex-col items-center justify-center"}>
+                    <div className={"relative dark:bg-custom-very-dark-grey dark:text-white m-auto py-60 bg-custom-white border-custom-light-grey rounded-2xl h-[800px] w-[800px] max-w-screen-md flex flex-col items-center justify-center"}>
                     <div  className={"absolute top-4 right-4"}>
                             <LanguageButton />
                         </div>
@@ -35,10 +34,8 @@ const App = () => {
                             <Switcher/>
                         </div>
                         <Routes>
-                            <Route path="/" element={<Homepage />} />
-                            <Route path="/password" element={<PasswordLoginPage />} />
-                            <Route path="/authentication1" element={<AuthenticationPage linkTo={"/contactInfo1"} linkFrom={"/password"} totalTasks={3} completedTasks={3}/>} />
-                            <Route path="/authentication2" element={<AuthenticationPage linkTo={"/emailValidation"} linkFrom={"/password"} totalTasks={5} completedTasks={3}/>} />
+                            <Route path="/" element={<Homepage linkTo={"/password"} />} />
+                            <Route path="/password" element={<PasswordLoginPage linkFrom={"/"} />} />
                             <Route path="/emailValidation" element={<EmailValidationPage />} />
                             <Route path="/resetPassword" element={<ResetPasswordPage/>} />
                             <Route path="/contactInfo1" element={<ContactInfoPage totalTasks={3} linkFrom={"/authentication1"} linkTo={"/validationSuccessfull1"}/>} />
