@@ -9,7 +9,7 @@
 /* Global styles */
 
 body {
-  background: #FFFCF8;
+  background: #ffffff;
 }
 
 
@@ -34,10 +34,6 @@ body {
   }
 
   input {
-    @apply font-custom-font
-  }
-
-  a {
     @apply font-custom-font
   }
   
