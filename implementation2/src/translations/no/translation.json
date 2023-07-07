@@ -21,11 +21,16 @@
   "enterPassword": "Skriv inn passord",
   "errorWrongPassword": "Feil passord",
   "forgottenPassword": "Glemt passord",
+  "bravoChangedPassword": "Så bra. Du har klart å endre passordet ditt.",
 
-  "enterAuthenticationCode": "Skriv inn autentiseringskode",
+  "enterAuthenticationCode": "Skriv inn autentiseringskode fra minID app",
   "wrongAuthenticationCodeEntered": "Feil autentiseringskode skrevet inn",
   "orUseSMS": "Eller bruk SMS",
+  "enterAuthenticationCodeFromSms": "Skriv inn autentiseringskode fra SMS",
   "haveYouNotMinIdUser": "ingen minID-bruker?",
+
+  "enterBirthNumberAndPassword": "Skriv inn fødselsnummer og passord",
+  "errorCombination": "Kombinasjonen av fødselsnummer og passord eksisterer ikke",
 
   "confirmContactInformation": "Godkjenn kontaktinformasjon",
   "phoneNumber": "Telefonnummer",
