@@ -1,8 +1,8 @@
 import React from "react";
-import ProgressBar from "../../components/ProgressBar";
-import InputField from "../../components/InputField";
+import ProgressBar from "../../components/progressBar";
+import InputField from "../../components/inputField";
 import { Link } from "react-router-dom";
-import NavigationButton from "../../components/NavigationButton";
+import NavigationButton from "../../components/navigationButton";
 import {useTranslation} from "react-i18next";
 
 const ActivationLetterPage = () => {

@@ -1,9 +1,9 @@
 import React, { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom'
 import '../../index.css';
-import ProgressBar from '../../components/ProgressBar.jsx';
+import ProgressBar from '../../components/progressBar.jsx';
 import MailImage from '../../images/envelope.png';
-import NavigationButton from '../../components/NavigationButton';
+import NavigationButton from '../../components/navigationButton';
 import {useTranslation} from "react-i18next";
 
 const EmailValidationPage = () => {
