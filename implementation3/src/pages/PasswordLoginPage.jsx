@@ -39,9 +39,11 @@ const PasswordLoginPage = () => {
             className={`p-4 bg-custom-white text-custom-black border-2 w-full my-2 
             ${errormessage ? 'border-custom-red' : 'border-custom-lightgrey'}`}
             placeholder={t('password')}
+            autoFocus={true}
             type="password"
             value={input}
             onChange={handleInput}
+            maxLength={5}
           />
          {/*  {errormessage && (
             <p className="text-custom-red mt-2">{errormessage}</p>

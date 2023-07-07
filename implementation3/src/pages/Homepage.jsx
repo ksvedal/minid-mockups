@@ -40,6 +40,7 @@ const Homepage = () => {
         <h1 className={`mt-10 ${errormsg ? 'text-custom-red' : 'text-custom-black dark:text-custom-white'}`}> 
         {errormsg ? errormsg : t('insertBirthNumber')}</h1>
           <input maxLength={11} 
+                autoFocus={true}
                 className={`p-4 bg-custom-white text-custom-black border-2 w-full my-2 
                 ${errormsg ? 'border-custom-red' : 'border-custom-lightgrey'}`}
                 placeholder={`11 ${t('numbers')}`} pattern={"[0-9]"} value={input} onChange={handleInput}>

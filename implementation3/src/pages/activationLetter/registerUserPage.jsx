@@ -19,7 +19,7 @@ const RegisterPage = () => {
             <div className="text-left mb-4"><p>{t('pleaseEnterUserInformation')}</p></div>
             <div className={"flex flex-col justify-center mb-20"}>
                 <p>{t('email')}</p>
-                <InputField placeholder={`${t('email')}`} pattern="[0-9]+" />
+                <InputField placeholder={`${t('email')}`} pattern="[0-9]+" autofocus={true} />
                 <p>{t('phoneNumber')}</p>
                 <InputField placeholder={`${t('phoneNumber')}`} pattern="[0-9]+" />
                 <p>{t('password')}</p>

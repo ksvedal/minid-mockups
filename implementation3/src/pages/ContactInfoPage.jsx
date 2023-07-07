@@ -17,9 +17,9 @@ const ContactInfoPage = ({linkTo, totalTasks}) => {
       <div>
         <h1 className='absolute top-52 left-1/2 transform -translate-x-1/2 text-3xl font-bold text-center'>{t('confirmContactInformation')}</h1>
         <h1>{t('phoneNumber')}</h1>
-        <UpdateContactInfoField className='text-left' placeholder="+4712345678" pattern="[0-9]+" />
+        <UpdateContactInfoField placeholder="+4712345678" pattern="[0-9]+" />
         <h1>{t('email')}</h1>
-        <UpdateContactInfoField className='text-left' placeholder="ola.nordmann@gmail.com" />
+        <UpdateContactInfoField placeholder="ola.nordmann@gmail.com" />
       </div>
 
       <Mountains />

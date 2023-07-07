@@ -16,7 +16,7 @@ const ResetPasswordPage = () => {
       <div>
         <h1 className="absolute top-52 text-3xl font-bold text-center">{t('newPassword')}</h1>
         <h1>{t('password')}</h1>
-        <InputField  placeholder={t('password')} type={"password"} />
+        <InputField  placeholder={t('password')} type={"password"} autofocus={true} />
         <h1>Gjenta Passord</h1>
         <InputField placeholder={t('password')} type={"password"} />
       </div>
