@@ -24,6 +24,8 @@
 
   "enterAuthenticationCode": "Skriv inn autentiseringskode",
   "wrongAuthenticationCodeEntered": "Feil autentiseringskode skrevet inn",
+  "orUseSMS": "Eller bruk SMS",
+  "haveYouNotMinIdUser": "ingen minID-bruker?",
 
   "confirmContactInformation": "Godkjenn kontaktinformasjon",
   "phoneNumber": "Telefonnummer",

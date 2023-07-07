@@ -24,6 +24,8 @@
   "enterAuthenticationCode": "Enter authentication code",
   "wrongAuthenticationCodeEntered": "Incorrect authentication code entered",
   "enterActivationCodeByEmail": "Enter activation code from email",
+  "orUseSMS": "Or use SMS",
+  "haveYouNotMinIdUser": "No minID-user?",
   
 
   "confirmContactInformation": "Confirm contact information",

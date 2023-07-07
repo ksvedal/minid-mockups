@@ -12,15 +12,20 @@
   "save": "Save",
   "password": "Password",
   "repeatPassword": "Repeat password",
-  "byPressingNextYouAcceptTerms": "By pressing next, you accept the terms of use",
+  "byPressingNextYouAcceptTerms": "By pressing next, you accept the terms of use.",
   "seeTerms": "See Terms of Use",
   "passwordTitle": "Password",
   "birthnumber": "Birth number",
+  "emailcode": "Code from email",
+  "smscode": "Code from SMS",
+  "activation": "Activation",
+  "activationcode": "Activation code",
+  "newPassword": "New password",
 
   "errorBirthNumber": "Birth number must contain 11 digits",
 
   "enterPassword": "Enter password",
-  "errorWrongPassword": "Wrong password",
+  "errorWrongPassword": "Wrong password entered",
   "forgottenPassword": "Forgotten password",
 
   "enterAuthenticationCode": "Enter authentication code",
@@ -37,10 +42,11 @@
   "hasOrderedActivationLetter": "An activation letter has been ordered to your address.",
   "enterActivationCode": "Enter activation code below",
   "pleaseEnterUserInformation": "Please enter user information",
-  "welcomeAsMinIdUser": "Welcome as a minID user",
+  "welcomeAsMinIdUser": "Welcome as a MinID user",
   "userRegistered": "Your user is now created. You can now log into digital services from the public.",
 
-  "hasNotCreatedUserPressOrderToCreate": "00000000000 has not created a minID user. Press 'order activation letter' to create.",
+  "hasNotCreatedUserPressOrderToCreate": "00000000000 has not created a MinID user. Press 'Order activation letter' to create.",
   "normalWorkingTime10Days": "Normal delivery time is 10 working days.",
+  "activationofMinID": "Activation of MinID",
   "activationSendByMailExplanation": "MinID Activation Letter is only sent by mail to your registered address. If you are registered with both mailing address and residence address, the letter is sent to the mailing address. For security reasons, the MinID Activation Letter is not sent to another address."
 }

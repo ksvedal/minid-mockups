@@ -9,10 +9,10 @@ const DoneRegisterPage = () => {
     const {t} = useTranslation()
     const navigate = useNavigate();
     return (
-        <div className={"flex flex-col items-center justify-center"}>
+        <div className={"flex flex-col items-center justify-center text-custom-black dark:text-custom-white"}>
         <ProgressBar totalTasks={4} completedTasks={4} />
-        <p className="p-5 text-2xl">{t('welcomeAsMinIdUser')}</p>
-        <p>{t('userRegistered')}</p>
+        <p className="absolute top-52 text-3xl font-bold">{t('welcomeAsMinIdUser')}</p>
+        <p className="p-32 text-center">{t('userRegistered')}</p>
 
         <Mountains />
         

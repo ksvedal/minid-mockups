@@ -50,14 +50,20 @@ const AuthenticationPage = ({linkFrom, linkTo, completedTasks, totalTasks}) => {
   };
    
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
+    <div className="flex flex-col items-center h-screen text-custom-black dark:text-custom-white">
       <ProgressBar totalTasks={totalTasks} completedTasks={completedTasks} />
-      <div className="w-full px-10 flex flex-col items-center">
-        <div className="flex items-center justify-center">
-          <img className="pb-5" src={PhoneImage} width="250px" alt="Grey Smartphone" />
+      <h1 className="absolute top-52 text-3xl font-bold">{t('smscode')}</h1>
+      <div className="w-full flex flex-col items-center">
+        <div className="flex items-center">
+          <img className="pb-16 mt-28" src={PhoneImage} width="250px" alt="Grey Smartphone" />
         </div>
-        <h1 className="text-center">{t('enterAuthenticationCode')}</h1>
-        <div className="mb-14 mt-2 flex items-center justify-center space-x-2">
+
+        <h1 className={`my-2 ${errorMessage ? 'text-custom-red' : 'text-custom-black dark:text-custom-white'} absolute bottom-96`}> 
+        {errorMessage ? errorMessage : t('enterAuthenticationCode')}
+        </h1>
+        
+        <div className=''>
+        <div className=" mb-28 mt-2 flex items-center space-x-2">
           <input
             ref={(ref) => inputRefs.current[0] = ref} // Store the input reference in inputRefs.current[0]
             placeholder="0"
@@ -66,7 +72,8 @@ const AuthenticationPage = ({linkFrom, linkTo, completedTasks, totalTasks}) => {
             autoFocus={true}
             onChange={(event) => handleInputChange(0, event)}
             onKeyDown={(event) => handleKeyDown(0, event)}
-            className="py-6 mb-4 w-11 h-11 bg-custom-light-grey text-black rounded-full border-custom-dark-grey-grey text-center dark:bg-custom-very-darker-grey dark:text-white"
+            className={`py-6 mb-4 w-11 h-11 bg-custom-white text-custom-black border-2 text-center 
+            ${errorMessage ? 'border-custom-red' : 'border-custom-lightgrey'}`}
           />
           {/* Repeat the above pattern for the remaining inputs (1, 2, 3, 4) */}
           <input
@@ -76,7 +83,8 @@ const AuthenticationPage = ({linkFrom, linkTo, completedTasks, totalTasks}) => {
             maxLength={1}
             onChange={(event) => handleInputChange(1, event)}
             onKeyDown={(event) => handleKeyDown(1, event)}
-            className="py-6 mb-4 w-11 h-11 bg-custom-light-grey text-black rounded-full border-custom-dark-grey-grey text-center dark:bg-custom-very-darker-grey dark:text-white"
+            className={`py-6 mb-4 w-11 h-11 bg-custom-white text-custom-black border-2 text-center 
+            ${errorMessage ? 'border-custom-red' : 'border-custom-lightgrey'}`}
           />
           <input
             ref={(ref) => inputRefs.current[2] = ref}
@@ -85,7 +93,8 @@ const AuthenticationPage = ({linkFrom, linkTo, completedTasks, totalTasks}) => {
             maxLength={1}
             onChange={(event) => handleInputChange(2, event)}
             onKeyDown={(event) => handleKeyDown(2, event)}
-            className="py-6 mb-4 w-11 h-11 bg-custom-light-grey text-black rounded-full border-custom-dark-grey-grey text-center dark:bg-custom-very-darker-grey dark:text-white"
+            className={`py-6 mb-4 w-11 h-11 bg-custom-white text-custom-black border-2 text-center 
+            ${errorMessage ? 'border-custom-red' : 'border-custom-lightgrey'}`}
           />
           <input
             ref={(ref) => inputRefs.current[3] = ref}
@@ -94,7 +103,8 @@ const AuthenticationPage = ({linkFrom, linkTo, completedTasks, totalTasks}) => {
             maxLength={1}
             onChange={(event) => handleInputChange(3, event)}
             onKeyDown={(event) => handleKeyDown(3, event)}
-            className="py-6 mb-4 w-11 h-11 bg-custom-light-grey text-black rounded-full border-custom-dark-grey-grey text-center dark:bg-custom-very-darker-grey dark:text-white"
+            className={`py-6 mb-4 w-11 h-11 bg-custom-white text-custom-black border-2 text-center 
+            ${errorMessage ? 'border-custom-red' : 'border-custom-lightgrey'}`}
           />
           <input
             ref={(ref) => inputRefs.current[4] = ref}
@@ -103,10 +113,12 @@ const AuthenticationPage = ({linkFrom, linkTo, completedTasks, totalTasks}) => {
             maxLength={1}
             onChange={(event) => handleInputChange(4, event)}
             onKeyDown={(event) => handleKeyDown(4, event)}
-            className="py-6 mb-4 w-11 h-11 bg-custom-light-grey text-black rounded-full border-custom-dark-grey-grey text-center dark:bg-custom-very-darker-grey dark:text-white"
+            className={`py-6 mb-4 w-11 h-11 bg-custom-white text-custom-black border-2 text-center 
+            ${errorMessage ? 'border-custom-red' : 'border-custom-lightgrey'}`}
           />
         </div>
-        <p className={"my-2 text-red-700 absolute top-40"}>{errorMessage && <p> {errorMessage}</p >}</p>
+        </div>
+       {/*  <p className={"my-2 text-red-700 absolute bottom-1/3 left-36"}>{errorMessage && <p> {errorMessage}</p >}</p> */}
       </div>
 
       <Mountains />

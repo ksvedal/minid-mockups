@@ -12,36 +12,41 @@
   "save": "Lagre",
   "password": "Passord",
   "repeatPassword": "Gjenta passord",
-  "byPressingNextYouAcceptTerms": "Ved å trykke neste godtar du bruksvilkårene",
+  "byPressingNextYouAcceptTerms": "Ved å trykke neste godtar du bruksvilkårene.",
   "seeTerms": "Se Bruksvilkår",
   "newPassword": "Nytt passord",
   "passwordTitle": "Passord",
   "birthnumber": "Fødselsnummer",
+  "emailcode": "Kode fra e-post",
+  "smscode": "Kode fra SMS",
+  "activation": "Aktivering",
+  "activationcode": "Aktiveringskode",
 
   "errorBirthNumber": "Fødselsnummer må inneholde 11 siffer",
 
-  "enterPassword": "Skriv inn passord",
-  "errorWrongPassword": "Feil passord",
+  "enterPassword": "Tast inn passord",
+  "errorWrongPassword": "Feil passord inntastet",
   "forgottenPassword": "Glemt passord",
 
-  "enterAuthenticationCode": "Skriv inn autentiseringskode",
-  "wrongAuthenticationCodeEntered": "Feil autentiseringskode skrevet inn",
+  "enterAuthenticationCode": "Tast inn kode tilsendt på SMS",
+  "wrongAuthenticationCodeEntered": "Feil kode inntastet",
 
   "confirmContactInformation": "Godkjenn kontaktinformasjon",
   "phoneNumber": "Telefonnummer",
   "email": "Epost",
-  "enterActivationCodeByEmail": "Skriv inn aktiveringskode som du har mottatt på epost",
+  "enterActivationCodeByEmail": "Tast inn kode tilsendt på e-post",
 
   "bravoLoggedIn": "Gratulerer, du har logget inn.",
   "bravoChangedPassword": "Gratulerer, du har endret passord.",
 
   "hasOrderedActivationLetter": "Aktiveringsbrev er bestilt til din adresse.",
-  "enterActivationCode": "Skriv inn aktiveringskode under",
+  "enterActivationCode": "Skriv inn aktiveringskoden under.",
   "pleaseEnterUserInformation": "Vennligst skriv inn brukerinformasjon",
-  "welcomeAsMinIdUser": "Velkommen som minID-bruker",
+  "welcomeAsMinIdUser": "Velkommen som MinID-bruker",
   "userRegistered": "Din bruker er nå opprettet. Du vil nå kunne logge inn på digitale tjenester fra det offentlige.",
 
-  "hasNotCreatedUserPressOrderToCreate": "00000000000 har ikkje opprettet en minID-bruker. Trykk på 'bestill aktiveringsbrev' for å opprette.",
+  "hasNotCreatedUserPressOrderToCreate": "00000000000 har ikkje opprettet en MinID-bruker. Trykk på 'Bestill aktiveringsbrev' for å opprette.",
+  "activationofMinID": "Aktivering av MinID",
   "normalWorkingTime10Days": "Normal leveringstid er 10 virkedager.",
   "activationSendByMailExplanation": "MinID Aktiveringsbrev blir bare sendt per post til din folkeregistrerte adresse. Er du registrert med både postadresse og bostedsadresse, blir brevet sendt til postadresse. Av sikkerhetsmessige grunner, blir ikke MinID Aktiveringsbrev sendt til annen adresse."
 }

@@ -12,10 +12,10 @@ const NoActivationLetterPage = () => {
 
     return (
         <>
-            <div className={"flex flex-col items-center justify-center h-screen"}>
+            <div className={"flex flex-col items-center justify-center h-screen text-custom-black dark:text-custom-white"}>
                 <ProgressBar totalTasks={3} completedTasks={2} />
-
-                <h1 className='py-3 text-center m-10'>
+                <h1 className="absolute top-52 text-3xl font-bold">{t('activationofMinID')}</h1>
+                <h1 className='py-3 text-center m-32'>
                     {t('hasNotCreatedUserPressOrderToCreate')}
                 </h1>
             </div>

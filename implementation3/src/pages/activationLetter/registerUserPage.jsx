@@ -12,10 +12,11 @@ const RegisterPage = () => {
     const navigate = useNavigate();
 
     return (
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center text-custom-black dark:text-custom-white">
         <div className={"flex flex-col items-center justify-center"}>
             <ProgressBar totalTasks={4} completedTasks={3} />
-            <p className="p-5">{t('pleaseEnterUserInformation')}</p>
+            <h1 className="absolute top-28 text-3xl font-bold">{t('activationofMinID')}</h1>
+            <div className="text-left mb-4"><p>{t('pleaseEnterUserInformation')}</p></div>
             <div className={"flex flex-col justify-center mb-20"}>
                 <p>{t('email')}</p>
                 <InputField placeholder={`${t('email')}`} pattern="[0-9]+" />

@@ -11,16 +11,17 @@ const ResetPasswordPage = () => {
     const {t} = useTranslation()
     const navigate = useNavigate();
   return (
-    <div className={"flex flex-col items-center justify-center h-screen"}>
+    <div className={"flex flex-col items-center justify-center h-screen text-custom-black dark:text-custom-white"}>
       <ProgressBar totalTasks={5} completedTasks={5} />
-      <div className={"absolute m-10 md:m-16 w-full px-10 top-14"}>
-        <h1 className='py-5'>{t('newPassword')}</h1>
-        <h1>Passord</h1>
-        <InputField className='color-black' placeholder="Passord" type={"password"} />
+      <div>
+        <h1 className="absolute top-52 text-3xl font-bold text-center">{t('newPassword')}</h1>
+        <h1>{t('password')}</h1>
+        <InputField  placeholder={t('password')} type={"password"} />
         <h1>Gjenta Passord</h1>
-        <InputField className='color-black' placeholder="Passord" type={"password"} />
+        <InputField placeholder={t('password')} type={"password"} />
       </div>
 
+     
       <Mountains />
       <NavigationButton position={'right'} text={t('confirm')} onClick={() => navigate("/contactInfo2")}/>
       <NavigationButton position={'left'} text={t('cancel')} onClick={() => navigate("/.")}/>

@@ -11,7 +11,7 @@ const ValidationSuccessfullPage = ({message}) => {
 
     return (
       <>
-        <div className={"flex flex-col items-center justify-center h-screen"}>
+        <div className={"flex flex-col items-center justify-center h-screen text-custom-black dark:text-custom-white"}>
           <h1 className='py-3'>{message}</h1>
          </div>
 
