@@ -35,7 +35,7 @@ const SmallInputField = ({ placeholder, onChange, ref}) => {
       maxLength={1}
       onChange={handleInputChange}
       onKeyDown={handleKeyDown}
-      className="py-6 mb-4 w-11 h-11 bg-custom-light-grey text-black rounded-full border-custom-dark-grey-grey text-center dark:bg-custom-very-darker-grey dark:text-white"
+      className="py-8 mb-4 w-11 h-11 bg-white text-black rounded-full border border-custom-purple text-center dark:bg-custom-very-darker-grey dark:text-white"
     />
   );
 };

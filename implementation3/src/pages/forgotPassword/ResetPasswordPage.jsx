@@ -1,27 +1,31 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import ProgressBar from '../../components/ProgressBar.jsx';
 import InputField from "../../components/InputField.jsx";
 import NavigationButton from "../../components/NavigationButton";
+import Mountains from "../../components/Icons/Mountains.jsx";
 import {useTranslation} from "react-i18next";
+import {useNavigate} from 'react-router-dom';
 
 
 const ResetPasswordPage = () => {
     const {t} = useTranslation()
+    const navigate = useNavigate();
   return (
-    <div className={"flex flex-col items-center justify-center h-screen"}>
+    <div className={"flex flex-col items-center justify-center h-screen text-custom-black dark:text-custom-white"}>
       <ProgressBar totalTasks={5} completedTasks={5} />
-        <div className={"absolute m-10 md:m-16 w-full px-10 top-14"}>
-          <h1 className='py-5'>{t('newPassword')}</h1>
-          <h1>Passord</h1>
-          <InputField className='color-black' placeholder="Passord" type={"password"} />
-          <h1>Gjenta Passord</h1>
-          <InputField className='color-black' placeholder="Passord" type={"password"} />
-        </div>
-        <div className={"absolute m-10 w-1/2 px-10 bottom-0"}>
-            <Link to="/contactInfo2"> <NavigationButton /> </Link>
-            <Link to="/."> <NavigationButton text={t('cancel')}/> </Link>
-        </div>
+      <div>
+        <h1 className="absolute top-52 text-3xl font-bold text-center">{t('newPassword')}</h1>
+        <h1>{t('password')}</h1>
+        <InputField  placeholder={t('password')} type={"password"} />
+        <h1>Gjenta Passord</h1>
+        <InputField placeholder={t('password')} type={"password"} />
+      </div>
+
+     
+      <Mountains />
+      <NavigationButton position={'right'} text={t('confirm')} onClick={() => navigate("/contactInfo2")}/>
+      <NavigationButton position={'left'} text={t('cancel')} onClick={() => navigate("/.")}/>
+
     </div>
   );
 };

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,7 +9,7 @@
 /* Global styles */
 
 body {
-  background: #ffffff;
+  background: #FFFCF8;
 }
 
 
@@ -17,10 +18,26 @@ body {
 
 @layer base {
   button {
-    @apply bg-amber-100 py-2 px-3 hover:scale-y-[1.10] active:scale-[0.97] transition-all duration-100 ease-in-out;
+    @apply hover:scale-y-[1.10] active:scale-[0.97] transition-all duration-100 ease-in-out font-custom-font;
   }
 
   h1 {
+    @apply font-custom-font
+  }
+  
+  h2 {
+    @apply font-custom-font
+  }
+
+  p {
+    @apply font-custom-font
+  }
+
+  input {
+    @apply font-custom-font
+  }
+
+  a {
     @apply font-custom-font
   }
   

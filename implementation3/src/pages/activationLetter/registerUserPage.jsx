@@ -2,18 +2,21 @@ import React from "react";
 import {Link, useNavigate} from "react-router-dom";
 import ProgressBar from "../../components/ProgressBar";
 import InputField from "../../components/InputField";
+import Mountains from "../../components/Icons/Mountains";
 import NavigationButton from "../../components/NavigationButton";
 import {useTranslation} from "react-i18next";
+
 
 const RegisterPage = () => {
     const {t} = useTranslation()
     const navigate = useNavigate();
 
     return (
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center text-custom-black dark:text-custom-white">
         <div className={"flex flex-col items-center justify-center"}>
             <ProgressBar totalTasks={4} completedTasks={3} />
-            <p className="p-5">{t('pleaseEnterUserInformation')}</p>
+            <h1 className="absolute top-28 text-3xl font-bold">{t('activationofMinID')}</h1>
+            <div className="text-left mb-4"><p>{t('pleaseEnterUserInformation')}</p></div>
             <div className={"flex flex-col justify-center mb-20"}>
                 <p>{t('email')}</p>
                 <InputField placeholder={`${t('email')}`} pattern="[0-9]+" />
@@ -27,10 +30,12 @@ const RegisterPage = () => {
                 <a href="https://eid.difi.no/nb/minid/brukervilkar" className="underline">{t('seeTerms')}</a>
             </div>
             </div>
-            <div className={"absolute w-1/2 px-10 bottom-0 m-10"}>
-                <NavigationButton text={t('next')} onClick={() => navigate("/doneRegisterUser")}/>
-                <NavigationButton text={t('cancel')} onClick={() => navigate("/.")} />
-            </div>
+
+            <Mountains />
+            
+            <NavigationButton position={'right'} text={t('next')} onClick={() => navigate("/doneRegisterUser")}/>
+            <NavigationButton position={'left'} text={t('cancel')} onClick={() => navigate("/.")} />
+           
         </div>
     )
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import NavigationButton from "../components/NavigationButton.jsx"
+import Mountains from "../components/Icons/Mountains.jsx";
 import "../index.css"
 import ProgressBar from '../components/ProgressBar.jsx';
 import { useState } from 'react';
@@ -32,27 +33,25 @@ const Homepage = () => {
   };
 
   return (
-      <div className={"flex flex-col items-center justify-center h-screen"}>
-        <p className={"my-2 text-red-700 absolute top-80"}>{errormsg && <p> {errormsg}</p >}</p>
+      <div className={"text-custom-black flex flex-col items-center dark:text-custom-white h-screen"}>
         <ProgressBar totalTasks={3} completedTasks={1} />
-        <div className='p-8 rounded-xl absolute top-60'>
-        <h1>{t('insertBirthNumber')}</h1>
-          <input maxLength={11} className={"p-3 bg-custom-light-grey text-center text-black placeholder-custom-dark-grey my-2 w-full font-semibold dark:bg-custom-very-darker-grey dark:text-white rounded-xl"}
+        <h1 className="absolute top-52 text-3xl font-bold">{t('birthnumber')}</h1>
+        <div className='p-6'>
+        <h1 className={`mt-10 ${errormsg ? 'text-custom-red' : 'text-custom-black dark:text-custom-white'}`}> 
+        {errormsg ? errormsg : t('insertBirthNumber')}</h1>
+          <input maxLength={11} 
+                className={`p-4 bg-custom-white text-custom-black border-2 w-full my-2 
+                ${errormsg ? 'border-custom-red' : 'border-custom-lightgrey'}`}
                 placeholder={`11 ${t('numbers')}`} pattern={"[0-9]"} value={input} onChange={handleInput}>
           </input>
-        </div>
-        
-        <div className={"absolute w-7/12 bottom-56 text-center right-0 "}>
-          <NavigationButton onClick={handleNextButtonClick}/>
+          {/* <p className={"my-1 text-custom-red absolute"}>{errormsg && <p> {errormsg}</p >}</p> */}
         </div>
 
-        <div className={"absolute w-7/12 bottom-32 text-center right-0 "}>
-          <NavigationButton onClick={handleNextButtonClick}/>
-        </div>
-
-        <div className={"absolute w-7/12 bottom-8 text-center left-0 "}>
-          <NavigationButton text="Trykk for å lære mer om MinID" onClick={handleNextButtonClick}/>
-        </div>
+        <Mountains />
+      
+        <NavigationButton position={'right'} onClick={handleNextButtonClick}/>
+        <NavigationButton position={'left'} text={t("back")} />
+       
       </div>
   );
 };

@@ -20,9 +20,17 @@
   "enterPassword": "Skriv inn passord",
   "errorWrongPassword": "Feil passord",
   "forgottenPassword": "Gløymt passord",
+  "bravoChangedPassword": "Strålandes. Du har klart å endre passordet ditt.",
+
 
   "enterAuthenticationCode": "Skriv inn autentiseringskode",
   "wrongAuthenticationCodeEntered": "Feil autentiseringskode skrive inn",
+  "orUseSMS": "Eller bruk SMS",
+  "enterAuthenticationCodeFromSms": "Skriv inn autentiseringskode frå SMS",
+
+  "haveYouNotMinIdUser": "Ingen minID-brukar?",
+
+  "enterBirthNumberAndPassword": "Skriv inn fødselsnummer og passord",
 
   "confirmContactInformation": "Godkjenn kontaktinformasjon",
   "phoneNumber": "Telefonnummer",
