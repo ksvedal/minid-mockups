@@ -1,7 +1,7 @@
 import React from 'react';
 import "../../index.css"
-import NavigationButton from "../../components/NavigationButton.jsx"
-import ProgressBar from "../../components/ProgressBar";
+import NavigationButton from "../../components/navigationButton.jsx"
+import ProgressBar from "../../components/progressBar";
 import {useNavigate} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 

@@ -1,8 +1,8 @@
 import React, {useRef} from 'react';
 import {Link, useNavigate} from 'react-router-dom';
-import NavigationButton from "../components/NavigationButton.jsx"
+import NavigationButton from "../components/navigationButton.jsx"
 import "../index.css"
-import ProgressBar from '../components/ProgressBar.jsx';
+import ProgressBar from '../components/progressBar.jsx';
 import { useState } from 'react';
 import { useTranslation } from "react-i18next";
 

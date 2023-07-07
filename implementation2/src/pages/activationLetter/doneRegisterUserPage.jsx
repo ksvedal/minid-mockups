@@ -1,7 +1,7 @@
 import React from "react";
 import {Link, useNavigate} from "react-router-dom";
-import ProgressBar from "../../components/ProgressBar";
-import NavigationButton from "../../components/NavigationButton";
+import ProgressBar from "../../components/progressBar";
+import NavigationButton from "../../components/navigationButton";
 import {useTranslation} from "react-i18next";
 
 const DoneRegisterPage = () => {

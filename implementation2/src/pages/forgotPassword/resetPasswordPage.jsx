@@ -1,8 +1,8 @@
 import React from 'react';
 import {Link, useNavigate} from 'react-router-dom';
-import ProgressBar from '../../components/ProgressBar.jsx';
-import InputField from "../../components/InputField.jsx";
-import NavigationButton from "../../components/NavigationButton";
+import ProgressBar from '../../components/progressBar.jsx';
+import InputField from "../../components/inputField.jsx";
+import NavigationButton from "../../components/navigationButton";
 import {useTranslation} from "react-i18next";
 
 

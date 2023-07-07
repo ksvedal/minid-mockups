@@ -1,6 +1,6 @@
 import React from 'react';
 import "../index.css"
-import NavigationButton from "../components/NavigationButton.jsx"
+import NavigationButton from "../components/navigationButton.jsx"
 import {Link, useNavigate} from 'react-router-dom';
 import {useTranslation} from "react-i18next";
 

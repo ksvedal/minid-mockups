@@ -3,8 +3,8 @@ import {Link, useNavigate} from 'react-router-dom';
 import "../../index.css"
 import { useState } from 'react';
 import { useTranslation } from "react-i18next";
-import ProgressBar from "../../components/ProgressBar";
-import NavigationButton from "../../components/NavigationButton";
+import ProgressBar from "../../components/progressBar";
+import NavigationButton from "../../components/navigationButton";
 
 
 const SmsPage = ( {linkFrom, linkTo }) => {
