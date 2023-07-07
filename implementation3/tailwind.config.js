@@ -6,7 +6,7 @@ module.exports = {
   mode: 'jit',
   purge: ["./src/**/*.{js,jsx,ts,tsx}"],
   variants: {},
-  plugins: [],
+  plugins: [require('tailwindcss-patterns')],
   important: true,
   theme: {
     fontFamily: {
@@ -26,16 +26,19 @@ module.exports = {
 
         //LM
         'custom-bg': "#F2E9DC",
+        'custom-bg-darker': "#7B6966",
         'custom-blue': "#51BDBC",
+        'custom-darker-blue': "#6D9EBA",
         'custom-white': "#F0F0F0",
         'custom-black': "#190B28",
-        'custom-darkgrey': "#878787",
-        'custom-lightgrey': "#BFBFBF",
+        'custom-dark-grey': "#878787",
+        'custom-light-grey': "#BFBFBF",
         'custom-error': "#FF8744",
         'custom-red': "#F2542D",
         
         //DM
         'custom-yellow': "#FFF3C8",
+        'custom-darker-yellow': "#C7B67B",
 
       },
     }

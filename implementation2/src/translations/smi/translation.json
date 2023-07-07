@@ -19,6 +19,7 @@
   "enterPassword": "Čále suodjalanlávlla",
   "errorWrongPassword": "Sukkel suodjalanlávlla",
   "forgottenPassword": "Heivehan suodjalanlávlla",
+  "bravoChangedPassword": "Så bra. Du har klart å endre passordet ditt.",
   "enterAuthenticationCode": "Čále authentiserejuvvon koda",
   "wrongAuthenticationCodeEntered": "Čállán authentiserejuvvon koda lea vašálaš",
   "orUseSMS": "Dahje geavahit SMS",
@@ -29,6 +30,11 @@
   "email": "E-boasta",
   "emailOptional": "E-boasta (valimin)",  
   "enterActivationCodeByEmail": "Čále aktivašuvdnakoda e-boastta",
+  "enterAuthenticationCodeFromSms": "Skriv inn autentiseringskode frå SMS",
+
+
+  "enterBirthNumberAndPassword": "čáleheapmáranjovnna ja suollemasvuohta",
+
 
   "bravoLoggedIn": "Bargái, leat loggen sisa",
   "hasOrderedActivationLetter": "Aktivašuvdnabrev lea mearridat du iežat",

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import NavigationButton from "../components/NavigationButton.jsx"
+import Mountains from "../components/Icons/Mountains.jsx";
 import "../index.css"
 import ProgressBar from '../components/ProgressBar.jsx';
 import { useState } from 'react';
@@ -46,14 +47,12 @@ const Homepage = () => {
           </input>
           {/* <p className={"my-1 text-custom-red absolute"}>{errormsg && <p> {errormsg}</p >}</p> */}
         </div>
-        
-        <div className={"absolute w-7/12 bottom-32 text-center right-0 "}>
-          <NavigationButton onClick={handleNextButtonClick}/>
-        </div>
 
-        <div className={"absolute w-7/12 bottom-8 text-center left-0 "}>
-          <NavigationButton text={t("back")} />
-        </div>
+        <Mountains />
+      
+        <NavigationButton position={'right'} onClick={handleNextButtonClick}/>
+        <NavigationButton position={'left'} text={t("back")} />
+       
       </div>
   );
 };

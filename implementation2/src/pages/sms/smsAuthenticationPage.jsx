@@ -1,12 +1,12 @@
-import React, {useRef} from 'react';
-import {Link, useNavigate} from 'react-router-dom';
-import NavigationButton from "../components/NavigationButton.jsx"
-import "../index.css"
-import ProgressBar from '../components/ProgressBar.jsx';
-import { useState } from 'react';
-import { useTranslation } from "react-i18next";
+import React, { useState, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
+import '../../index.css';
+import PhoneImage from "../../images/grey_smartphone.jpg";
+import {useTranslation} from "react-i18next";
+import ProgressBar from "../../components/ProgressBar";
+import NavigationButton from "../../components/NavigationButton";
 
-const Homepage = ( {linkTo} ) => {
+const SmsAuthenticationPage = ({linkFrom, linkTo, completedTasks, totalTasks}) => {
     const {t} = useTranslation()
     const navigate = useNavigate();
     const [inputValues, setInputValues] = useState(['', '', '', '', '']);
@@ -52,7 +52,10 @@ const Homepage = ( {linkTo} ) => {
         <div className="flex flex-col items-center justify-center h-screen">
             <ProgressBar totalTasks={3} completedTasks={1} />
             <div className="w-full px-10 flex flex-col items-center">
-                <p className="text-center my-4 text-3xl font-semibold text-bold font-sans subpixel-antialiased text-custom-purple dark:text-custom-yellow">{t('enterAuthenticationCode')}</p>
+                <div className="flex items-center justify-center">
+                    <img className="pb-5" src={PhoneImage} width="250px" alt="Grey Smartphone" />
+                </div>
+                <p className="text-center my-4 text-xl font-semibold text-bold font-sans subpixel-antialiased text-custom-purple dark:text-custom-yellow">{t('enterAuthenticationCodeFromSms')}</p>
                 <div className="my-4 flex items-center justify-center space-x-4">
                     <input
                         ref={(ref) => inputRefs.current[0] = ref} // Store the input reference in inputRefs.current[0]
@@ -103,23 +106,9 @@ const Homepage = ( {linkTo} ) => {
                 <p className={"my-2 text-custom-red dark:text-custom-neon-red font-semibold absolute top-40"}>{errorMessage && <p> {errorMessage}</p >}</p>
             </div>
             <NavigationButton onClick={handleNextClick} />
-            <div className=' absolute bottom-0'>
-            </div>
-
-            <Link
-                className="text-center m-2 hover:text-custom-golden font-semibold underline text-bold font-sans subpixel-antialiased text-custom-purple dark:text-custom-yellow"
-                to={"./sms"}>
-                {t('orUseSMS')}
-            </Link>
-
-            <Link
-                className="text-center m-2 hover:text-custom-golden font-semibold underline text-bold font-sans subpixel-antialiased text-custom-purple dark:text-custom-yellow"
-                  to={"./noActivationLetter"}>
-                 {t('haveYouNotMinIdUser')}
-            </Link>
-
+            <NavigationButton text={t('cancel')} onClick={() => navigate(linkFrom)} />
         </div>
     );
 };
 
-export default Homepage;
+export default SmsAuthenticationPage;

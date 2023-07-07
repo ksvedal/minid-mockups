@@ -2,6 +2,7 @@ import React from "react";
 import ProgressBar from "../../components/ProgressBar";
 import InputField from "../../components/InputField";
 import { Link, useNavigate } from "react-router-dom";
+import Mountains from "../../components/Icons/Mountains";
 import NavigationButton from "../../components/NavigationButton";
 import {useTranslation} from "react-i18next";
 
@@ -26,15 +27,12 @@ const ActivationLetterPage = () => {
             <h2 className="underline text-left">{t('orderNewActivationLetter')}</h2>
           </Link>
         </div>
-        <div>
-          <div className="absolute w-7/12 bottom-32 text-center right-0">
-            <NavigationButton text={t('next')} onClick={() => navigate("/registerUser")} />
-          </div>
-  
-          <div className="absolute w-7/12 bottom-8 text-center left-0">
-            <NavigationButton text={t('back')} onClick={() => navigate("/")} />
-          </div>
-        </div>
+
+        <Mountains />
+
+        <NavigationButton position={'right'} text={t('orderActivationLetter')} onClick={() => navigate("/noactivationletterordered")}/>
+        <NavigationButton position={'left'} text={t('back')} onClick={() => navigate("/.")}/>
+      
       </div>
     );
   };
