@@ -2,6 +2,7 @@ import React from 'react';
 import ProgressBar from '../../components/ProgressBar.jsx';
 import InputField from "../../components/InputField.jsx";
 import NavigationButton from "../../components/NavigationButton";
+import Mountains from "../../components/Icons/Mountains.jsx";
 import {useTranslation} from "react-i18next";
 import {useNavigate} from 'react-router-dom';
 
@@ -19,15 +20,12 @@ const ResetPasswordPage = () => {
         <h1>Gjenta Passord</h1>
         <InputField placeholder={t('password')} type={"password"} />
       </div>
-      {/* <div className={"absolute w-20 bottom-44 text-center h-12 bg-amber-200 left-32"}> //Auduns boks
-      </div> */}
-      <div className={"absolute w-7/12 bottom-32 text-center right-0 "}>
-        <NavigationButton text={t('confirm')} onClick={() => navigate("/contactInfo2")}/>
-      </div>
 
-      <div className={"absolute w-7/12 bottom-8 text-center left-0 "}>
-        <NavigationButton text={t('cancel')} onClick={() => navigate("/.")}/>
-      </div> 
+     
+      <Mountains />
+      <NavigationButton position={'right'} text={t('confirm')} onClick={() => navigate("/contactInfo2")}/>
+      <NavigationButton position={'left'} text={t('cancel')} onClick={() => navigate("/.")}/>
+
     </div>
   );
 };
