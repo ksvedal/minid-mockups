@@ -1,8 +1,8 @@
 import React from "react";
 import {Link, useNavigate} from "react-router-dom";
-import ProgressBar from "../../components/ProgressBar";
-import InputField from "../../components/InputField";
-import NavigationButton from "../../components/NavigationButton";
+import ProgressBar from "../../components/progressBar";
+import InputField from "../../components/inputField";
+import NavigationButton from "../../components/navigationButton";
 import {useTranslation} from "react-i18next";
 
 const RegisterPage = () => {

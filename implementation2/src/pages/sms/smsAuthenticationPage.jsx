@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import '../../index.css';
 import PhoneImage from "../../images/grey_smartphone.jpg";
 import {useTranslation} from "react-i18next";
-import ProgressBar from "../../components/ProgressBar";
-import NavigationButton from "../../components/NavigationButton";
+import ProgressBar from "../../components/progressBar";
+import NavigationButton from "../../components/navigationButton";
 
 const SmsAuthenticationPage = ({linkFrom, linkTo, completedTasks, totalTasks}) => {
     const {t} = useTranslation()
