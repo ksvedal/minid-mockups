@@ -103,6 +103,8 @@ const Homepage = ( {linkTo} ) => {
                 <p className={"my-2 text-custom-red dark:text-custom-neon-red font-semibold absolute top-40"}>{errorMessage && <p> {errorMessage}</p >}</p>
             </div>
             <NavigationButton onClick={handleNextClick} />
+            <div className=' absolute bottom-0'>
+            </div>
 
             <Link
                 className="text-center m-2 hover:text-custom-golden font-semibold underline text-bold font-sans subpixel-antialiased text-custom-purple dark:text-custom-yellow"
