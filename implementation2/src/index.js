@@ -19,6 +19,7 @@ import ResetPasswordPage from './pages/forgotPassword/ResetPasswordPage';
 import { useTranslation } from "react-i18next";
 import Mountains from './components/Icons/mountains';
 import SmsPage from "./pages/sms/smsPage";
+import SmsAuthenticationPage from "./pages/sms/smsAuthenticationPage";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -44,7 +45,8 @@ const App = () => {
                         <Routes>
                             <Route path="/" element={<Homepage linkTo={"/password"} />} />
                             <Route path="/password" element={<PasswordLoginPage linkFrom={"/"} />} />
-                            <Route path="/sms" element={<SmsPage linkTo={"/password"} linkFrom={"/"} />} />
+                            <Route path="/sms" element={<SmsPage linkTo={"/smsAuthentication"} linkFrom={"/"} />} />
+                            <Route path="/smsAuthentication" element={<SmsAuthenticationPage linkTo={"/validationSuccessfull1"} linkFrom={"/sms"} />} />
                             <Route path="/emailValidation" element={<EmailValidationPage />} />
                             <Route path="/resetPassword" element={<ResetPasswordPage/>} />
                             <Route path="/contactInfo1" element={<ContactInfoPage totalTasks={3} linkFrom={"/authentication1"} linkTo={"/validationSuccessfull1"}/>} />

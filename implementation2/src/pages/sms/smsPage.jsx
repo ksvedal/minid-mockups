@@ -7,7 +7,7 @@ import ProgressBar from "../../components/ProgressBar";
 import NavigationButton from "../../components/NavigationButton";
 
 
-const SmsPage = ( {linkFrom }) => {
+const SmsPage = ( {linkFrom, linkTo }) => {
     const { t, i18n } = useTranslation()
     const regex = /^[0-9]+$/;
     const [errorMessage, setErrorMessage] = useState('');
@@ -23,7 +23,7 @@ const SmsPage = ( {linkFrom }) => {
 
     const handleNextButtonClick = () => {
         if (input.length === 11 && regex.test(input)) {
-            navigate("/password");
+            navigate(linkTo);
         } else if (input.length === 1) {
             navigate("/activationLetter");
         } else if (input.length === 2) {

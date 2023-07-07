@@ -20,15 +20,16 @@
   "enterPassword": "Enter password",
   "errorWrongPassword": "Wrong password",
   "forgottenPassword": "Forgotten password",
+  "bravoChangedPassword": "Your password has been changed.",
 
   "enterAuthenticationCode": "Enter authentication code",
   "wrongAuthenticationCodeEntered": "Incorrect authentication code entered",
   "enterActivationCodeByEmail": "Enter activation code from email",
   "orUseSMS": "Or use SMS",
+  "enterAuthenticationCodeFromSms": "Enter authentication code from SMS",
   "haveYouNotMinIdUser": "No minID-user?",
 
   "enterBirthNumberAndPassword": "Enter fødselsnummer and passord",
-
 
   "confirmContactInformation": "Confirm contact information",
   "phoneNumber": "Phone number",
