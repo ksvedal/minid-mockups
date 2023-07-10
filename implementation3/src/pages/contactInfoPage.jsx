@@ -11,10 +11,10 @@ const ContactInfoPage = ({linkTo, totalTasks}) => {
   const navigate = useNavigate();
 
   return (
-    <div className={"flex flex-col items-center justify-center h-screen text-custom-black dark:text-custom-black"}>
+    <div className={"flex flex-col items-center justify-center h-screen text-custom-black dark:text-custom-white"}>
       {/*ContactInfoPage is always the last step completedTasks = totalTasks*/}
       <ProgressBar totalTasks={totalTasks} completedTasks={totalTasks} />
-      <div>
+      <div className='dark:text-custom-white'>
         <h1 className='absolute top-52 left-1/2 transform -translate-x-1/2 text-3xl font-bold text-center'>{t('confirmContactInformation')}</h1>
         <h1>{t('phoneNumber')}</h1>
         <UpdateContactInfoField placeholder="+4712345678" pattern="[0-9]+" />
