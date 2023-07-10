@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom'
 import '../../index.css';
 import ProgressBar from '../../components/ProgressBar.jsx';
-import Mountains from '../../components/Icons/Mountains';
+import Mountains from '../../components/Icons/mountains';
 import MailImage from '../../images/envelope.png';
 import NavigationButton from '../../components/NavigationButton';
 import {useTranslation} from "react-i18next";

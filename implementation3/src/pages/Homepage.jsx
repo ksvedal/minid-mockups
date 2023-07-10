@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import NavigationButton from "../components/NavigationButton.jsx"
-import Mountains from "../components/Icons/Mountains.jsx";
+import Mountains from "../components/Icons/mountains.jsx";
 import "../index.css"
 import ProgressBar from '../components/ProgressBar.jsx';
 import { useState } from 'react';

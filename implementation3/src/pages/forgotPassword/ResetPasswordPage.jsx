@@ -1,8 +1,8 @@
 import React from 'react';
 import ProgressBar from '../../components/ProgressBar.jsx';
 import InputField from "../../components/InputField.jsx";
-import NavigationButton from "../../components/NavigationButton";
-import Mountains from "../../components/Icons/Mountains.jsx";
+import NavigationButton from "../../components/NavigationButton.jsx";
+import Mountains from "../../components/Icons/mountains.jsx";
 import {useTranslation} from "react-i18next";
 import {useNavigate} from 'react-router-dom';
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import NavigationButton from "../components/NavigationButton.jsx"
-import Mountains from "../components/Icons/Mountains.jsx";
+import Mountains from "../components/Icons/mountains.jsx";
 import { Link, useNavigate } from 'react-router-dom';
 import ProgressBar from '../components/ProgressBar.jsx';
 import {useTranslation} from "react-i18next";
