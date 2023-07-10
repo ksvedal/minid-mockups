@@ -1,9 +1,9 @@
 import React from "react";
-import ProgressBar from "../../components/ProgressBar";
-import InputField from "../../components/InputField";
+import ProgressBar from "../../components/progressBar";
+import InputField from "../../components/inputField";
 import { Link, useNavigate } from "react-router-dom";
-import Mountains from "../../components/Icons/Mountains";
-import NavigationButton from "../../components/NavigationButton";
+import Mountains from "../../components/Icons/mountains";
+import NavigationButton from "../../components/navigationButton";
 import {useTranslation} from "react-i18next";
 
 
@@ -13,7 +13,7 @@ const ActivationLetterPage = () => {
     const navigate = useNavigate();
   
     return (
-      <div className="flex flex-col items-center justify-center text-custom-black dark:text-custom-white">
+      <div className="flex flex-col items-center justify-center text-custom-black dark:text-custom-black">
         <ProgressBar totalTasks={4} completedTasks={2} />
         <div className="flex flex-col items-center justify-center">
           <h1 className="absolute top-52 text-3xl font-bold">{t('activationofMinID')}</h1>

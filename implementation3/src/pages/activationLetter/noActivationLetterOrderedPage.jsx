@@ -1,8 +1,8 @@
 import React from 'react';
 import "../../index.css"
-import NavigationButton from "../../components/NavigationButton.jsx"
-import ProgressBar from "../../components/ProgressBar"
-import Mountains from "../../components/Icons/Mountains.jsx";
+import NavigationButton from "../../components/navigationButton.jsx"
+import ProgressBar from '../../components/progressBar.jsx';
+import Mountains from "../../components/Icons/mountains.jsx";
 import {useNavigate} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 

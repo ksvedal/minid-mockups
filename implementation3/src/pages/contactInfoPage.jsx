@@ -1,9 +1,9 @@
 import React from 'react';
-import NavigationButton from "../components/NavigationButton.jsx"
+import NavigationButton from "../components/navigationButton.jsx"
 import {Link, useNavigate} from 'react-router-dom';
-import ProgressBar from '../components/ProgressBar.jsx';
-import Mountains from "../components/Icons/Mountains.jsx";
-import UpdateContactInfoField from '../components/UpdateContactInfoField.jsx';
+import ProgressBar from '../components/progressBar.jsx';
+import Mountains from "../components/Icons/mountains.jsx";
+import UpdateContactInfoField from '../components/updateContactInfoField.jsx';
 import {useTranslation} from "react-i18next";
 
 const ContactInfoPage = ({linkTo, totalTasks}) => {
@@ -11,7 +11,7 @@ const ContactInfoPage = ({linkTo, totalTasks}) => {
   const navigate = useNavigate();
 
   return (
-    <div className={"flex flex-col items-center justify-center h-screen text-custom-black dark:text-custom-white"}>
+    <div className={"flex flex-col items-center justify-center h-screen text-custom-black dark:text-custom-black"}>
       {/*ContactInfoPage is always the last step completedTasks = totalTasks*/}
       <ProgressBar totalTasks={totalTasks} completedTasks={totalTasks} />
       <div>

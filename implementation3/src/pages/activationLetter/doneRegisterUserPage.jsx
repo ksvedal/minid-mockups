@@ -1,7 +1,7 @@
 import React from "react";
-import ProgressBar from "../../components/ProgressBar";
-import NavigationButton from "../../components/NavigationButton";
-import Mountains from "../../components/Icons/Mountains";
+import ProgressBar from "../../components/progressBar";
+import NavigationButton from "../../components/navigationButton";
+import Mountains from "../../components/Icons/mountains";
 import {useTranslation} from "react-i18next";
 import {useNavigate} from "react-router-dom";
 
