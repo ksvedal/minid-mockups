@@ -27,7 +27,7 @@ const App = () => {
   return (
           <Router>
                 <div className={"flex items-center justify-center h-screen h"}>
-                    <div className={"relative dark:bg-custom-very-dark-grey dark:text-white m-auto py-60 bg-custom-white border-custom-light-grey rounded-2xl h-[800px] w-[800px] max-w-screen-md flex flex-col items-center justify-center overflow-hidden"}>
+                    <div className={"relative py-60 bg-custom-white border-custom-light-grey rounded-2xl h-[800px] w-[800px] max-w-screen-md flex flex-col items-center justify-center overflow-hidden"}>
                       <div className={"absolute top-48 left-1 rotate-180"}>
                         <Mountains bigMountainWidth="34" smallMountainHeight={"80"} bigMountainHeight={"80"} bigMountainColor={"custom-light-purple"} smallMountainColor={'custom-light-purple'} />
                      </div>

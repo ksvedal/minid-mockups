@@ -52,7 +52,7 @@ const Homepage = ( {linkTo} ) => {
         <div className="flex flex-col items-center justify-center h-screen">
             <ProgressBar totalTasks={3} completedTasks={1} />
             <div className="w-full px-10 flex flex-col items-center">
-                <p className="text-center my-4 text-3xl font-semibold text-bold font-sans subpixel-antialiased text-custom-purple dark:text-custom-yellow">{t('enterAuthenticationCode')}</p>
+                <p className="text-center my-4 text-3xl font-semibold text-bold font-sans subpixel-antialiased text-custom-purple dark:text-custom-red">{t('enterAuthenticationCode')}</p>
                 <div className="my-4 flex items-center justify-center space-x-4">
                     <input
                         ref={(ref) => inputRefs.current[0] = ref} // Store the input reference in inputRefs.current[0]
@@ -61,7 +61,7 @@ const Homepage = ( {linkTo} ) => {
                         maxLength={1}
                         onChange={(event) => handleInputChange(0, event)}
                         onKeyDown={(event) => handleKeyDown(0, event)}
-                        className="py-6 subpixel-antialiased focus:outline-none border-transparent ring-4 ring-transparent focus:ring-custom-golden w-16 h-16 bg-white text-black font-semibold rounded-full border-custom-dark-grey-grey text-center dark:bg-custom-very-darker-grey dark:text-white"
+                        className="py-6 subpixel-antialiased focus:outline-none border-transparent ring-4 ring-transparent focus:ring-custom-golden w-16 h-16 bg-white text-black font-semibold rounded-full border-custom-dark-grey-grey text-center "
                     />
                     <input
                         ref={(ref) => inputRefs.current[1] = ref}
@@ -70,7 +70,7 @@ const Homepage = ( {linkTo} ) => {
                         maxLength={1}
                         onChange={(event) => handleInputChange(1, event)}
                         onKeyDown={(event) => handleKeyDown(1, event)}
-                        className="py-6 subpixel-antialiased focus:outline-none border-transparent ring-4 ring-transparent focus:ring-custom-golden w-16 h-16 bg-white text-black font-semibold rounded-full border-custom-dark-grey-grey text-center dark:bg-custom-very-darker-grey dark:text-white"
+                        className="py-6 subpixel-antialiased focus:outline-none border-transparent ring-4 ring-transparent focus:ring-custom-golden w-16 h-16 bg-white text-black font-semibold rounded-full border-custom-dark-grey-grey text-center "
                     />
                     <input
                         ref={(ref) => inputRefs.current[2] = ref}
@@ -79,7 +79,7 @@ const Homepage = ( {linkTo} ) => {
                         maxLength={1}
                         onChange={(event) => handleInputChange(2, event)}
                         onKeyDown={(event) => handleKeyDown(2, event)}
-                        className="py-6 subpixel-antialiased focus:outline-none border-transparent ring-4 ring-transparent focus:ring-custom-golden w-16 h-16 bg-white text-black font-semibold rounded-full border-custom-dark-grey-grey text-center dark:bg-custom-very-darker-grey dark:text-white"
+                        className="py-6 subpixel-antialiased focus:outline-none border-transparent ring-4 ring-transparent focus:ring-custom-golden w-16 h-16 bg-white text-black font-semibold rounded-full border-custom-dark-grey-grey text-center "
                     />
                     <input
                         ref={(ref) => inputRefs.current[3] = ref}
@@ -88,7 +88,7 @@ const Homepage = ( {linkTo} ) => {
                         maxLength={1}
                         onChange={(event) => handleInputChange(3, event)}
                         onKeyDown={(event) => handleKeyDown(3, event)}
-                        className="py-6 subpixel-antialiased focus:outline-none border-transparent ring-4 ring-transparent focus:ring-custom-golden w-16 h-16 bg-white text-black font-semibold rounded-full border-custom-dark-grey-grey text-center dark:bg-custom-very-darker-grey dark:text-white"
+                        className="py-6 subpixel-antialiased focus:outline-none border-transparent ring-4 ring-transparent focus:ring-custom-golden w-16 h-16 bg-white text-black font-semibold rounded-full border-custom-dark-grey-grey text-center "
                     />
                     <input
                         ref={(ref) => inputRefs.current[4] = ref}
@@ -97,7 +97,7 @@ const Homepage = ( {linkTo} ) => {
                         maxLength={1}
                         onChange={(event) => handleInputChange(4, event)}
                         onKeyDown={(event) => handleKeyDown(4, event)}
-                        className="py-6 subpixel-antialiased focus:outline-none border-transparent ring-4 ring-transparent focus:ring-custom-golden w-16 h-16 bg-white text-black font-semibold rounded-full border-custom-dark-grey-grey text-center dark:bg-custom-very-darker-grey dark:text-white"
+                        className="py-6 subpixel-antialiased focus:outline-none border-transparent ring-4 ring-transparent focus:ring-custom-golden w-16 h-16 bg-white text-black font-semibold rounded-full border-custom-dark-grey-grey text-center "
                     />
                 </div>
                 <p className={"my-2 text-custom-red dark:text-custom-neon-red font-semibold absolute top-40"}>{errorMessage && <p> {errorMessage}</p >}</p>
@@ -106,11 +106,11 @@ const Homepage = ( {linkTo} ) => {
             <div className=' absolute bottom-0'>
             </div>
 
-            <a className="text-center my-4 text-2xl underline font-semibold text-bold font-sans subpixel-antialiased text-custom-purple dark:text-custom-yellow"
+            <a className="text-center my-4 text-2xl underline font-semibold text-bold font-sans subpixel-antialiased text-custom-purple dark:text-custom-red"
                 href="./password"> {t('orUseSMS')}
             </a>
 
-            <a className="text-center my-4 font-semibold underline text-bold font-sans subpixel-antialiased text-custom-purple dark:text-custom-yellow"
+            <a className="text-center my-4 font-semibold underline text-bold font-sans subpixel-antialiased text-custom-purple dark:text-custom-red"
                href="./password"> {t('haveYouNotMinIdUser')}
             </a>
 
