@@ -26,6 +26,8 @@
   "wrongAuthenticationCodeEntered": "Incorrect authentication code entered",
   "enterActivationCodeByEmail": "Enter activation code from email",
   "orUseSMS": "Or use SMS",
+  "scanQrWithApp": "Scan QR-code on minID-app",
+  "orUseAuthCode": "Or use authentication code",
   "enterAuthenticationCodeFromSms": "Enter authentication code from SMS",
   "haveYouNotMinIdUser": "No minID-user?",
 

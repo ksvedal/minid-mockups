@@ -25,6 +25,8 @@
 
   "enterAuthenticationCode": "Skriv inn autentiseringskode fra minID app",
   "wrongAuthenticationCodeEntered": "Feil autentiseringskode skrevet inn",
+  "scanQrWithApp": "Scan QR-koden på minID-app",
+  "orUseAuthCode": "Eller bruk autentiseringskode",
   "orUseSMS": "Eller bruk SMS",
   "enterAuthenticationCodeFromSms": "Skriv inn autentiseringskode fra SMS",
   "haveYouNotMinIdUser": "ingen minID-bruker?",

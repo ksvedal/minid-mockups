@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Homepage from './pages/homepage';
+import HomePageAuthCode from './pages/homePageAuthCode';
 import PasswordLoginPage from './pages/passwordLoginPage';
 import ContactInfoPage from './pages/contactInfoPage';
 import ValidationSuccessfullPage from './pages/validationSuccessfullPage';
@@ -20,6 +20,7 @@ import { useTranslation } from "react-i18next";
 import Mountains from './components/Icons/mountains';
 import SmsPage from "./pages/sms/smsPage";
 import SmsAuthenticationPage from "./pages/sms/smsAuthenticationPage";
+import HomepageQR from "./pages/homePageQR";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -37,7 +38,8 @@ const App = () => {
                             <Switcher/>
                         </div>
                         <Routes>
-                            <Route path="/" element={<Homepage linkTo={"/password"} />} />
+                            <Route path="/" element={<HomepageQR linkTo={"/password"} />} />
+                            <Route path="/homePageAuthCode" element={<HomePageAuthCode />}/>
                             <Route path="/password" element={<PasswordLoginPage linkFrom={"/"} />} />
                             <Route path="/sms" element={<SmsPage linkTo={"/smsAuthentication"} linkFrom={"/"} />} />
                             <Route path="/smsAuthentication" element={<SmsAuthenticationPage linkTo={"/validationSuccessfull1"} linkFrom={"/sms"} />} />
