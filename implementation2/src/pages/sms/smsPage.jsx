@@ -37,21 +37,21 @@ const SmsPage = ( {linkFrom, linkTo }) => {
         <div className="flex flex-col items-center justify-center h-screen">
             <ProgressBar totalTasks={3} completedTasks={1} />
             <div className="w-full px-10 flex flex-col items-center">
-                <p className="text-center my-4 text-3xl font-semibold text-bold font-sans subpixel-antialiased text-custom-purple dark:text-custom-yellow">{t('enterBirthNumberAndPassword')}</p>
+                <p className="text-center my-4 text-3xl font-semibold text-bold font-sans subpixel-antialiased text-custom-purple dark:text-custom-red">{t('enterBirthNumberAndPassword')}</p>
 
                 <input maxLength={11}
-                       className="p-3 my-2 w-2/3 focus:shadow-2xl shadow-md subpixel-antialiased focus:outline-none border-transparent ring-3 ring-transparent focus:ring-custom-golden bg-white text-black font-semibold rounded-full border-custom-dark-grey-grey w-full text-center dark:bg-custom-very-darker-grey dark:text-white"
+                       className="p-3 my-2 w-2/3 focus:shadow-2xl shadow-md subpixel-antialiased focus:outline-none border-transparent ring-3 ring-transparent focus:ring-custom-golden bg-white text-black font-semibold rounded-full border-custom-dark-grey-grey w-full text-center"
                        placeholder={`11 ${t('numbers')}`} pattern={"[0-9]"} value={input} onChange={handleInput}>
                 </input>
 
                 <input
-                       className="p-3 my-2 w-2/3 focus:shadow-2xl shadow-md subpixel-antialiased focus:outline-none border-transparent ring-3 ring-transparent focus:ring-custom-golden bg-white text-black font-semibold rounded-full border-custom-dark-grey-grey w-full text-center dark:bg-custom-very-darker-grey dark:text-white"
+                       className="p-3 my-2 w-2/3 focus:shadow-2xl shadow-md subpixel-antialiased focus:outline-none border-transparent ring-3 ring-transparent focus:ring-custom-golden bg-white text-black font-semibold rounded-full border-custom-dark-grey-grey w-full text-center"
                        placeholder={`${t('password')}`}>
                 </input>
 
                 <Link to="/resetPassword">
                     <p
-                        className="text-center m-2 hover:text-custom-golden font-semibold underline text-bold font-sans subpixel-antialiased text-custom-purple dark:text-custom-yellow">
+                        className="text-center m-2 hover:text-custom-golden font-semibold underline text-bold font-sans subpixel-antialiased text-custom-purple dark:text-custom-light-red">
                         {t('forgottenPassword')}
                     </p>
                 </Link>
