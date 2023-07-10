@@ -3,6 +3,7 @@ import NavigationButton from "../components/navigationButton.jsx"
 import { Link, useNavigate } from 'react-router-dom';
 import ProgressBar from '../components/progressBar.jsx';
 import {useTranslation} from "react-i18next";
+import Forest from "../components/Icons/forest";
 
 const PasswordLoginPage = ({linkFrom} ) => {
   const {t} = useTranslation()
@@ -43,6 +44,7 @@ const PasswordLoginPage = ({linkFrom} ) => {
           <NavigationButton onClick={handleClick} />
           <br/>
           <NavigationButton text={t('back')} onClick={() => navigate(linkFrom)} />
+        <Forest />
       </div>
   );
 };

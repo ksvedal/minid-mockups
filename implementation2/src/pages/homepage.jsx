@@ -5,6 +5,7 @@ import "../index.css"
 import ProgressBar from '../components/progressBar.jsx';
 import { useState } from 'react';
 import { useTranslation } from "react-i18next";
+import Mountains from "../components/Icons/mountains";
 
 const Homepage = ( {linkTo} ) => {
     const {t} = useTranslation()
@@ -117,7 +118,7 @@ const Homepage = ( {linkTo} ) => {
                   to={"./noActivationLetter"}>
                  {t('haveYouNotMinIdUser')}
             </Link>
-
+            <Mountains />
         </div>
     );
 };

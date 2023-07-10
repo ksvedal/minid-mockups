@@ -25,7 +25,7 @@ module.exports = {
         'custom-yellow': '#e6c2ff',
         'custom-very-dark-grey': '#313131',
         'custom-very-darker-grey': '#212121',
-        'custom-light-purple': '#F5EDEA',
+        'custom-light-purple': 'rgba(120,81,144,0.5)',
         'custom-beige-background': '#FFFBF2',
         'custom-red': '#A63C4F',
         'custom-light-red': '#c17580',
