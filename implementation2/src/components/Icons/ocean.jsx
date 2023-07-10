@@ -7,8 +7,8 @@ import React from 'react';
 const Ocean = () => {
 
   return (
-    <div>
-        <FontAwesomeIcon icon={faWater}/>
+      <div className={"-bottom-24 -right-24 -rotate-45 absolute"}>
+        <FontAwesomeIcon icon={faWater} className=' text-custom-light-purple text-[16rem]'/>
     </div>
   );
 };

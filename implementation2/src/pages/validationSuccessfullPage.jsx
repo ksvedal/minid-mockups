@@ -2,7 +2,8 @@ import React from 'react';
 import "../index.css"
 import NavigationButton from "../components/navigationButton.jsx"
 import {Link, useNavigate} from 'react-router-dom';
-import {useTranslation} from "react-i18next";
+import {I18nextProvider, useTranslation} from "react-i18next";
+import Ocean from "../components/Icons/ocean";
 
 const ValidationSuccessfullPage = ({message}) => {
     const {t} = useTranslation()
@@ -15,6 +16,7 @@ const ValidationSuccessfullPage = ({message}) => {
                 <h1 className='py-3'>{message}</h1>
                 <NavigationButton text={t('home')} onClick={() => navigate("/.")}/>
             </div>
+            <Ocean/>
         </div>
       </>
   );
