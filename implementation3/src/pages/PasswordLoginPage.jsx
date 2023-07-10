@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import NavigationButton from "../components/NavigationButton.jsx"
+import NavigationButton from "../components/navigationButton.jsx"
 import Mountains from "../components/Icons/mountains.jsx";
 import { Link, useNavigate } from 'react-router-dom';
-import ProgressBar from '../components/ProgressBar.jsx';
+import ProgressBar from '../components/progressBar.jsx';
 import {useTranslation} from "react-i18next";
 
 const PasswordLoginPage = () => {

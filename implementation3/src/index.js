@@ -1,23 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Homepage from './pages/Homepage';
-import PasswordLoginPage from './pages/PasswordLoginPage';
-import AuthenticationPage from './pages/AuthenticationPage';
-import ContactInfoPage from './pages/ContactInfoPage';
-import ValidationSuccessfullPage from './pages/ValidationSuccessfullPage';
+import Homepage from './pages/homepage';
+import PasswordLoginPage from './pages/passwordLoginPage';
+import AuthenticationPage from './pages/authenticationPage';
+import ContactInfoPage from './pages/contactInfoPage';
+import ValidationSuccessfullPage from './pages/validationSuccessfullPage';
 import LanguageButton from './components/languageButton';
 import ActivationLetterPage from './pages/activationLetter/activationLetterPage';
 import RegisterPage from './pages/activationLetter/registerUserPage';
 import DoneRegisterPage from './pages/activationLetter/doneRegisterUserPage';
-import EmailValidationPage from './pages/forgotPassword/EmailValidationPage';
+import EmailValidationPage from './pages/forgotPassword/emailValidationPage';
 import "./i18n.js"
 
 //@ts-ignore Case mismatch idk why, it doesn't look wrong and doesn't affect the program
-import Switcher from './components/SwitchDarkMode';
+import Switcher from './components/switchDarkMode';
 import NoActivationLetterPage from "./pages/activationLetter/noActivationLetterPage";
 import NoActivationLetterOrderedPage from "./pages/activationLetter/noActivationLetterOrderedPage";
-import ResetPasswordPage from './pages/forgotPassword/ResetPasswordPage';
+import ResetPasswordPage from './pages/forgotPassword/resetPasswordPage';
 import {useTranslation} from "react-i18next";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

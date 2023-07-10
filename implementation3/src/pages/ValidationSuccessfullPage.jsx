@@ -1,7 +1,7 @@
 import React from 'react';
 import "../index.css"
 import Mountains from '../components/Icons/mountains';
-import NavigationButton from "../components/NavigationButton.jsx"
+import NavigationButton from "../components/navigationButton.jsx"
 import {useNavigate} from 'react-router-dom';
 import {useTranslation} from "react-i18next";
 

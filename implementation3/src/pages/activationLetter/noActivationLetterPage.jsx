@@ -2,7 +2,7 @@ import React from 'react';
 import "../../index.css"
 import NavigationButton from "../../components/navigationButton.jsx"
 import {useNavigate} from 'react-router-dom';
-import ProgressBar from "../../components/progressBar";
+import ProgressBar from '../../components/progressBar.jsx';
 import Mountains from "../../components/Icons/mountains.jsx";
 import {useTranslation} from "react-i18next";
 

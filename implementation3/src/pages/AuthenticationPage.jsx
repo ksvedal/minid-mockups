@@ -1,9 +1,9 @@
 import React, { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import NavigationButton from '../components/NavigationButton.jsx';
+import NavigationButton from '../components/navigationButton.jsx';
 import '../index.css';
 import Mountains from '../components/Icons/mountains.jsx';
-import ProgressBar from '../components/ProgressBar.jsx';
+import ProgressBar from '../components/progressBar.jsx';
 import PhoneImage from "../images/grey_smartphone.jpg";
 import {useTranslation} from "react-i18next";
 
