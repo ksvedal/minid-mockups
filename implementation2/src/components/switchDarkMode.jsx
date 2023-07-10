@@ -15,10 +15,11 @@ export default function Switcher() {
 
 	return (
 		<>
-		<DarkModeSwitch className="m-3"
+		<DarkModeSwitch className="m-3 text-black dark:text-black dark:bg-text-black"
 			checked={darkmode}
 			onChange={toggleDarkmode}
 			size={30}
+			moonColor={"black"}
 		/>
 		</>
 	);

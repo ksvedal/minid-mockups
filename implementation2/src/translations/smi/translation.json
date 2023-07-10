@@ -23,6 +23,8 @@
   "enterAuthenticationCode": "Čále authentiserejuvvon koda",
   "wrongAuthenticationCodeEntered": "Čállán authentiserejuvvon koda lea vašálaš",
   "orUseSMS": "Dahje geavahit SMS",
+  "scanQrWithApp": "Scan QR-koden på minID-app",
+  "orUseAuthCode": "Eller bruk autentiseringskode",
   "haveYouNotMinIdUser": "Ii leat du minID-geavaheaddji?",
 
   "confirmContactInformation": "Doarjja kontaktinformašuvnna",
