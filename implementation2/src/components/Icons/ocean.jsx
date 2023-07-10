@@ -8,7 +8,7 @@ const Ocean = () => {
 
   return (
       <div className={"-bottom-24 -right-24 -rotate-45 absolute"}>
-        <FontAwesomeIcon icon={faWater} className=' text-custom-light-purple text-[16rem]'/>
+        <FontAwesomeIcon icon={faWater} className=' text-custom-light-purple text-[16rem] dark:text-custom-light-red'/>
     </div>
   );
 };
