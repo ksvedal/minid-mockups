@@ -36,7 +36,7 @@ const LanguageButton = () => {
 
     return (
       <div>
-       <div className="dark:text-white font-bold text-gray-800 py-4 px-9 cursor-pointer" onClick={handleMenuToggle}>
+       <div className=" font-bold text-gray-800 py-4 px-9 cursor-pointer" onClick={handleMenuToggle}>
         <span className=' '>{selectedLanguage}  </span>
         <div className="inline-block">
           <FontAwesomeIcon icon={faArrowRight}

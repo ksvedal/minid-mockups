@@ -27,9 +27,10 @@ module.exports = {
         'custom-very-darker-grey': '#212121',
         'custom-light-purple': '#F5EDEA',
         'custom-beige-background': '#FFFBF2',
-        'custom-red': '#c53a3a',
+        'custom-red': '#A63C4F',
+        'custom-light-red': '#c17580',
         'custom-neon-red': '#ff8989',
-        'custom-golden': '#ffc541'
+        'custom-golden': '#ffc541',
       }
     }
   }
