@@ -1,8 +1,8 @@
 import React, {useRef} from 'react';
-import { useNavigate } from 'react-router-dom';
-import NavigationButton from "../components/NavigationButton.jsx"
+import {Link, useNavigate} from 'react-router-dom';
+import NavigationButton from "../components/navigationButton.jsx"
 import "../index.css"
-import ProgressBar from '../components/ProgressBar.jsx';
+import ProgressBar from '../components/progressBar.jsx';
 import { useState } from 'react';
 import { useTranslation } from "react-i18next";
 
@@ -56,7 +56,7 @@ const Homepage = ( {linkTo} ) => {
                 <div className="my-4 flex items-center justify-center space-x-4">
                     <input
                         ref={(ref) => inputRefs.current[0] = ref} // Store the input reference in inputRefs.current[0]
-                        placeholder="0"
+                        placeholder=""
                         pattern="[a-zA-Z0-9]"
                         maxLength={1}
                         onChange={(event) => handleInputChange(0, event)}
@@ -65,7 +65,7 @@ const Homepage = ( {linkTo} ) => {
                     />
                     <input
                         ref={(ref) => inputRefs.current[1] = ref}
-                        placeholder="0"
+                        placeholder=""
                         pattern="[a-zA-Z0-9]"
                         maxLength={1}
                         onChange={(event) => handleInputChange(1, event)}
@@ -74,7 +74,7 @@ const Homepage = ( {linkTo} ) => {
                     />
                     <input
                         ref={(ref) => inputRefs.current[2] = ref}
-                        placeholder="0"
+                        placeholder=""
                         pattern="[a-zA-Z0-9]"
                         maxLength={1}
                         onChange={(event) => handleInputChange(2, event)}
@@ -83,7 +83,7 @@ const Homepage = ( {linkTo} ) => {
                     />
                     <input
                         ref={(ref) => inputRefs.current[3] = ref}
-                        placeholder="0"
+                        placeholder=""
                         pattern="[a-zA-Z0-9]"
                         maxLength={1}
                         onChange={(event) => handleInputChange(3, event)}
@@ -92,7 +92,7 @@ const Homepage = ( {linkTo} ) => {
                     />
                     <input
                         ref={(ref) => inputRefs.current[4] = ref}
-                        placeholder="0"
+                        placeholder=""
                         pattern="[a-zA-Z0-9]"
                         maxLength={1}
                         onChange={(event) => handleInputChange(4, event)}
@@ -106,13 +106,17 @@ const Homepage = ( {linkTo} ) => {
             <div className=' absolute bottom-0'>
             </div>
 
-            <a className="text-center my-4 text-2xl underline font-semibold text-bold font-sans subpixel-antialiased text-custom-purple dark:text-custom-red"
-                href="./password"> {t('orUseSMS')}
-            </a>
+            <Link
+                className="text-center m-2 hover:text-custom-golden font-semibold underline text-bold font-sans subpixel-antialiased text-custom-purple dark:text-custom-red"
+                to={"./sms"}>
+                {t('orUseSMS')}
+            </Link>
 
-            <a className="text-center my-4 font-semibold underline text-bold font-sans subpixel-antialiased text-custom-purple dark:text-custom-red"
-               href="./password"> {t('haveYouNotMinIdUser')}
-            </a>
+            <Link
+                className="text-center m-2 hover:text-custom-golden font-semibold underline text-bold font-sans subpixel-antialiased text-custom-purple dark:text-custom-red"
+                  to={"./noActivationLetter"}>
+                 {t('haveYouNotMinIdUser')}
+            </Link>
 
         </div>
     );

@@ -1,8 +1,8 @@
 import React from 'react';
 import "../../index.css"
-import NavigationButton from "../../components/NavigationButton.jsx"
+import NavigationButton from "../../components/navigationButton.jsx"
 import {Link, useNavigate} from 'react-router-dom';
-import ProgressBar from "../../components/ProgressBar";
+import ProgressBar from "../../components/progressBar";
 import {useTranslation} from "react-i18next";
 
 const NoActivationLetterPage = () => {
@@ -11,16 +11,15 @@ const NoActivationLetterPage = () => {
 
     return (
         <>
-            <div className={"flex flex-col items-center justify-center h-screen"}>
-                <ProgressBar totalTasks={3} completedTasks={2} />
-
+            <div className="flex flex-col items-center justify-center h-screen">
+                <ProgressBar totalTasks={4} completedTasks={2} />
+                <div className="w-full px-10 flex flex-col items-center">
                 <h1 className='py-3 text-center m-10'>
                     {t('hasNotCreatedUserPressOrderToCreate')}
                 </h1>
             </div>
-            <div className={"absolute w-1/2 px-10 m-10 bottom-0"}>
-                <NavigationButton text={t('orderActivationLetter')} onClick={() => navigate("/noactivationletterordered")}/>
-                <NavigationButton text={t('back')} onClick={() => navigate("/.")}/>
+            <NavigationButton text={t('orderActivationLetter')} onClick={() => navigate("/noactivationletterordered")}/>
+            <NavigationButton text={t('back')} onClick={() => navigate("/.")}/>
             </div>
         </>
     );

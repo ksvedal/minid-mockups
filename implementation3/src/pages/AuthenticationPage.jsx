@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import NavigationButton from '../components/NavigationButton.jsx';
 import '../index.css';
+import Mountains from '../components/Icons/Mountains.jsx';
 import ProgressBar from '../components/ProgressBar.jsx';
 import PhoneImage from "../images/grey_smartphone.jpg";
 import {useTranslation} from "react-i18next";
@@ -49,17 +50,20 @@ const AuthenticationPage = ({linkFrom, linkTo, completedTasks, totalTasks}) => {
   };
    
   return (
-    <div className="flex flex-col items-center h-screen">
+    <div className="flex flex-col items-center h-screen text-custom-black dark:text-custom-white">
       <ProgressBar totalTasks={totalTasks} completedTasks={completedTasks} />
-      <h1 className="text-3xl font-bold mb-12">{t('smscode')}</h1>
-      <div className="w-full px-10 flex flex-col items-center">
+      <h1 className="absolute top-52 text-3xl font-bold">{t('smscode')}</h1>
+      <div className="w-full flex flex-col items-center">
         <div className="flex items-center">
-          <img className="pb-16" src={PhoneImage} width="250px" alt="Grey Smartphone" />
+          <img className="pb-16 mt-28" src={PhoneImage} width="250px" alt="Grey Smartphone" />
         </div>
-        <h1 className={`my-2 ${errorMessage ? 'text-custom-red' : 'text-custom-black'} absolute top-96 left-36`}> 
+
+        <h1 className={`my-2 ${errorMessage ? 'text-custom-red' : 'text-custom-black dark:text-custom-white'} absolute bottom-96`}> 
         {errorMessage ? errorMessage : t('enterAuthenticationCode')}
         </h1>
-        <div className=" mb-44 mt-2 flex items-center space-x-2">
+        
+        <div className=''>
+        <div className=" mb-28 mt-2 flex items-center space-x-2">
           <input
             ref={(ref) => inputRefs.current[0] = ref} // Store the input reference in inputRefs.current[0]
             placeholder="0"
@@ -113,14 +117,15 @@ const AuthenticationPage = ({linkFrom, linkTo, completedTasks, totalTasks}) => {
             ${errorMessage ? 'border-custom-red' : 'border-custom-lightgrey'}`}
           />
         </div>
+        </div>
        {/*  <p className={"my-2 text-red-700 absolute bottom-1/3 left-36"}>{errorMessage && <p> {errorMessage}</p >}</p> */}
       </div>
-      <div className="absolute w-7/12 bottom-32 text-center right-0 ">
-        <NavigationButton onClick={handleNextClick} />
-      </div>
-      <div className={"absolute w-7/12 bottom-8 text-center left-0 "}>
-        <NavigationButton text={t('cancel')} onClick={() => navigate(linkFrom)} />
-      </div>
+
+      <Mountains />
+
+      <NavigationButton position={'right'} onClick={handleNextClick} />
+      <NavigationButton position={'left'} text={t('cancel')} onClick={() => navigate(linkFrom)} />
+
     </div>
   );
 };

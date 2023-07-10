@@ -12,10 +12,10 @@ const ProgressBar = ({ totalTasks, completedTasks }) => {
             return (
               <React.Fragment key={index}>
                 {showLine && (
-                  <div className={`h-1.5 w-6 ${isCompleted ? 'bg-custom-purple dark:bg-custom-yellow' : 'bg-white '}`} />
+                  <div className={`h-1.5 shadow-md w-6 ${isCompleted ? 'bg-custom-purple dark:bg-custom-yellow' : 'bg-white '}`} />
                 )}
                 <div
-                  className={`h-6 w-6 rounded-full ${isCompleted ? 'bg-custom-purple dark:bg-custom-light-red' : 'bg-white'}`}
+                  className={`h-6 w-6 shadow-md rounded-full ${isCompleted ? 'bg-custom-purple dark:bg-custom-light-red' : 'bg-white'}`}
                 />
               </React.Fragment>
             );

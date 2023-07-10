@@ -1,16 +1,16 @@
 import React, { useState, useRef } from 'react';
-import { useNavigate } from 'react-router-dom'
-import '../../index.css';
-import ProgressBar from '../../components/ProgressBar.jsx';
-import MailImage from '../../images/envelope.png';
-import NavigationButton from '../../components/NavigationButton';
+import { useNavigate } from 'react-router-dom';
+import NavigationButton from '../components/navigationButton.jsx';
+import '../index.css';
+import ProgressBar from '../components/progressBar.jsx';
+import PhoneImage from "../images/grey_smartphone.jpg";
 import {useTranslation} from "react-i18next";
 
-const EmailValidationPage = () => {
-  const {t} = useTranslation();
-  const navigate = useNavigate();
-  const [inputValues, setInputValues] = useState(['', '', '', '', '']);
-  const [errorMessage, setErrorMessage] = useState('');
+const AuthenticationPage = ({linkFrom, linkTo, completedTasks, totalTasks}) => {
+    const {t} = useTranslation()
+    const navigate = useNavigate();
+    const [inputValues, setInputValues] = useState(['', '', '', '', '']);
+    const [errorMessage, setErrorMessage] = useState('');
 
   const inputRefs = useRef([]);
 
@@ -34,10 +34,10 @@ const EmailValidationPage = () => {
   const handleNextClick = () => {
     const isAnyFieldEmpty = inputValues.some((value) => value === '');
     if (isAnyFieldEmpty) {
-      setErrorMessage('Feil kode inntastet');
+      setErrorMessage(t('wrongAuthenticationCodeEntered'));
       return;
     }
-    navigate("/resetPassword");
+    navigate(linkTo);
   };
 
   const handleKeyDown = (index, event) => {
@@ -50,14 +50,14 @@ const EmailValidationPage = () => {
    
   return (
     <div className="flex flex-col items-center justify-center h-screen">
-      <ProgressBar totalTasks={5} completedTasks={4} />
+      <ProgressBar totalTasks={totalTasks} completedTasks={completedTasks} />
       <div className="w-full px-10 flex flex-col items-center">
         <div className="flex items-center justify-center">
-          <img className="pb-16" src={MailImage} width="150px" alt="Envelope" />
+          <img className="pb-5" src={PhoneImage} width="250px" alt="Grey Smartphone" />
         </div>
-        <h1 className="text-center">{t('enterActivationCodeByEmail')}</h1>
-        <div className="mb-3 mt-2 flex items-center justify-center space-x-2">
-        <input
+        <h1 className="text-center">{t('enterAuthenticationCode')}</h1>
+        <div className="mb-14 mt-2 flex items-center justify-center space-x-2">
+          <input
             ref={(ref) => inputRefs.current[0] = ref} // Store the input reference in inputRefs.current[0]
             placeholder="0"
             pattern="[a-zA-Z0-9]" 
@@ -108,10 +108,10 @@ const EmailValidationPage = () => {
       </div>
       <div className="absolute m-10 w-1/2 px-10 bottom-0">
         <NavigationButton onClick={handleNextClick} />
-        <NavigationButton text={t('cancel')} onClick={() => navigate("/authentication2")} />
+        <NavigationButton text={t('cancel')} onClick={() => navigate(linkFrom)} />
       </div>
     </div>
   );
 };
 
-export default EmailValidationPage;
+export default AuthenticationPage;
