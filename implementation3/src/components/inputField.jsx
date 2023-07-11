@@ -15,11 +15,7 @@ const InputField = ({ placeholder, pattern, type, autofocus }) => {
     <div>
       <input
         autoFocus={autofocus}
-<<<<<<< HEAD
-        className={"p-3 bg-custom-white text-custom-black placeholder-custom-dark-grey border-2 border-custom-lightgrey mt-2 mb-6 w-full font-semibold dark:bg-black dark:text-white"}
-=======
         className={"p-3 bg-custom-white text-custom-black placeholder-custom-dark-grey border-2 border-custom-lightgrey mt-2 mb-6 w-full font-semibold dark:bg-black dark:text-white dark:border-black"}
->>>>>>> d954c8247d77645261c60274e0ddd69dc1ef9e5d
         type={type === 'password' ? 'password' : 'text'}
         placeholder={placeholder}
         onChange={handleInputChange}
