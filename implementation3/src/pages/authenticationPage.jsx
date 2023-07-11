@@ -72,7 +72,7 @@ const AuthenticationPage = ({linkFrom, linkTo, completedTasks, totalTasks}) => {
             autoFocus={true}
             onChange={(event) => handleInputChange(0, event)}
             onKeyDown={(event) => handleKeyDown(0, event)}
-            className={`py-6 mb-4 w-11 h-11 bg-custom-white text-custom-black border-2 text-center 
+            className={`py-6 mb-4 w-11 h-11 bg-custom-white text-custom-black border-2 text-center dark:bg-black dark:text-white 
             ${errorMessage ? 'border-custom-red' : 'border-custom-lightgrey'}`}
           />
           {/* Repeat the above pattern for the remaining inputs (1, 2, 3, 4) */}
@@ -83,7 +83,7 @@ const AuthenticationPage = ({linkFrom, linkTo, completedTasks, totalTasks}) => {
             maxLength={1}
             onChange={(event) => handleInputChange(1, event)}
             onKeyDown={(event) => handleKeyDown(1, event)}
-            className={`py-6 mb-4 w-11 h-11 bg-custom-white text-custom-black border-2 text-center 
+            className={`py-6 mb-4 w-11 h-11 bg-custom-white text-custom-black border-2 text-center dark:bg-black dark:text-white  
             ${errorMessage ? 'border-custom-red' : 'border-custom-lightgrey'}`}
           />
           <input
@@ -93,7 +93,7 @@ const AuthenticationPage = ({linkFrom, linkTo, completedTasks, totalTasks}) => {
             maxLength={1}
             onChange={(event) => handleInputChange(2, event)}
             onKeyDown={(event) => handleKeyDown(2, event)}
-            className={`py-6 mb-4 w-11 h-11 bg-custom-white text-custom-black border-2 text-center 
+            className={`py-6 mb-4 w-11 h-11 bg-custom-white text-custom-black border-2 text-center dark:bg-black dark:text-white 
             ${errorMessage ? 'border-custom-red' : 'border-custom-lightgrey'}`}
           />
           <input
@@ -103,7 +103,7 @@ const AuthenticationPage = ({linkFrom, linkTo, completedTasks, totalTasks}) => {
             maxLength={1}
             onChange={(event) => handleInputChange(3, event)}
             onKeyDown={(event) => handleKeyDown(3, event)}
-            className={`py-6 mb-4 w-11 h-11 bg-custom-white text-custom-black border-2 text-center 
+            className={`py-6 mb-4 w-11 h-11 bg-custom-white text-custom-black border-2 text-center dark:bg-black dark:text-white 
             ${errorMessage ? 'border-custom-red' : 'border-custom-lightgrey'}`}
           />
           <input
@@ -113,7 +113,7 @@ const AuthenticationPage = ({linkFrom, linkTo, completedTasks, totalTasks}) => {
             maxLength={1}
             onChange={(event) => handleInputChange(4, event)}
             onKeyDown={(event) => handleKeyDown(4, event)}
-            className={`py-6 mb-4 w-11 h-11 bg-custom-white text-custom-black border-2 text-center 
+            className={`py-6 mb-4 w-11 h-11 bg-custom-white text-custom-black border-2 text-center dark:bg-black dark:text-white  
             ${errorMessage ? 'border-custom-red' : 'border-custom-lightgrey'}`}
           />
         </div>
