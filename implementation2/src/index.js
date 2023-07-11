@@ -39,7 +39,7 @@ const App = () => {
                         </div>
                         <Routes>
                             <Route path="/" element={<HomepageQR linkTo={"/password"} />} />
-                            <Route path="/homePageAuthCode" element={<HomePageAuthCode />}/>
+                            <Route path="/homePageAuthCode" element={<HomePageAuthCode linkTo={"/password"}/>}/>
                             <Route path="/password" element={<PasswordLoginPage linkFrom={"/"} />} />
                             <Route path="/sms" element={<SmsPage linkTo={"/smsAuthentication"} linkFrom={"/"} />} />
                             <Route path="/smsAuthentication" element={<SmsAuthenticationPage linkTo={"/validationSuccessfull1"} linkFrom={"/sms"} />} />
