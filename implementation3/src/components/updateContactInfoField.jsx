@@ -30,7 +30,7 @@ const UpdateContactInfoField = ({ placeholder, pattern, autofocus }) => {
     <div className="flex items-center">
       <input
         className="p-3 bg-custom-white text-custom-black placeholder-custom-darkgrey m-1 px-10 w-full font-semibold border-2 border-custom-lightgrey
-        dark:bg-black dark:text-white"
+        dark:bg-black dark:text-white dark:border-black"
         type="text"
         placeholder={isEditing ? '' : placeholder}
         value={value}

@@ -36,8 +36,8 @@ const PasswordLoginPage = () => {
         </p>
         <div>
           <input
-            className={`p-4 bg-custom-white text-custom-black dark:bg-black dark:text-white border-2 w-full my-2 
-            ${errormessage ? 'border-custom-red' : 'border-custom-lightgrey'}`}
+            className={`p-4 bg-custom-white text-custom-black dark:bg-black dark:text-white dark:border-black border-2 w-full my-2 
+            ${errormessage ? 'border-custom-red dark:border-custom-red' : 'border-custom-lightgrey'}`}
             placeholder={t('password')}
             autoFocus={true}
             type="password"
