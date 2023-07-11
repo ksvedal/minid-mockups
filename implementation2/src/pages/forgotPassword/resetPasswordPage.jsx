@@ -13,7 +13,7 @@ const ResetPasswordPage = () => {
     return (
       <div className="flex flex-col items-center justify-center h-screen">
           <ProgressBar totalTasks={3} completedTasks={2} />
-          <div className="w-full px-10 flex flex-col items-center">
+          <div className="w-full px-10 flex flex-col items-center text-custom-black">
           <h1 className='py-5'>{t('newPassword')}</h1>
           <h1>Passord</h1>
           <InputField className='color-black' placeholder="Passord" type={"password"} />
