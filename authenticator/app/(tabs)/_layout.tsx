@@ -11,7 +11,7 @@ function TabBarIcon(props: {
   name: React.ComponentProps<typeof FontAwesome>['name'];
   color: string;
 }) {
-  return <FontAwesome size={28} style={{ marginBottom: -3 }} {...props} />;
+  return <FontAwesome size={20} style={{ padding: 5 }} {...props} />;
 }
 
 export default function TabLayout() {
@@ -20,22 +20,30 @@ export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
-      }}>
+        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].text,
+        tabBarInactiveTintColor: Colors[colorScheme ?? 'light'].textFaded,
+        tabBarStyle: {
+          backgroundColor: Colors[colorScheme ?? 'light'].background,
+            borderTopWidth: 0,
+        },
+        headerShown: false
+      }}
+
+    >
       <Tabs.Screen
         name="index"
         options={{
           title: 'Tab One',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
-          headerRight: () => (
+          tabBarIcon: ({ color }) => <TabBarIcon name="camera" color={color} />,
+          headerLeft: () => (
             <Link href="/modal" asChild>
               <Pressable>
                 {({ pressed }) => (
                   <FontAwesome
-                    name="info-circle"
+                    name="user"
                     size={25}
                     color={Colors[colorScheme ?? 'light'].text}
-                    style={{ marginRight: 15, opacity: pressed ? 0.5 : 1 }}
+                    style={{ fontWeight: 'bold', marginLeft: 15, opacity: pressed ? 0.5 : 1 }}
                   />
                 )}
               </Pressable>
@@ -46,8 +54,8 @@ export default function TabLayout() {
       <Tabs.Screen
         name="code"
         options={{
-          title: 'Tab Two',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          title: 'Autentiseringskode',
+          tabBarIcon: ({ color }) => <TabBarIcon name="hashtag" color={color} />,
         }}
       />
     </Tabs>
