@@ -59,11 +59,13 @@ This design has the same flow as implementation1, but with a different color sch
 
 
 ### Login Flow
-The login flow is illustrated below:
+The login flow of all implementations is illustrated below:
 
 <img src="./images/minID_flow.png" alt="MinID flow" style="margin: 15px">
 
-It's worth mentioning that to reach the activationLetterFlow (the blue box in the flow chart), you only need to enter one password character and then press the login button. To access the passwordFlow (the green box in the flow chart), you need to enter two password characters and then press the login button. For the normal loginFlow, you must enter all the password characters and then press the login button.
+* To reach the activationLetterFlow (the blue box in the flow chart), you need to enter any one number in the form collecting national identification numbers and then press the login button. 
+* To access the noLetterActivationLetterOrderedFlow (the green box in the flow chart), you need to enter any two numbers in the form collecting national identification numbers and then press the login button.
+* To access the normal loginFlow, you must enter any 11 numbers in the form collecting national identification numbers and then press the login button.
 
 ## Available Scripts
 
