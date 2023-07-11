@@ -41,8 +41,13 @@ const Homepage = () => {
         {errormsg ? errormsg : t('insertBirthNumber')}</h1>
           <input maxLength={11} 
                 autoFocus={true}
+<<<<<<< HEAD
                 className={`p-4 bg-custom-white text-custom-black dark:bg-black dark:text-white border-2 w-full my-2 
                 ${errormsg ? 'border-custom-red' : 'border-custom-lightgrey'}`}
+=======
+                className={`p-4 bg-custom-white text-custom-black dark:bg-black dark:border-black  dark:text-white border-2 w-full my-2 
+                ${errormsg ? 'border-custom-red dark:border-custom-red' : 'border-custom-lightgrey'}`}
+>>>>>>> d954c8247d77645261c60274e0ddd69dc1ef9e5d
                 placeholder={`11 ${t('numbers')}`} pattern={"[0-9]"} value={input} onChange={handleInput}>
           </input>
           {/* <p className={"my-1 text-custom-red absolute"}>{errormsg && <p> {errormsg}</p >}</p> */}
