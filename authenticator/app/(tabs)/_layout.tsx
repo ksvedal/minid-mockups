@@ -33,8 +33,8 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Tab One',
-          tabBarIcon: ({ color }) => <TabBarIcon name="camera" color={color} />,
+          title: 'Autentiseringskode',
+          tabBarIcon: ({ color }) => <TabBarIcon name="hashtag" color={color} />,
           headerLeft: () => (
             <Link href="/modal" asChild>
               <Pressable>
@@ -52,11 +52,18 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="code"
+        name="scanner"
         options={{
-          title: 'Autentiseringskode',
-          tabBarIcon: ({ color }) => <TabBarIcon name="hashtag" color={color} />,
+          title: 'QR Scanner',
+          tabBarIcon: ({ color }) => <TabBarIcon name="camera" color={color} />,
         }}
+      />
+      <Tabs.Screen
+            name="user"
+            options={{
+                title: 'Innstillinger',
+                tabBarIcon: ({ color }) => <TabBarIcon name="wrench" color={color} />,
+            }}
       />
     </Tabs>
   );
