@@ -1,6 +1,7 @@
 export default {
   light: {
     text: '#785190',
+    textGrey: '#343434',
     textInverse: '#ffffff',
     textFaded: '#cecdcd',
     white: '#ffffff',
@@ -11,6 +12,7 @@ export default {
   },
   dark: {
     text: '#e6c2ff',
+    textGrey: '#ececec',
     textInverse: '#000000',
     textFaded: '#5e5e5e',
     white: '#ffffff',
