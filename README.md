@@ -7,6 +7,11 @@ The design aims to be as user-friendly as possible, requiring no prior knowledge
 ## Project File Architecture
 In the project, you will find different implementations of the design organized into separate folders. The first implementation represents the original design, the second implementation showcases the optimized design, and the third implementation features the original design with a different color scheme and layout. Each design has its own root directory within the implementation folders. To run all the different designs within the project, npm is used to install the necessary dependencies and build the extension. Run npm install in all the folders to install the required dependencies. See the setup section below for more information.
 
+Following is the file structures (in order) for implementation 1, 2, and 3.
+
+<img src="./images/imp1_struct.png" alt="Implementation 1 structure" width="30%" style="margin: 30px"><img src="./images/imp2_struct.png" alt="Implementation 2 structure" width="30%" style="margin: 30px"><img src="./images/imp3_struct.png" alt="Implementation 3 structure" width="30%" style="margin: 30px">
+
+
 ## Setup
 This project was bootstrapped with Create React App.
 
