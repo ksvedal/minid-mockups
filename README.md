@@ -9,15 +9,17 @@ The design aims to be as user-friendly as possible, requiring no prior knowledge
 1. [Target Audience](#target-audience)
 2. [Project File Architecture](#project-file-architecture)
 3. [Setup](#setup)
+   - [Setup React Apps](#setup-react-apps)
+   - [Setup Mobile Authenticator](#setup-mobile-authenticator)
 4. [User Manual](#user-manual)
-    - [Login Flow](#login-flow)
-    - [Implementation 1](#implementation-1)
-    - [Implementation 2](#implementation-2)
-    - [Implementation 3](#implementation-3)
+   - [Login Flow](#login-flow)
+   - [Implementation 1](#implementation-1)
+   - [Implementation 2](#implementation-2)
+   - [Implementation 3](#implementation-3)
 5. [Available Scripts](#available-scripts)
 6. [Troubleshooting](#troubleshooting)
-    - [Error during npm install](#error-during-npm-install)
-    - [Unable to Start Development Server](#unable-to-start-development-server)
+   - [Error during npm install](#error-during-npm-install)
+   - [Unable to Start Development Server](#unable-to-start-development-server)
 7. [Learn More](#learn-more)
 
 
@@ -49,11 +51,15 @@ To set up the project, follow these steps:
 
 4. In order to shut down the project, press ctrl + c in the terminal
 
-## Setup Mobile Authenticator (React Native Using Expo)
+## Setup Mobile Authenticator
 
-1. **Go to the project directory:**
+This project was created with React Native Using Expo
+
+To set up the project, follow these steps:
+
+1. **Go to the authenticator directory:**
    ```sh
-   cd your-project-name
+   cd authenticator
    ```
 
 2. **Install dependencies:**
@@ -109,6 +115,7 @@ Activation letter flow if user dont have account:
 ### Implementation 2
 
 This app has two versions of what is essentially the same flow. Both is displayed in the demo app and can be navigated by the top link for demo purposes. But for user simplicity there is an argument to made that only one of them should be available. This solution is highly advantageous as it strikes a balance between security and user-friendliness. Although the SMS login buttons remain available, they have been downsized to encourage mobile app usage. This approach not only reduces costs for the government but also enhances user security. The app will be linked to the user's national identification number, enabling swift login procedures. When the user opens the app, they have to unlock it by either biometrics or a 4 letter pin they created upon registration. The app then generates a 5 letter code to be entered in the login flow. Opening the mobile application is therefore essentially the first step of this flow; both for the QR- and activation-code solutions. It's worth noting that this code remains active for a specific duration, ensuring both robust security and expeditious login processes.
+
 The rest of the flow (E.G. activation letter, SMS alternative and forgotten password) is similar to implementation 1.
 
 Version 1: Authentication code
@@ -146,7 +153,7 @@ Installs all the dependencies needed to run the project.
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser (Only for the React applications).
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
