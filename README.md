@@ -45,9 +45,8 @@ Normal and dark mode:
 
 Main login flow if the user has account and everything works as intended:
 
-<img src="./images/implementation1.png" alt="Implementation1 dark mode preview" width="400px">
-<img src="./images/implementation1_pw.png" alt="Implementation1 dark mode preview" width="400px">
-<img src="./images/implementation1_authcode.png" alt="Implementation1 dark mode preview" width="400px">
+<img src="./images/implementation1.png" alt="Implementation1 dark mode preview" width="49%"> <img src="./images/implementation1_pw.png" alt="Implementation1 dark mode preview" width="49%">
+<img src="./images/implementation1_authcode.png" alt="Implementation1 dark mode preview" width="49%">
 
 Activation letter flow if user dont have account:
 
