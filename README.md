@@ -51,11 +51,8 @@ Main login flow if the user has account and everything works as intended:
 
 Activation letter flow if user dont have account:
 
-<img src="./images/implementation1_letter_not_ordered.png" alt="Implementation1 dark mode preview" width="400px">
-<img src="./images/implementation1_letter_just_ordered.png" alt="Implementation1 dark mode preview" width="400px">
-<img src="./images/implementation1_letter_ordered_enter_activation_code.png" alt="Implementation1 dark mode preview" width="400px">
-<img src="./images/implementation1_letter_enter_information.png" alt="Implementation1 dark mode preview" width="400px">
-<img src="./images/implementation1_welcome.png" alt="Implementation1 dark mode preview" width="400px">
+<img src="./images/implementation1_letter_not_ordered.png" alt="Implementation1 dark mode preview" width="49%"> <img src="./images/implementation1_letter_just_ordered.png" alt="Implementation1 dark mode preview" width="49%">
+<img src="./images/implementation1_letter_ordered_enter_activation_code.png" alt="Implementation1 dark mode preview" width="49%"> <img src="./images/implementation1_letter_enter_information.png" alt="Implementation1 dark mode preview" width="49%">
 
 ### Implementation 2
 
