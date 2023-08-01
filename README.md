@@ -1,113 +1,202 @@
 # MinID Login Page - Optimized Flow
-This project presents an optimized flow for the MinID login page, focusing on improving the layout and enhancing the user experience. The development process utilizes the Tailwind CSS framework to streamline the design.
+## Summary
+The MinID Login Page project offers an optimized login experience, implementing three different designs to enhance user interaction. It utilizes the Tailwind CSS framework and is bootstrapped with Create React App. The project caters to various users by supporting multiple languages and is structured in a way that encourages a smooth user experience while keeping security in focus. Detailed instructions are provided for setup, usage, and troubleshooting.
 
 ## Target Audience
 The design aims to be as user-friendly as possible, requiring no prior knowledge of MinID. It supports multiple languages, making it suitable for non-native speakers. Basic understanding of computers is recommended for setting up the project.
 
+## Table of Contents
+1. [Summary](#summary)
+2. [Target Audience](#target-audience)
+3. [Table of Contents](#table-of-contents)
+4. [Project File Architecture](#project-file-architecture)
+5. [Scripts and dependencies](#scripts-and-dependencies)
+   - [React Web Applications](#react-web-applications)
+      - [Main Dependencies](#main-dependencies)
+      - [Development Dependencies](#development-dependencies)
+      - [Scripts](#scripts)
+      - [Others](#others)
+   - [React Native Expo Mobile Application: "authenticator"](#react-native-expo-mobile-application-"authenticator")
+      - [Main Dependencies](#main-dependencies-1)
+      - [Development Dependencies](#development-dependencies-1)
+      - [Scripts](#scripts-1)
+6. [Setup](#setup)
+   - [Setup React Apps](#setup-react-apps)
+   - [Setup Mobile Authenticator](#setup-mobile-authenticator)
+7. [User Manual](#user-manual)
+   - [Login Flow](#login-flow)
+   - [Implementation 1](#implementation-1)
+   - [Implementation 2](#implementation-2)
+   - [Implementation 3](#implementation-3)
+8. [Troubleshooting](#troubleshooting)
+   - [Error during npm install](#error-during-npm-install)
+   - [Unable to Start Development Server](#unable-to-start-development-server)
+9. [Learn More](#learn-more)
+10. [Contributors](#contributors)
+
+
 ## Project File Architecture
 In the project, you will find different implementations of the design organized into separate folders. The first implementation represents the original design, the second implementation showcases the optimized design, and the third implementation features the original design with a different color scheme and layout. Each design has its own root directory within the implementation folders. To run all the different designs within the project, npm is used to install the necessary dependencies and build the extension. Run npm install in all the folders to install the required dependencies. See the setup section below for more information.
 
-## Setup
+Following is the file structures (in order) for implementation 1, 2, and 3.
+
+<img src="./images/imp1_struct.png" alt="Implementation 1 structure" width="30%" style="margin: 30px"><img src="./images/imp2_struct.png" alt="Implementation 2 structure" width="30%" style="margin: 30px"><img src="./images/imp3_struct.png" alt="Implementation 3 structure" width="30%" style="margin: 30px">
+
+## Scripts and dependencies
+### React Web Applications:
+
+#### Main Dependencies:
+- **React & ReactDOM**: `^18.2.0` - The core libraries for building user interfaces.
+- **React Router DOM**: `^6.14.0` - A collection of navigational components.
+- **FontAwesome**: `^6.4.0` - Icons library.
+- **i18next** & **react-i18next**: `^23.2.6` & `^13.0.1` respectively - Used for internationalization and language selection.
+- **react-toggle-dark-mode**: `^1.1.1` - A package to manage dark mode toggling.
+
+#### Development Dependencies:
+- **Tailwind CSS**: `^3.3.2` - A utility-first CSS framework.
+
+#### Scripts:
+- `start`: Start the development server.
+- `build`: Builds the production version of the app.
+- `test`: Run the test suite.
+- `eject`: Ejects the configuration and scripts from `react-scripts`.
+
+#### Others:
+- ESLint configuration for linting.
+- Browserlist to control the browsers supported in development and production.
+
+### React Native Expo Mobile Application: "authenticator"
+
+#### Main Dependencies:
+- **Expo SDK**: `~48.0.18` - A framework for building native apps.
+- **React Navigation**: Various packages for handling navigation.
+- **React Native Reanimated**: `^3.3.0` - Enhanced animations.
+- **Expo Barcode Scanner**: `~12.3.2` - Scanning barcodes functionality.
+- **React Native SVG**: `^13.10.0` - SVG rendering.
+
+#### Development Dependencies:
+- **TypeScript**: `^4.9.4` - Static type-checking along with the latest ECMAScript features.
+- **Jest & Jest Expo**: `^29.2.1` & `~48.0.0` - Testing library.
+
+#### Scripts:
+- `start`: Start the development server.
+- `android`, `ios`, `web`: Start the development server for specific platforms.
+- `test`: Run the test suite.
+
+
+## Setup React Apps
+
 This project was bootstrapped with Create React App.
 
 To set up the project, follow these steps:
 
-1. Open the root directory of the extension (implementation1, implementation2 or implementation3) in a terminal.
+1. **Open the root directory of the extension (implementation1, implementation2 or implementation3) in a terminal.**
 
-2. Run the following commands in the terminal:
+2. **Run the following commands in the terminal:**
+    ```sh
+    npm install
+    ```
+    ```sh
+    npm start
+    ```
+   
+3. **This will open the project in development mode in your browser, at localhost:3000. Hee you can see the preview of the given implementation, and navigate through the design.**
 
+4. **In order to shut down the project, press ctrl + c in the terminal**
 
-    ```npm install```
+## Setup Mobile Authenticator
 
-    ```npm start```
+This project was created with React Native Using Expo
 
-3. This will open the project in development mode in your browser, at localhost:3000. Hee you can see the preview of the given implementation, and navigate through the design. 
+To set up the project, follow these steps:
 
-4. In order to shut down the project, press ctrl + c in the terminal
+1. **Go to the authenticator directory:**
+   ```sh
+   cd authenticator
+   ```
 
+2. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```sh
+   expo start
+   ```
+   
+4. **Scan the QR code with the Expo Go app or run on an emulator.**
+
+5. **For more details, refer to the [Expo documentation](https://docs.expo.dev/).**
 
 ## User Manual
 When you open the project in your browser, you will see the MinID login page. You can navigate through the different pages of the login process, depending on which implementation you are using. Below are previews of the different designs, including both normal and dark mode, along with explanations of the login process for each implementation.
 
-### Implementation 1
-
-Normal and dark mode:
-
-<img src="./images/implementation1.jpg" alt="Implementation1 preview" width="800" style="margin: 15px">
-<img src="./images/implementation1_dark.jpg" alt="Implementation1 dark mode preview" width="800" style="margin: 15px">
-
-This design uses birth number first to make the login process easier for the user. However, this solution is not very secure because of the risk of sanitizing of national identification number, and therefore we do not recommend this implementation. 
-
-
-### Implementation 2
-
-Normal and dark mode:
-
-<img src="./images/implementation2.jpg" alt="Implementation2 preview" width="800" style="margin: 15px">
-<img src="./images/implementation2_dark.jpg" alt="Implementation2 dark mode preview" width="800" style="margin: 15px">
-
-This design incorporates a QR code to enhance the user's login experience. The QR code is generated by the MinID app, allowing users to conveniently log in by scanning it. This solution is highly advantageous as it strikes a balance between security and user-friendliness. Although the SMS login buttons remain available, they have been downsized to encourage QR code usage. This approach not only reduces costs for the government but also enhances user security. The app will be linked to the user's national identification number, enabling swift login procedures. Upon scanning the QR code, the app provides login options through biometrics or by generating a 5-letter code for manual input. It's worth noting that this code remains active for a specific duration, ensuring both robust security and expeditious login processes.
-
-### Implementation 3
-
-Normal and dark mode:
-
-<img src="./images/implementation3.jpg" alt="Implementation1 preview" width="800" style="margin: 15px">
-<img src="./images/implementation3_dark.jpg" alt="Implementation1 dark mode preview" width="800" style="margin: 15px">
-
-This design has the same flow as implementation1, but with a different color scheme and layout.
-
-
 ### Login Flow
-The login flow of all implementations is illustrated below:
+The login flow of implementation 1 and 3 is illustrated below:
 
 <img src="./images/minID_flow.png" alt="MinID flow" style="margin: 15px">
 
-* To reach the activationLetterFlow (the blue box in the flow chart), you need to enter any one number in the form collecting national identification numbers and then press the login button. 
+* To reach the activationLetterFlow (the blue box in the flow chart), you need to enter any one number in the form collecting national identification numbers and then press the login button.
 * To access the noLetterActivationLetterOrderedFlow (the green box in the flow chart), you need to enter any two numbers in the form collecting national identification numbers and then press the login button.
 * To access the normal loginFlow, you must enter any 11 numbers in the form collecting national identification numbers and then press the login button.
 
-## Available Scripts
+The login flow of implementation 2 is illustrated below:
 
-In the project directory, you can run:
+<img src="./images/minID_flow_2.png" alt="MinID flow" style="margin: 15px">
 
-### `npm install`
+* The "use App" portion of the flow will either consist of QR-code or authentication code. This is dependent on what is implemented. For simplicity for the user it is preferred that only one of these is implemented. In the current iteration the user first gets presented with the QR-code page and then can move on to the authentication page. This is only for presentation purposes.
 
-Installs all the dependencies needed to run the project.
+### Implementation 1
 
-### `npm start`
+This design uses birth number first to make the login process easier for the user. However, this solution is not very secure because of the risk of sanitizing of national identification number, and therefore we do not recommend this implementation. 
+The flow is very similar to the current solution, but a notable change is that the social security number and password fields have been separated to prevent the user getting overwhelmed.
+Dark and normal mode:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<img src="./images/implementation1_dark.png" alt="Implementation1 dark mode preview" width="49%"> <img src="./images/implementation1.png" alt="Implementation1 preview" width="49%">
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Main login flow if the user has account and everything works as intended:
 
-### `npm test`
+<img src="./images/implementation1.png" alt="Implementation1 SSN" width="49%"> <img src="./images/implementation1_pw.png" alt="Implementation1 password" width="49%">
+<img src="./images/implementation1_authcode.png" alt="Implementation1 authentication code" width="49%">
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Activation letter flow if user dont have account:
 
-### `npm run build`
+<img src="./images/implementation1_letter_not_ordered.png" alt="Implementation1 letter not ordered" width="49%"> <img src="./images/implementation1_letter_just_ordered.png" alt="Implementation1 letter just ordered" width="49%">
+<img src="./images/implementation1_letter_ordered_enter_activation_code.png" alt="Implementation1 letter ordered" width="49%"> <img src="./images/implementation1_letter_enter_information.png" alt="Implementation1 letter activated enter information" width="49%">
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Implementation 2
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This app has two versions of what is essentially the same flow. Both is displayed in the demo app and can be navigated by the top link for demo purposes. But for user simplicity there is an argument to be made that only one of them should be available. This solution is highly advantageous as it strikes a balance between security and user-friendliness. Although the SMS login buttons remain available, they have been downsized to encourage mobile app usage. This approach not only reduces costs for the government but also enhances user security. The app will be linked to the user's national identification number, enabling swift login procedures. When the user opens the app, they have to unlock it by either biometrics or a 4 letter pin they created upon registration. The app then generates a 5 letter code to be entered in the login flow. Opening the mobile application is therefore essentially the first step of this flow; both for the QR- and activation-code solutions. It's worth noting that this code remains active for a specific duration, ensuring both robust security and expeditious login processes.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The rest of the flow (E.G. activation letter, SMS alternative and forgotten password) is similar to implementation 1.
 
-### `npm run eject`
+Neither the Application nor the authenticator is implemented to communicate with each other in any way and this is just a mockup.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Version 1: Authentication code
+The app then generates a 5 letter code to be entered in the login flow.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Version 2: QR-code
+The login flow generates a QR code for the user to scan with their app.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Authentication code and QR-code presesentation:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-¨
+<img src="./images/implementation2_authcode.png" alt="Implementation2 authentication code" width="49%"> <img src="./images/implementation2_qr.png" alt="Implementation2 QR code" width="49%">
+
+Mobile authenticator:
+These images show the code generator with a moving slide to display how long the code will last along with the qr scanner on the last image:
+
+<img src="./images/mobile_auth_1.jpg" alt="Implementation2 mobile" width="32%"> <img src="./images/mobile_auth_2.jpg" alt="Implementation2 mobile 2" width="32%"> <img src="./images/mobile_auth_3.jpg" alt="Implementation2 mobile QR" width="32%">
+
+### Implementation 3
+
+This design has the same flow as implementation1, but with a different color scheme and layout.
+
+Dark and normal mode:
+
+<img src="./images/implementation3_dark.png" alt="Implementation1 dark mode" width="49%" style="margin: 15px"> <img src="./images/implementation3.png" alt="Implementation1" width="49%" style="margin: 15px">
+
+
 ## Troubleshooting
 
 ### Error during npm install
@@ -142,3 +231,22 @@ To learn more about creating and configuring React applications, you can visit t
 
 Additional documentation and guides for React and Create React App can be found within the respective documentation sites.
 
+## Contributors
+
+Contributions to this project:
+
+**Andreas Conradi Nitschke** - [andreascnits](https://github.com/andreascnits)
+
+**Audun Kristian Oklevik** - [AudunKristian](https://github.com/AudunKristian)
+
+**Brage Navarsete** - [BrageAsperandenNavarsete](https://github.com/BrageAsperandenNavarsete)
+
+**Eiril Solveig Ugulen** - [Eiril](https://github.com/Eiril)
+
+**Kae Saito** - [kaechin](https://github.com/kaechin)
+
+**Kristian Birkeli** - [krigubir](https://github.com/krigubir)
+
+**Kristoffer Svedal** - [ksvedal](https://github.com/ksvedal)
+
+**Thea Ueland** - [theaueland](https://github.com/theaueland)
