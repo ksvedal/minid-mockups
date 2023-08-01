@@ -100,9 +100,9 @@ To set up the project, follow these steps:
     npm start
     ```
    
-3. This will open the project in development mode in your browser, at localhost:3000. Hee you can see the preview of the given implementation, and navigate through the design. 
+3. **This will open the project in development mode in your browser, at localhost:3000. Hee you can see the preview of the given implementation, and navigate through the design.**
 
-4. In order to shut down the project, press ctrl + c in the terminal
+4. **In order to shut down the project, press ctrl + c in the terminal**
 
 ## Setup Mobile Authenticator
 
@@ -126,8 +126,8 @@ To set up the project, follow these steps:
    ```
    
 4. **Scan the QR code with the Expo Go app or run on an emulator.**
-5. 
-    For more details, refer to the [Expo documentation](https://docs.expo.dev/).
+
+5. **For more details, refer to the [Expo documentation](https://docs.expo.dev/).**
 
 ## User Manual
 When you open the project in your browser, you will see the MinID login page. You can navigate through the different pages of the login process, depending on which implementation you are using. Below are previews of the different designs, including both normal and dark mode, along with explanations of the login process for each implementation.
