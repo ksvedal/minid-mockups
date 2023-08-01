@@ -38,12 +38,24 @@ When you open the project in your browser, you will see the MinID login page. Yo
 ### Implementation 1
 
 This design uses birth number first to make the login process easier for the user. However, this solution is not very secure because of the risk of sanitizing of national identification number, and therefore we do not recommend this implementation. 
-
+The flow is very similar to the current solution, but a notable change is that the social security number and password fields have been separated to prevent the user getting overwhelmed.
 Normal and dark mode:
 
-<img src="./images/implementation1.jpg" alt="Implementation1 preview" width="800" style="margin: 15px">
-<img src="./images/implementation1_dark.jpg" alt="Implementation1 dark mode preview" width="800" style="margin: 15px">
+<img src="./images/implementation1_dark.png" alt="Implementation1 dark mode preview" width="49%"> <img src="./images/implementation1.png" alt="Implementation1 preview" width="49%">
 
+Main login flow if the user has account and everything works as intended:
+
+<img src="./images/implementation1.png" alt="Implementation1 dark mode preview" width="33%">
+<img src="./images/implementation1_pw.png" alt="Implementation1 dark mode preview" width="33%">
+<img src="./images/implementation1_authcode.png" alt="Implementation1 dark mode preview" width="33%">
+
+Activation letter flow if user dont have account:
+
+<img src="./images/implementation1_letter_not_ordered.png" alt="Implementation1 dark mode preview" width="33%">
+<img src="./images/implementation1_letter_just_ordered.png" alt="Implementation1 dark mode preview" width="33%">
+<img src="./images/implementation1_letter_ordered_enter_activation_code.png" alt="Implementation1 dark mode preview" width="33%">
+<img src="./images/implementation1_letter_enter_information.png" alt="Implementation1 dark mode preview" width="33%">
+<img src="./images/implementation1_welcome.png" alt="Implementation1 dark mode preview" width="33%">
 
 ### Implementation 2
 
@@ -79,9 +91,10 @@ The login flow of implementation 1 and 3 is illustrated below:
 * To access the normal loginFlow, you must enter any 11 numbers in the form collecting national identification numbers and then press the login button.
 
 The login flow of implementation 2 is illustrated below:
+
 <img src="./images/minID_flow_2.png" alt="MinID flow" style="margin: 15px">
 
-* The "use App" portion of the flow will either consist of QR-code or authentication code. This is dependent on what is implemented. For simplicity for the user it is preffered that only one of these is implemented. In the current iteration the user first gets presented with the QR-code page and then can move on to the authentication page. This is only for presentation purposes.
+* The "use App" portion of the flow will either consist of QR-code or authentication code. This is dependent on what is implemented. For simplicity for the user it is preferred that only one of these is implemented. In the current iteration the user first gets presented with the QR-code page and then can move on to the authentication page. This is only for presentation purposes.
 
 ## Available Scripts
 
