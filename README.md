@@ -6,21 +6,32 @@ The MinID Login Page project offers an optimized login experience, implementing 
 The design aims to be as user-friendly as possible, requiring no prior knowledge of MinID. It supports multiple languages, making it suitable for non-native speakers. Basic understanding of computers is recommended for setting up the project.
 
 ## Table of Contents
-1. [Target Audience](#target-audience)
-2. [Project File Architecture](#project-file-architecture)
-3. [Setup](#setup)
+1. [Summary](#summary)
+2. [Target Audience](#target-audience)
+3. [Table of Contents](#table-of-contents)
+4. [Project File Architecture](#project-file-architecture)
+5. [Scripts and dependencies](#scripts-and-dependencies)
+   - [React Web Applications](#react-web-applications)
+      - [Main Dependencies](#main-dependencies)
+      - [Development Dependencies](#development-dependencies)
+      - [Scripts](#scripts)
+      - [Others](#others)
+   - [React Native Expo Mobile Application: "authenticator"](#react-native-expo-mobile-application-"authenticator")
+      - [Main Dependencies](#main-dependencies-1)
+      - [Development Dependencies](#development-dependencies-1)
+      - [Scripts](#scripts-1)
+6. [Setup](#setup)
    - [Setup React Apps](#setup-react-apps)
    - [Setup Mobile Authenticator](#setup-mobile-authenticator)
-4. [User Manual](#user-manual)
+7. [User Manual](#user-manual)
    - [Login Flow](#login-flow)
    - [Implementation 1](#implementation-1)
    - [Implementation 2](#implementation-2)
    - [Implementation 3](#implementation-3)
-5. [Available Scripts](#available-scripts)
-6. [Troubleshooting](#troubleshooting)
+8. [Troubleshooting](#troubleshooting)
    - [Error during npm install](#error-during-npm-install)
    - [Unable to Start Development Server](#unable-to-start-development-server)
-7. [Learn More](#learn-more)
+9. [Learn More](#learn-more)
 
 
 ## Project File Architecture
@@ -37,7 +48,7 @@ Following is the file structures (in order) for implementation 1, 2, and 3.
 - **React & ReactDOM**: `^18.2.0` - The core libraries for building user interfaces.
 - **React Router DOM**: `^6.14.0` - A collection of navigational components.
 - **FontAwesome**: `^6.4.0` - Icons library.
-- **i18next** & **react-i18next**: `^23.2.6` & `^13.0.1` respectively - Used for internationalization.
+- **i18next** & **react-i18next**: `^23.2.6` & `^13.0.1` respectively - Used for internationalization and language selection.
 - **react-toggle-dark-mode**: `^1.1.1` - A package to manage dark mode toggling.
 
 #### Development Dependencies:
@@ -70,6 +81,7 @@ Following is the file structures (in order) for implementation 1, 2, and 3.
 - `start`: Start the development server.
 - `android`, `ios`, `web`: Start the development server for specific platforms.
 - `test`: Run the test suite.
+
 
 ## Setup React Apps
 
@@ -184,47 +196,6 @@ Dark and normal mode:
 <img src="./images/implementation3_dark.png" alt="Implementation1 dark mode" width="49%" style="margin: 15px"> <img src="./images/implementation3.png" alt="Implementation1" width="49%" style="margin: 15px">
 
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm install`
-
-Installs all the dependencies needed to run the project.
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser (Only for the React applications).
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-¨
 ## Troubleshooting
 
 ### Error during npm install
