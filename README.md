@@ -118,6 +118,8 @@ This app has two versions of what is essentially the same flow. Both is displaye
 
 The rest of the flow (E.G. activation letter, SMS alternative and forgotten password) is similar to implementation 1.
 
+Neither the Application or authenticator is implemented to communicate with each other in any way and this is just a mockup.
+
 Version 1: Authentication code
 The app then generates a 5 letter code to be entered in the login flow.
 
