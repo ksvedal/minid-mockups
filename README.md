@@ -29,24 +29,46 @@ Following is the file structures (in order) for implementation 1, 2, and 3.
 <img src="./images/imp1_struct.png" alt="Implementation 1 structure" width="30%" style="margin: 30px"><img src="./images/imp2_struct.png" alt="Implementation 2 structure" width="30%" style="margin: 30px"><img src="./images/imp3_struct.png" alt="Implementation 3 structure" width="30%" style="margin: 30px">
 
 
-## Setup
+## Setup React Apps
+
 This project was bootstrapped with Create React App.
 
 To set up the project, follow these steps:
 
-1. Open the root directory of the extension (implementation1, implementation2 or implementation3) in a terminal.
+1. **Open the root directory of the extension (implementation1, implementation2 or implementation3) in a terminal.**
 
-2. Run the following commands in the terminal:
-
-
-    ```npm install```
-
-    ```npm start```
-
+2. **Run the following commands in the terminal:**
+    ```sh
+    npm install
+    ```
+    ```sh
+    npm start
+    ```
+   
 3. This will open the project in development mode in your browser, at localhost:3000. Hee you can see the preview of the given implementation, and navigate through the design. 
 
 4. In order to shut down the project, press ctrl + c in the terminal
 
+## Setup Mobile Authenticator (React Native Using Expo)
+
+1. **Go to the project directory:**
+   ```sh
+   cd your-project-name
+   ```
+
+2. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```sh
+   expo start
+   ```
+   
+4. **Scan the QR code with the Expo Go app or run on an emulator.**
+5. 
+    For more details, refer to the [Expo documentation](https://docs.expo.dev/).
 
 ## User Manual
 When you open the project in your browser, you will see the MinID login page. You can navigate through the different pages of the login process, depending on which implementation you are using. Below are previews of the different designs, including both normal and dark mode, along with explanations of the login process for each implementation.
@@ -102,7 +124,7 @@ Authentication code and QR-code presesentation:
 Mobile authenticator:
 These images shows the code generator with a moving slide to display how long the code will last along with the qr scanner on the last image:
 
-<img src="./images/mobile_auth_1.jpg" alt="Implementation2 mobile" width="33%"> <img src="./images/mobile_auth_2.jpg" alt="Implementation2 mobile 2" width="33%"> <img src="./images/mobile_auth_3.jpg" alt="Implementation2 mobile QR" width="33%">
+<img src="./images/mobile_auth_1.jpg" alt="Implementation2 mobile" width="32%"> <img src="./images/mobile_auth_2.jpg" alt="Implementation2 mobile 2" width="32%"> <img src="./images/mobile_auth_3.jpg" alt="Implementation2 mobile QR" width="32%">
 
 ### Implementation 3
 
