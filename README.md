@@ -57,8 +57,7 @@ The login flow generates a QR code for the user to scan with their app.
 
 Authentication code and QR-code presesentation:
 
-<img src="./images/implementation2.jpg" alt="Implementation2 preview" width="800" style="margin: 15px">
-<img src="./images/implementation2_dark.jpg" alt="Implementation2 dark mode preview" width="800" style="margin: 15px">
+<img src="./images/implementation2_authcode.png" alt="Implementation2 preview" width="49%"> <img src="./images/implementation2_qr.png" alt="Implementation2 dark mode preview" width="49%">
 
 
 ### Implementation 3
