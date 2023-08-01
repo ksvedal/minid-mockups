@@ -45,21 +45,22 @@ Normal and dark mode:
 
 Main login flow if the user has account and everything works as intended:
 
-<img src="./images/implementation1.png" alt="Implementation1 dark mode preview" width="33%">
-<img src="./images/implementation1_pw.png" alt="Implementation1 dark mode preview" width="33%">
-<img src="./images/implementation1_authcode.png" alt="Implementation1 dark mode preview" width="33%">
+<img src="./images/implementation1.png" alt="Implementation1 dark mode preview" width="400px">
+<img src="./images/implementation1_pw.png" alt="Implementation1 dark mode preview" width="400px">
+<img src="./images/implementation1_authcode.png" alt="Implementation1 dark mode preview" width="400px">
 
 Activation letter flow if user dont have account:
 
-<img src="./images/implementation1_letter_not_ordered.png" alt="Implementation1 dark mode preview" width="33%">
-<img src="./images/implementation1_letter_just_ordered.png" alt="Implementation1 dark mode preview" width="33%">
-<img src="./images/implementation1_letter_ordered_enter_activation_code.png" alt="Implementation1 dark mode preview" width="33%">
-<img src="./images/implementation1_letter_enter_information.png" alt="Implementation1 dark mode preview" width="33%">
-<img src="./images/implementation1_welcome.png" alt="Implementation1 dark mode preview" width="33%">
+<img src="./images/implementation1_letter_not_ordered.png" alt="Implementation1 dark mode preview" width="400px">
+<img src="./images/implementation1_letter_just_ordered.png" alt="Implementation1 dark mode preview" width="400px">
+<img src="./images/implementation1_letter_ordered_enter_activation_code.png" alt="Implementation1 dark mode preview" width="400px">
+<img src="./images/implementation1_letter_enter_information.png" alt="Implementation1 dark mode preview" width="400px">
+<img src="./images/implementation1_welcome.png" alt="Implementation1 dark mode preview" width="400px">
 
 ### Implementation 2
 
 This app has two versions of what is essentially the same flow. Both is displayed in the demo app and can be navigated by the top link for demo purposes. But for user simplicity there is an argument to made that only one of them should be available. This solution is highly advantageous as it strikes a balance between security and user-friendliness. Although the SMS login buttons remain available, they have been downsized to encourage mobile app usage. This approach not only reduces costs for the government but also enhances user security. The app will be linked to the user's national identification number, enabling swift login procedures. When the user opens the app, they have to unlock it by either biometrics or a 4 letter pin they created upon registration. The app then generates a 5 letter code to be entered in the login flow. Opening the mobile application is therefore essentially the first step of this flow; both for the QR- and activation-code solutions. It's worth noting that this code remains active for a specific duration, ensuring both robust security and expeditious login processes.
+The rest of the flow (E.G. activation letter, SMS alternative and forgotten password) is similar to implementation 1.
 
 Version 1: Authentication code
 The app then generates a 5 letter code to be entered in the login flow.
