@@ -234,26 +234,18 @@ Additional documentation and guides for React and Create React App can be found 
 
 Contributions to this project:
 
-### Andreas Conradi Nitschke
-![Andreas's Avatar](https://avatars.githubusercontent.com/u/111982215?v=4?size=50) - [andreascnits](https://github.com/andreascnits)
+**Andreas Conradi Nitschke** - [andreascnits](https://github.com/andreascnits)
 
-### Audun Kristian Oklevik
-![Auduns's Avatar](https://avatars.githubusercontent.com/u/123725511?v=4?size=50) - [AudunKristian](https://github.com/AudunKristian)
+**Audun Kristian Oklevik** - [AudunKristian](https://github.com/AudunKristian)
 
-### Brage Navarsete
-![Brage's Avatar](https://avatars.githubusercontent.com/u/72668683?v=4?size=50) - [BrageAsperandenNavarsete](https://github.com/BrageAsperandenNavarsete)
+**Brage Navarsete** - [BrageAsperandenNavarsete](https://github.com/BrageAsperandenNavarsete)
 
-### Eiril Solveig Ugulen
-![Eiril's Avatar](https://avatars.githubusercontent.com/u/136449799?v=4?size=50) - [Eiril](https://github.com/Eiril)
+**Eiril Solveig Ugulen** - [Eiril](https://github.com/Eiril)
 
-### Kae Saito
-![Kae's Avatar](https://avatars.githubusercontent.com/u/93870750?v=4?size=50) - [kaechin](https://github.com/kaechin)
+**Kae Saito** - [kaechin](https://github.com/kaechin)
 
-### Kristian Birkeli
-![Kristian's Avatar](https://avatars.githubusercontent.com/u/93485256?v=4?size=50) - [krigubir](https://github.com/krigubir)
+**Kristian Birkeli** - [krigubir](https://github.com/krigubir)
 
-### Kristoffer Svedal
-![Kristoffer's Avatar](https://avatars.githubusercontent.com/u/40900660?s=400&u=f7c3c3e41ebea9d623673bbce28f32f6bcbc604f&v=4?size=50) - [ksvedal](https://github.com/ksvedal)
+**Kristoffer Svedal** - [ksvedal](https://github.com/ksvedal)
 
-### Thea Ueland
-![Thea's Avatar](https://avatars.githubusercontent.com/u/48138987?v=4) - [theaueland](https://github.com/theaueland)
+**Thea Ueland** - [theaueland](https://github.com/theaueland)
