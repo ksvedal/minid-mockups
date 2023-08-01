@@ -34,12 +34,26 @@ To set up the project, follow these steps:
 ## User Manual
 When you open the project in your browser, you will see the MinID login page. You can navigate through the different pages of the login process, depending on which implementation you are using. Below are previews of the different designs, including both normal and dark mode, along with explanations of the login process for each implementation.
 
+### Login Flow
+The login flow of implementation 1 and 3 is illustrated below:
+
+<img src="./images/minID_flow.png" alt="MinID flow" style="margin: 15px">
+
+* To reach the activationLetterFlow (the blue box in the flow chart), you need to enter any one number in the form collecting national identification numbers and then press the login button.
+* To access the noLetterActivationLetterOrderedFlow (the green box in the flow chart), you need to enter any two numbers in the form collecting national identification numbers and then press the login button.
+* To access the normal loginFlow, you must enter any 11 numbers in the form collecting national identification numbers and then press the login button.
+
+The login flow of implementation 2 is illustrated below:
+
+<img src="./images/minID_flow_2.png" alt="MinID flow" style="margin: 15px">
+
+* The "use App" portion of the flow will either consist of QR-code or authentication code. This is dependent on what is implemented. For simplicity for the user it is preferred that only one of these is implemented. In the current iteration the user first gets presented with the QR-code page and then can move on to the authentication page. This is only for presentation purposes.
 
 ### Implementation 1
 
 This design uses birth number first to make the login process easier for the user. However, this solution is not very secure because of the risk of sanitizing of national identification number, and therefore we do not recommend this implementation. 
 The flow is very similar to the current solution, but a notable change is that the social security number and password fields have been separated to prevent the user getting overwhelmed.
-Normal and dark mode:
+Dark and normal mode:
 
 <img src="./images/implementation1_dark.png" alt="Implementation1 dark mode preview" width="49%"> <img src="./images/implementation1.png" alt="Implementation1 preview" width="49%">
 
@@ -77,21 +91,6 @@ Dark and normal mode:
 
 <img src="./images/implementation3_dark.png" alt="Implementation1 dark mode preview" width="49%" style="margin: 15px"> <img src="./images/implementation3.png" alt="Implementation1 preview" width="49%" style="margin: 15px">
 
-
-### Login Flow
-The login flow of implementation 1 and 3 is illustrated below:
-
-<img src="./images/minID_flow.png" alt="MinID flow" style="margin: 15px">
-
-* To reach the activationLetterFlow (the blue box in the flow chart), you need to enter any one number in the form collecting national identification numbers and then press the login button. 
-* To access the noLetterActivationLetterOrderedFlow (the green box in the flow chart), you need to enter any two numbers in the form collecting national identification numbers and then press the login button.
-* To access the normal loginFlow, you must enter any 11 numbers in the form collecting national identification numbers and then press the login button.
-
-The login flow of implementation 2 is illustrated below:
-
-<img src="./images/minID_flow_2.png" alt="MinID flow" style="margin: 15px">
-
-* The "use App" portion of the flow will either consist of QR-code or authentication code. This is dependent on what is implemented. For simplicity for the user it is preferred that only one of these is implemented. In the current iteration the user first gets presented with the QR-code page and then can move on to the authentication page. This is only for presentation purposes.
 
 ## Available Scripts
 
