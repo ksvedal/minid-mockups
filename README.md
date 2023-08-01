@@ -62,12 +62,11 @@ Authentication code and QR-code presesentation:
 
 ### Implementation 3
 
-Normal and dark mode:
-
-<img src="./images/implementation3.jpg" alt="Implementation1 preview" width="800" style="margin: 15px">
-<img src="./images/implementation3_dark.jpg" alt="Implementation1 dark mode preview" width="800" style="margin: 15px">
-
 This design has the same flow as implementation1, but with a different color scheme and layout.
+
+Dark and normal mode:
+
+<img src="./images/implementation3_dark.png" alt="Implementation1 dark mode preview" width="49%" style="margin: 15px"> <img src="./images/implementation3.png" alt="Implementation1 preview" width="49%" style="margin: 15px">
 
 
 ### Login Flow
