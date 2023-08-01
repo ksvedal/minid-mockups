@@ -30,6 +30,46 @@ Following is the file structures (in order) for implementation 1, 2, and 3.
 
 <img src="./images/imp1_struct.png" alt="Implementation 1 structure" width="30%" style="margin: 30px"><img src="./images/imp2_struct.png" alt="Implementation 2 structure" width="30%" style="margin: 30px"><img src="./images/imp3_struct.png" alt="Implementation 3 structure" width="30%" style="margin: 30px">
 
+## Scripts and dependencies
+### React Web Applications:
+
+#### Main Dependencies:
+- **React & ReactDOM**: `^18.2.0` - The core libraries for building user interfaces.
+- **React Router DOM**: `^6.14.0` - A collection of navigational components.
+- **FontAwesome**: `^6.4.0` - Icons library.
+- **i18next** & **react-i18next**: `^23.2.6` & `^13.0.1` respectively - Used for internationalization.
+- **react-toggle-dark-mode**: `^1.1.1` - A package to manage dark mode toggling.
+
+#### Development Dependencies:
+- **Tailwind CSS**: `^3.3.2` - A utility-first CSS framework.
+
+#### Scripts:
+- `start`: Start the development server.
+- `build`: Builds the production version of the app.
+- `test`: Run the test suite.
+- `eject`: Ejects the configuration and scripts from `react-scripts`.
+
+#### Others:
+- ESLint configuration for linting.
+- Browserlist to control the browsers supported in development and production.
+
+### React Native Expo Mobile Application: "authenticator"
+
+#### Main Dependencies:
+- **Expo SDK**: `~48.0.18` - A framework for building native apps.
+- **React Navigation**: Various packages for handling navigation.
+- **React Native Reanimated**: `^3.3.0` - Enhanced animations.
+- **Expo Barcode Scanner**: `~12.3.2` - Scanning barcodes functionality.
+- **React Native SVG**: `^13.10.0` - SVG rendering.
+
+#### Development Dependencies:
+- **TypeScript**: `^4.9.4` - Static type-checking along with the latest ECMAScript features.
+- **Jest & Jest Expo**: `^29.2.1` & `~48.0.0` - Testing library.
+
+#### Scripts:
+- `start`: Start the development server.
+- `android`, `ios`, `web`: Start the development server for specific platforms.
+- `test`: Run the test suite.
 
 ## Setup React Apps
 
@@ -118,7 +158,7 @@ This app has two versions of what is essentially the same flow. Both is displaye
 
 The rest of the flow (E.G. activation letter, SMS alternative and forgotten password) is similar to implementation 1.
 
-Neither the Application or authenticator is implemented to communicate with each other in any way and this is just a mockup.
+Neither the Application nor the authenticator is implemented to communicate with each other in any way and this is just a mockup.
 
 Version 1: Authentication code
 The app then generates a 5 letter code to be entered in the login flow.
@@ -131,7 +171,7 @@ Authentication code and QR-code presesentation:
 <img src="./images/implementation2_authcode.png" alt="Implementation2 authentication code" width="49%"> <img src="./images/implementation2_qr.png" alt="Implementation2 QR code" width="49%">
 
 Mobile authenticator:
-These images shows the code generator with a moving slide to display how long the code will last along with the qr scanner on the last image:
+These images show the code generator with a moving slide to display how long the code will last along with the qr scanner on the last image:
 
 <img src="./images/mobile_auth_1.jpg" alt="Implementation2 mobile" width="32%"> <img src="./images/mobile_auth_2.jpg" alt="Implementation2 mobile 2" width="32%"> <img src="./images/mobile_auth_3.jpg" alt="Implementation2 mobile QR" width="32%">
 
