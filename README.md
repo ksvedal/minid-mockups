@@ -76,13 +76,13 @@ Dark and normal mode:
 
 Main login flow if the user has account and everything works as intended:
 
-<img src="./images/implementation1.png" alt="Implementation1 dark mode preview" width="49%"> <img src="./images/implementation1_pw.png" alt="Implementation1 dark mode preview" width="49%">
-<img src="./images/implementation1_authcode.png" alt="Implementation1 dark mode preview" width="49%">
+<img src="./images/implementation1.png" alt="Implementation1 SSN" width="49%"> <img src="./images/implementation1_pw.png" alt="Implementation1 password" width="49%">
+<img src="./images/implementation1_authcode.png" alt="Implementation1 authentication code" width="49%">
 
 Activation letter flow if user dont have account:
 
-<img src="./images/implementation1_letter_not_ordered.png" alt="Implementation1 dark mode preview" width="49%"> <img src="./images/implementation1_letter_just_ordered.png" alt="Implementation1 dark mode preview" width="49%">
-<img src="./images/implementation1_letter_ordered_enter_activation_code.png" alt="Implementation1 dark mode preview" width="49%"> <img src="./images/implementation1_letter_enter_information.png" alt="Implementation1 dark mode preview" width="49%">
+<img src="./images/implementation1_letter_not_ordered.png" alt="Implementation1 letter not ordered" width="49%"> <img src="./images/implementation1_letter_just_ordered.png" alt="Implementation1 letter just ordered" width="49%">
+<img src="./images/implementation1_letter_ordered_enter_activation_code.png" alt="Implementation1 letter ordered" width="49%"> <img src="./images/implementation1_letter_enter_information.png" alt="Implementation1 letter activated enter information" width="49%">
 
 ### Implementation 2
 
@@ -97,8 +97,12 @@ The login flow generates a QR code for the user to scan with their app.
 
 Authentication code and QR-code presesentation:
 
-<img src="./images/implementation2_authcode.png" alt="Implementation2 preview" width="49%"> <img src="./images/implementation2_qr.png" alt="Implementation2 dark mode preview" width="49%">
+<img src="./images/implementation2_authcode.png" alt="Implementation2 authentication code" width="49%"> <img src="./images/implementation2_qr.png" alt="Implementation2 QR code" width="49%">
 
+Mobile authenticator:
+These images shows the code generator with a moving slide to display how long the code will last along with the qr scanner on the last image:
+
+<img src="./images/mobile_auth_1.jpg" alt="Implementation2 mobile" width="33%"> <img src="./images/mobile_auth_2.jpg" alt="Implementation2 mobile 2" width="33%"> <img src="./images/mobile_auth_3.jpg" alt="Implementation2 mobile QR" width="33%">
 
 ### Implementation 3
 
@@ -106,7 +110,7 @@ This design has the same flow as implementation1, but with a different color sch
 
 Dark and normal mode:
 
-<img src="./images/implementation3_dark.png" alt="Implementation1 dark mode preview" width="49%" style="margin: 15px"> <img src="./images/implementation3.png" alt="Implementation1 preview" width="49%" style="margin: 15px">
+<img src="./images/implementation3_dark.png" alt="Implementation1 dark mode" width="49%" style="margin: 15px"> <img src="./images/implementation3.png" alt="Implementation1" width="49%" style="margin: 15px">
 
 
 ## Available Scripts
