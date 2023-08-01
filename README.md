@@ -32,6 +32,7 @@ The design aims to be as user-friendly as possible, requiring no prior knowledge
    - [Error during npm install](#error-during-npm-install)
    - [Unable to Start Development Server](#unable-to-start-development-server)
 9. [Learn More](#learn-more)
+10. [Contributors](#contributors)
 
 
 ## Project File Architecture
