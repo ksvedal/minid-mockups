@@ -1,8 +1,25 @@
 # MinID Login Page - Optimized Flow
-This project presents an optimized flow for the MinID login page, focusing on improving the layout and enhancing the user experience. The development process utilizes the Tailwind CSS framework to streamline the design.
+## Summary
+The MinID Login Page project offers an optimized login experience, implementing three different designs to enhance user interaction. It utilizes the Tailwind CSS framework and is bootstrapped with Create React App. The project caters to various users by supporting multiple languages and is structured in a way that encourages a smooth user experience while keeping security in focus. Detailed instructions are provided for setup, usage, and troubleshooting.
 
 ## Target Audience
 The design aims to be as user-friendly as possible, requiring no prior knowledge of MinID. It supports multiple languages, making it suitable for non-native speakers. Basic understanding of computers is recommended for setting up the project.
+
+## Table of Contents
+1. [Target Audience](#target-audience)
+2. [Project File Architecture](#project-file-architecture)
+3. [Setup](#setup)
+4. [User Manual](#user-manual)
+    - [Login Flow](#login-flow)
+    - [Implementation 1](#implementation-1)
+    - [Implementation 2](#implementation-2)
+    - [Implementation 3](#implementation-3)
+5. [Available Scripts](#available-scripts)
+6. [Troubleshooting](#troubleshooting)
+    - [Error during npm install](#error-during-npm-install)
+    - [Unable to Start Development Server](#unable-to-start-development-server)
+7. [Learn More](#learn-more)
+
 
 ## Project File Architecture
 In the project, you will find different implementations of the design organized into separate folders. The first implementation represents the original design, the second implementation showcases the optimized design, and the third implementation features the original design with a different color scheme and layout. Each design has its own root directory within the implementation folders. To run all the different designs within the project, npm is used to install the necessary dependencies and build the extension. Run npm install in all the folders to install the required dependencies. See the setup section below for more information.
