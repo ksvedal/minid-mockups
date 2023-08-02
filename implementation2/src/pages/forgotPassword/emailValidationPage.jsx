@@ -64,7 +64,7 @@ const EmailValidationPage = () => {
             maxLength={1}
             onChange={(event) => handleInputChange(0, event)}
             onKeyDown={(event) => handleKeyDown(0, event)}
-            className="py-6 mb-4 w-11 h-11 bg-custom-light-grey text-black rounded-full border-custom-dark-grey-grey text-center dark:bg-custom-very-darker-grey dark:text-white"
+            className="py-6 mb-4 w-11 h-11 bg-custom-light-grey text-black rounded-full border-custom-dark-grey-grey text-center "
           />
           {/* Repeat the above pattern for the remaining inputs (1, 2, 3, 4) */}
           <input
@@ -74,7 +74,7 @@ const EmailValidationPage = () => {
             maxLength={1}
             onChange={(event) => handleInputChange(1, event)}
             onKeyDown={(event) => handleKeyDown(1, event)}
-            className="py-6 mb-4 w-11 h-11 bg-custom-light-grey text-black rounded-full border-custom-dark-grey-grey text-center dark:bg-custom-very-darker-grey dark:text-white"
+            className="py-6 mb-4 w-11 h-11 bg-custom-light-grey text-black rounded-full border-custom-dark-grey-grey text-center "
           />
           <input
             ref={(ref) => inputRefs.current[2] = ref}
@@ -83,7 +83,7 @@ const EmailValidationPage = () => {
             maxLength={1}
             onChange={(event) => handleInputChange(2, event)}
             onKeyDown={(event) => handleKeyDown(2, event)}
-            className="py-6 mb-4 w-11 h-11 bg-custom-light-grey text-black rounded-full border-custom-dark-grey-grey text-center dark:bg-custom-very-darker-grey dark:text-white"
+            className="py-6 mb-4 w-11 h-11 bg-custom-light-grey text-black rounded-full border-custom-dark-grey-grey text-center "
           />
           <input
             ref={(ref) => inputRefs.current[3] = ref}
@@ -92,7 +92,7 @@ const EmailValidationPage = () => {
             maxLength={1}
             onChange={(event) => handleInputChange(3, event)}
             onKeyDown={(event) => handleKeyDown(3, event)}
-            className="py-6 mb-4 w-11 h-11 bg-custom-light-grey text-black rounded-full border-custom-dark-grey-grey text-center dark:bg-custom-very-darker-grey dark:text-white"
+            className="py-6 mb-4 w-11 h-11 bg-custom-light-grey text-black rounded-full border-custom-dark-grey-grey text-center "
           />
           <input
             ref={(ref) => inputRefs.current[4] = ref}
@@ -101,7 +101,7 @@ const EmailValidationPage = () => {
             maxLength={1}
             onChange={(event) => handleInputChange(4, event)}
             onKeyDown={(event) => handleKeyDown(4, event)}
-            className="py-6 mb-4 w-11 h-11 bg-custom-light-grey text-black rounded-full border-custom-dark-grey-grey text-center dark:bg-custom-very-darker-grey dark:text-white"
+            className="py-6 mb-4 w-11 h-11 bg-custom-light-grey text-black rounded-full border-custom-dark-grey-grey text-center "
           />
         </div>
         <p className={"my-2 text-red-700 absolute top-40"}>{errorMessage && <p> {errorMessage}</p >}</p>
