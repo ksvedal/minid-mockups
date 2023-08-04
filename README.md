@@ -2,6 +2,8 @@
 ## Summary
 The MinID Login Page project offers an optimized login experience, implementing three different designs to enhance user interaction. It utilizes the Tailwind CSS framework and is bootstrapped with Create React App. The project caters to various users by supporting multiple languages and is structured in a way that encourages a smooth user experience while keeping security in focus. Detailed instructions are provided for setup, usage, and troubleshooting.
 
+This project is one of two tasks issued by the [Norwegian Digitalisation Agency](https://www.digdir.no/) for a group of 8 students in the timeframe between 12 June to 04 Aug 2023
+
 ## Target Audience
 The design aims to be as user-friendly as possible, requiring no prior knowledge of MinID. It supports multiple languages, making it suitable for non-native speakers. Basic understanding of computers is recommended for setting up the project.
 
