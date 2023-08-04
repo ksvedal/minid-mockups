@@ -11,15 +11,6 @@ The design aims to be as user-friendly as possible, requiring no prior knowledge
 3. [Table of Contents](#table-of-contents)
 4. [Project File Architecture](#project-file-architecture)
 5. [Scripts and dependencies](#scripts-and-dependencies)
-   - [React Web Applications](#react-web-applications)
-      - [Main Dependencies](#main-dependencies)
-      - [Development Dependencies](#development-dependencies)
-      - [Scripts](#scripts)
-      - [Others](#others)
-   - [React Native Expo Mobile Application: "authenticator"](#react-native-expo-mobile-application-"authenticator")
-      - [Main Dependencies](#main-dependencies-1)
-      - [Development Dependencies](#development-dependencies-1)
-      - [Scripts](#scripts-1)
 6. [Setup](#setup)
    - [Setup React Apps](#setup-react-apps)
    - [Setup Mobile Authenticator](#setup-mobile-authenticator)
@@ -29,10 +20,9 @@ The design aims to be as user-friendly as possible, requiring no prior knowledge
    - [Implementation 2](#implementation-2)
    - [Implementation 3](#implementation-3)
 8. [Troubleshooting](#troubleshooting)
-   - [Error during npm install](#error-during-npm-install)
-   - [Unable to Start Development Server](#unable-to-start-development-server)
 9. [Learn More](#learn-more)
-10. [Contributors](#contributors)
+10. [Future work](#future-work)
+11. [Contributors](#contributors)
 
 
 ## Project File Architecture
@@ -230,6 +220,10 @@ To learn more about creating and configuring React applications, you can visit t
 [React documentation](https://reactjs.org/).
 
 Additional documentation and guides for React and Create React App can be found within the respective documentation sites.
+
+## Future work
+
+Future work should involve conducting extensive user testing and evaluation of all three implementations to identify the best combination of design elements that optimize security and user experience. By addressing the identified weaknesses and building on the strengths of each prototype, a more robust and user-friendly MinID platform can be achieved.
 
 ## Contributors
 
